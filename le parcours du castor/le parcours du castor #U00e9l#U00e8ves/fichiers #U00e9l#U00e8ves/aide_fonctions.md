@@ -91,15 +91,15 @@ Vous pourrez vous en inspirer pour `lanceCheminAleatoire1/2()`.
 ### Partie I - Validation du parcours
 
 #### `sontVoisines(case1, case2)`
-**But** : Vérifie si deux cases sont adjacentes (horizontalement ou verticalement).
+**But** : Vérifie si deux cases sont adjacentes (horizontalement ou verticalement, pas en diagonale).
 
-**Indice** : Réfléchissez à la distance entre deux cases. Deux cases voisines ont une différence de 1 sur une seule dimension (ligne OU colonne, pas les deux).
-
-**Exemples** :
-- `[0,0]` et `[0,1]` → voisines (même ligne, colonnes différentes de 1)
-- `[0,0]` et `[1,0]` → voisines (lignes différentes de 1, même colonne)
-- `[0,0]` et `[1,1]` → NON voisines (diagonale)
-- `[0,0]` et `[2,0]` → NON voisines (trop éloignées)
+**Tests attendus** :
+```python
+sontVoisines([0,0], [0,1])  # doit retourner True
+sontVoisines([0,0], [1,0])  # doit retourner True
+sontVoisines([0,0], [1,1])  # doit retourner False (diagonale)
+sontVoisines([0,0], [2,0])  # doit retourner False (trop loin)
+```
 
 ---
 

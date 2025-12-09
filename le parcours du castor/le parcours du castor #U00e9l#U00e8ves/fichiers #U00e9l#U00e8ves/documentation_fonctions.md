@@ -244,10 +244,9 @@ Départ [4,5]
 - **Sortie** : `True` si adjacentes, `False` sinon
 - **Règle** : Adjacence horizontale ou verticale uniquement (pas diagonale)
 
-**Réflexion** :
-- Comparez les coordonnées des deux cases
-- Calculez les différences entre les lignes et entre les colonnes
-- Trouvez une condition qui soit vraie uniquement pour les voisins directs
+**À réfléchir** :
+- Quelle condition mathématique vérifie qu'une case est juste à côté d'une autre ?
+- Comment distinguer un voisin direct d'une case en diagonale ?
 
 ---
 

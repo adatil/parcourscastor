@@ -1,0 +1,537 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feedback>
+
+<item type="label">
+    <itemid>1</itemid>
+    <typ>label</typ>
+    <name>Section 1</name>
+    <label>&lt;h3&gt;Informations générales&lt;/h3&gt;</label>
+    <required>0</required>
+    <position>1</position>
+</item>
+
+<item type="textfield">
+    <itemid>2</itemid>
+    <typ>textfield</typ>
+    <name>Classe</name>
+    <label>Classe</label>
+    <required>1</required>
+    <position>2</position>
+    <presentation>30|1</presentation>
+</item>
+
+<item type="textfield">
+    <itemid>3</itemid>
+    <typ>textfield</typ>
+    <name>LV1</name>
+    <label>LV1</label>
+    <required>1</required>
+    <position>3</position>
+    <presentation>20|1</presentation>
+</item>
+
+<item type="textfield">
+    <itemid>4</itemid>
+    <typ>textfield</typ>
+    <name>LV2</name>
+    <label>LV2</label>
+    <required>1</required>
+    <position>4</position>
+    <presentation>20|1</presentation>
+</item>
+
+<item type="textfield">
+    <itemid>5</itemid>
+    <typ>textfield</typ>
+    <name>Options</name>
+    <label>Option(s)</label>
+    <required>0</required>
+    <position>5</position>
+    <presentation>40|1</presentation>
+</item>
+
+<item type="multichoice">
+    <itemid>6</itemid>
+    <typ>multichoice</typ>
+    <name>Regime</name>
+    <label>Régime</label>
+    <required>1</required>
+    <position>6</position>
+    <presentation>r&gt;&gt;&gt;&gt;&gt;Externe|Demi-pensionnaire|Interne&lt;&lt;&lt;&lt;&lt;1</presentation>
+</item>
+
+<item type="textfield">
+    <itemid>7</itemid>
+    <typ>textfield</typ>
+    <name>Commune</name>
+    <label>Commune de résidence</label>
+    <required>0</required>
+    <position>7</position>
+    <presentation>40|1</presentation>
+</item>
+
+<item type="textfield">
+    <itemid>8</itemid>
+    <typ>textfield</typ>
+    <name>Trajet</name>
+    <label>Temps de trajet matin et soir (pour les externes et demi-pensionnaires)</label>
+    <required>0</required>
+    <position>8</position>
+    <presentation>30|1</presentation>
+</item>
+
+<item type="label">
+    <itemid>9</itemid>
+    <typ>label</typ>
+    <name>Section 2</name>
+    <label>&lt;h3&gt;Bilan du trimestre 1&lt;/h3&gt;</label>
+    <required>0</required>
+    <position>9</position>
+</item>
+
+<item type="textarea">
+    <itemid>10</itemid>
+    <typ>textarea</typ>
+    <name>Matieres_plaisantes</name>
+    <label>Quelles sont les matières qui te plaisent ? Pourquoi ?</label>
+    <required>1</required>
+    <position>10</position>
+    <presentation>60|5</presentation>
+</item>
+
+<item type="textarea">
+    <itemid>11</itemid>
+    <typ>textarea</typ>
+    <name>Matieres_deplaisantes</name>
+    <label>Et celles qui te plaisent moins ? Pourquoi ?</label>
+    <required>1</required>
+    <position>11</position>
+    <presentation>60|5</presentation>
+</item>
+
+<item type="multichoice">
+    <itemid>12</itemid>
+    <typ>multichoice</typ>
+    <name>Auto_Francais</name>
+    <label>Autoévaluation en Français - Comment évalues-tu tes résultats ?</label>
+    <required>1</required>
+    <position>12</position>
+    <presentation>r&gt;&gt;&gt;&gt;&gt;Très insuffisant|Insuffisant|Satisfaisant|Bien|Très bien&lt;&lt;&lt;&lt;&lt;1</presentation>
+</item>
+
+<item type="multichoice">
+    <itemid>13</itemid>
+    <typ>multichoice</typ>
+    <name>Auto_Maths</name>
+    <label>Autoévaluation en Mathématiques</label>
+    <required>1</required>
+    <position>13</position>
+    <presentation>r&gt;&gt;&gt;&gt;&gt;Très insuffisant|Insuffisant|Satisfaisant|Bien|Très bien&lt;&lt;&lt;&lt;&lt;1</presentation>
+</item>
+
+<item type="multichoice">
+    <itemid>14</itemid>
+    <typ>multichoice</typ>
+    <name>Auto_HG</name>
+    <label>Autoévaluation en Histoire-Géographie</label>
+    <required>1</required>
+    <position>14</position>
+    <presentation>r&gt;&gt;&gt;&gt;&gt;Très insuffisant|Insuffisant|Satisfaisant|Bien|Très bien&lt;&lt;&lt;&lt;&lt;1</presentation>
+</item>
+
+<item type="multichoice">
+    <itemid>15</itemid>
+    <typ>multichoice</typ>
+    <name>Auto_LV1</name>
+    <label>Autoévaluation en LV1</label>
+    <required>1</required>
+    <position>15</position>
+    <presentation>r&gt;&gt;&gt;&gt;&gt;Très insuffisant|Insuffisant|Satisfaisant|Bien|Très bien&lt;&lt;&lt;&lt;&lt;1</presentation>
+</item>
+
+<item type="multichoice">
+    <itemid>16</itemid>
+    <typ>multichoice</typ>
+    <name>Auto_LV2</name>
+    <label>Autoévaluation en LV2</label>
+    <required>1</required>
+    <position>16</position>
+    <presentation>r&gt;&gt;&gt;&gt;&gt;Très insuffisant|Insuffisant|Satisfaisant|Bien|Très bien&lt;&lt;&lt;&lt;&lt;1</presentation>
+</item>
+
+<item type="multichoice">
+    <itemid>17</itemid>
+    <typ>multichoice</typ>
+    <name>Auto_SVT</name>
+    <label>Autoévaluation en SVT</label>
+    <required>1</required>
+    <position>17</position>
+    <presentation>r&gt;&gt;&gt;&gt;&gt;Très insuffisant|Insuffisant|Satisfaisant|Bien|Très bien&lt;&lt;&lt;&lt;&lt;1</presentation>
+</item>
+
+<item type="multichoice">
+    <itemid>18</itemid>
+    <typ>multichoice</typ>
+    <name>Auto_Physique</name>
+    <label>Autoévaluation en Sciences Physiques</label>
+    <required>1</required>
+    <position>18</position>
+    <presentation>r&gt;&gt;&gt;&gt;&gt;Très insuffisant|Insuffisant|Satisfaisant|Bien|Très bien&lt;&lt;&lt;&lt;&lt;1</presentation>
+</item>
+
+<item type="multichoice">
+    <itemid>19</itemid>
+    <typ>multichoice</typ>
+    <name>Auto_EPS</name>
+    <label>Autoévaluation en EPS</label>
+    <required>1</required>
+    <position>19</position>
+    <presentation>r&gt;&gt;&gt;&gt;&gt;Très insuffisant|Insuffisant|Satisfaisant|Bien|Très bien&lt;&lt;&lt;&lt;&lt;1</presentation>
+</item>
+
+<item type="multichoice">
+    <itemid>20</itemid>
+    <typ>multichoice</typ>
+    <name>Auto_SNT</name>
+    <label>Autoévaluation en SNT</label>
+    <required>1</required>
+    <position>20</position>
+    <presentation>r&gt;&gt;&gt;&gt;&gt;Très insuffisant|Insuffisant|Satisfaisant|Bien|Très bien&lt;&lt;&lt;&lt;&lt;1</presentation>
+</item>
+
+<item type="multichoice">
+    <itemid>21</itemid>
+    <typ>multichoice</typ>
+    <name>Evolution</name>
+    <label>Comment évolue ta situation depuis le début de l'année ?</label>
+    <required>1</required>
+    <position>21</position>
+    <presentation>r&gt;&gt;&gt;&gt;&gt;En nette progression|En légère progression|Stable|En légère baisse|En nette baisse&lt;&lt;&lt;&lt;&lt;1</presentation>
+</item>
+
+<item type="label">
+    <itemid>22</itemid>
+    <typ>label</typ>
+    <name>Section 3</name>
+    <label>&lt;h3&gt;Méthodes de travail et organisation&lt;/h3&gt;</label>
+    <required>0</required>
+    <position>22</position>
+</item>
+
+<item type="multichoice">
+    <itemid>23</itemid>
+    <typ>multichoice</typ>
+    <name>Temps_travail</name>
+    <label>Combien de temps consacres-tu au travail scolaire tous les soirs ?</label>
+    <required>1</required>
+    <position>23</position>
+    <presentation>r&gt;&gt;&gt;&gt;&gt;Moins de 30 minutes|Entre 30 min et 1h|Entre 1h et 2h|Entre 2h et 3h|Plus de 3h&lt;&lt;&lt;&lt;&lt;1</presentation>
+</item>
+
+<item type="multichoice">
+    <itemid>24</itemid>
+    <typ>multichoice</typ>
+    <name>Anticipation</name>
+    <label>T'avances-tu systématiquement dans ton travail dès que tu en as l'occasion ?</label>
+    <required>1</required>
+    <position>24</position>
+    <presentation>r&gt;&gt;&gt;&gt;&gt;Toujours|Souvent|Parfois|Rarement|Jamais&lt;&lt;&lt;&lt;&lt;1</presentation>
+</item>
+
+<item type="multichoice">
+    <itemid>25</itemid>
+    <typ>multichoice</typ>
+    <name>Revisions</name>
+    <label>Quand commences-tu tes révisions pour les devoirs surveillés ?</label>
+    <required>1</required>
+    <position>25</position>
+    <presentation>r&gt;&gt;&gt;&gt;&gt;Une semaine à l'avance|2-3 jours avant|La veille|Jamais&lt;&lt;&lt;&lt;&lt;1</presentation>
+</item>
+
+<item type="label">
+    <itemid>26</itemid>
+    <typ>label</typ>
+    <name>Section 4</name>
+    <label>&lt;h3&gt;Vie personnelle et numérique&lt;/h3&gt;</label>
+    <required>0</required>
+    <position>26</position>
+</item>
+
+<item type="textarea">
+    <itemid>27</itemid>
+    <typ>textarea</typ>
+    <name>Loisirs</name>
+    <label>Quels sont tes loisirs (personnels, sportifs, compétition, culturels, musicaux, etc) et combien de temps par semaine y consacres-tu ?</label>
+    <required>0</required>
+    <position>27</position>
+    <presentation>60|3</presentation>
+</item>
+
+<item type="textfield">
+    <itemid>28</itemid>
+    <typ>textfield</typ>
+    <name>Jeux_video</name>
+    <label>Es-tu adepte des jeux vidéo ? Combien de temps par semaine peux-tu y passer ?</label>
+    <required>0</required>
+    <position>28</position>
+    <presentation>60|1</presentation>
+</item>
+
+<item type="textfield">
+    <itemid>29</itemid>
+    <typ>textfield</typ>
+    <name>Reseaux_sociaux</name>
+    <label>Es-tu "accro" au portable, à Instagram, TikTok ou un autre réseau social ? Combien de temps peux-tu y passer ?</label>
+    <required>0</required>
+    <position>29</position>
+    <presentation>60|1</presentation>
+</item>
+
+<item type="textfield">
+    <itemid>30</itemid>
+    <typ>textfield</typ>
+    <name>Sommeil</name>
+    <label>Quelles sont, en général, tes heures de lever et de coucher en période scolaire ?</label>
+    <required>0</required>
+    <position>30</position>
+    <presentation>60|1</presentation>
+</item>
+
+<item type="multichoice">
+    <itemid>31</itemid>
+    <typ>multichoice</typ>
+    <name>Ordinateur</name>
+    <label>Disposes-tu d'un ordinateur personnel pour travailler ?</label>
+    <required>1</required>
+    <position>31</position>
+    <presentation>r&gt;&gt;&gt;&gt;&gt;Oui|Non|Partagé avec la famille&lt;&lt;&lt;&lt;&lt;1</presentation>
+</item>
+
+<item type="multichoice">
+    <itemid>32</itemid>
+    <typ>multichoice</typ>
+    <name>Tablette</name>
+    <label>Disposes-tu d'une tablette pour travailler ?</label>
+    <required>1</required>
+    <position>32</position>
+    <presentation>r&gt;&gt;&gt;&gt;&gt;Oui|Non&lt;&lt;&lt;&lt;&lt;1</presentation>
+</item>
+
+<item type="label">
+    <itemid>33</itemid>
+    <typ>label</typ>
+    <name>Section 5</name>
+    <label>&lt;h3&gt;Projet d'orientation&lt;/h3&gt;</label>
+    <required>0</required>
+    <position>33</position>
+</item>
+
+<item type="multichoice">
+    <itemid>34</itemid>
+    <typ>multichoice</typ>
+    <name>Metier_connu</name>
+    <label>Je sais quel métier exercer</label>
+    <required>1</required>
+    <position>34</position>
+    <presentation>r&gt;&gt;&gt;&gt;&gt;Oui|Non&lt;&lt;&lt;&lt;&lt;1</presentation>
+</item>
+
+<item type="textfield">
+    <itemid>35</itemid>
+    <typ>textfield</typ>
+    <name>Quel_metier</name>
+    <label>Si oui, précise quel métier</label>
+    <required>0</required>
+    <position>35</position>
+    <presentation>60|1</presentation>
+</item>
+
+<item type="multichoice">
+    <itemid>36</itemid>
+    <typ>multichoice</typ>
+    <name>Etudes_connues</name>
+    <label>Je sais quelles études entreprendre pour y arriver</label>
+    <required>1</required>
+    <position>36</position>
+    <presentation>r&gt;&gt;&gt;&gt;&gt;Oui|Non&lt;&lt;&lt;&lt;&lt;1</presentation>
+</item>
+
+<item type="textarea">
+    <itemid>37</itemid>
+    <typ>textarea</typ>
+    <name>Hesitation_metiers</name>
+    <label>J'hésite entre plusieurs métiers - Si oui, lesquels ?</label>
+    <required>0</required>
+    <position>37</position>
+    <presentation>60|3</presentation>
+</item>
+
+<item type="multichoice">
+    <itemid>38</itemid>
+    <typ>multichoice</typ>
+    <name>Secteur_connu</name>
+    <label>J'ai une idée du secteur professionnel dans lequel je souhaite travailler</label>
+    <required>1</required>
+    <position>38</position>
+    <presentation>r&gt;&gt;&gt;&gt;&gt;Oui|Non&lt;&lt;&lt;&lt;&lt;1</presentation>
+</item>
+
+<item type="textfield">
+    <itemid>39</itemid>
+    <typ>textfield</typ>
+    <name>Quel_secteur</name>
+    <label>Si oui, précise le secteur</label>
+    <required>0</required>
+    <position>39</position>
+    <presentation>60|1</presentation>
+</item>
+
+<item type="multichoice">
+    <itemid>40</itemid>
+    <typ>multichoice</typ>
+    <name>Duree_etudes</name>
+    <label>J'envisage des études</label>
+    <required>0</required>
+    <position>40</position>
+    <presentation>r&gt;&gt;&gt;&gt;&gt;Courtes (BAC +2/+3)|Longues (BAC +5 ou plus)|Je ne sais pas encore&lt;&lt;&lt;&lt;&lt;1</presentation>
+</item>
+
+<item type="textfield">
+    <itemid>41</itemid>
+    <typ>textfield</typ>
+    <name>Type_etudes</name>
+    <label>Type d'études envisagées (BTS, DUT, Licence, Prépa, École...)</label>
+    <required>0</required>
+    <position>41</position>
+    <presentation>60|1</presentation>
+</item>
+
+<item type="multichoice">
+    <itemid>42</itemid>
+    <typ>multichoice</typ>
+    <name>Type_bac</name>
+    <label>J'ai déjà une idée du bac que je souhaite préparer</label>
+    <required>1</required>
+    <position>42</position>
+    <presentation>r&gt;&gt;&gt;&gt;&gt;Oui, bac général|Oui, bac technologique|Non, je ne sais pas encore&lt;&lt;&lt;&lt;&lt;1</presentation>
+</item>
+
+<item type="multichoice">
+    <itemid>43</itemid>
+    <typ>multichoice</typ>
+    <name>Specialites_connues</name>
+    <label>J'ai déjà une idée des spécialités que je vais choisir en première</label>
+    <required>1</required>
+    <position>43</position>
+    <presentation>r&gt;&gt;&gt;&gt;&gt;Oui|Non&lt;&lt;&lt;&lt;&lt;1</presentation>
+</item>
+
+<item type="textarea">
+    <itemid>44</itemid>
+    <typ>textarea</typ>
+    <name>Lesquelles_specialites</name>
+    <label>Si oui, lesquelles ? (3 spécialités à choisir)</label>
+    <required>0</required>
+    <position>44</position>
+    <presentation>60|3</presentation>
+</item>
+
+<item type="label">
+    <itemid>45</itemid>
+    <typ>label</typ>
+    <name>Section 6</name>
+    <label>&lt;h3&gt;Accompagnement et stages&lt;/h3&gt;</label>
+    <required>0</required>
+    <position>45</position>
+</item>
+
+<item type="multichoice">
+    <itemid>46</itemid>
+    <typ>multichoice</typ>
+    <name>CIO_visite</name>
+    <label>Je suis déjà allé au CIO de Brest</label>
+    <required>1</required>
+    <position>46</position>
+    <presentation>r&gt;&gt;&gt;&gt;&gt;Oui|Non&lt;&lt;&lt;&lt;&lt;1</presentation>
+</item>
+
+<item type="multichoice">
+    <itemid>47</itemid>
+    <typ>multichoice</typ>
+    <name>COP_rencontre</name>
+    <label>J'ai déjà rencontré le ou la COP (Conseiller d'Orientation Psychologue)</label>
+    <required>1</required>
+    <position>47</position>
+    <presentation>r&gt;&gt;&gt;&gt;&gt;Oui|Non&lt;&lt;&lt;&lt;&lt;1</presentation>
+</item>
+
+<item type="multichoice">
+    <itemid>48</itemid>
+    <typ>multichoice</typ>
+    <name>COP_RDV</name>
+    <label>Je souhaite prendre rendez-vous avec le ou la COP</label>
+    <required>1</required>
+    <position>48</position>
+    <presentation>r&gt;&gt;&gt;&gt;&gt;Oui|Non|Peut-être&lt;&lt;&lt;&lt;&lt;1</presentation>
+</item>
+
+<item type="multichoice">
+    <itemid>49</itemid>
+    <typ>multichoice</typ>
+    <name>Envie_stage</name>
+    <label>J'ai envie de faire un stage en entreprise pour préciser mon orientation</label>
+    <required>1</required>
+    <position>49</position>
+    <presentation>r&gt;&gt;&gt;&gt;&gt;Oui|Non|Peut-être&lt;&lt;&lt;&lt;&lt;1</presentation>
+</item>
+
+<item type="textfield">
+    <itemid>50</itemid>
+    <typ>textfield</typ>
+    <name>Domaine_stage</name>
+    <label>Si oui, dans quel domaine ?</label>
+    <required>0</required>
+    <position>50</position>
+    <presentation>60|1</presentation>
+</item>
+
+<item type="multichoice">
+    <itemid>51</itemid>
+    <typ>multichoice</typ>
+    <name>Stage_trouve</name>
+    <label>J'ai déjà trouvé un stage</label>
+    <required>0</required>
+    <position>51</position>
+    <presentation>r&gt;&gt;&gt;&gt;&gt;Oui|Non|Je cherche actuellement&lt;&lt;&lt;&lt;&lt;1</presentation>
+</item>
+
+<item type="label">
+    <itemid>52</itemid>
+    <typ>label</typ>
+    <name>Section 7</name>
+    <label>&lt;h3&gt;Pour finir...&lt;/h3&gt;</label>
+    <required>0</required>
+    <position>52</position>
+</item>
+
+<item type="textarea">
+    <itemid>53</itemid>
+    <typ>textarea</typ>
+    <name>Difficultes</name>
+    <label>Y a-t-il des difficultés particulières que tu souhaites évoquer avec ton professeur principal ?</label>
+    <required>0</required>
+    <position>53</position>
+    <presentation>60|5</presentation>
+</item>
+
+<item type="textarea">
+    <itemid>54</itemid>
+    <typ>textarea</typ>
+    <name>Commentaires</name>
+    <label>Commentaires libres - Tout ce que tu souhaites ajouter</label>
+    <required>0</required>
+    <position>54</position>
+    <presentation>60|5</presentation>
+</item>
+
+</feedback>

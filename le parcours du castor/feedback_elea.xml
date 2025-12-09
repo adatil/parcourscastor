@@ -1,0 +1,1247 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<FEEDBACK VERSION="200701" COMMENT="XML-Importfile for mod/feedback">
+     <ITEMS>
+          <ITEM TYPE="info" REQUIRED="0">
+               <ITEMID>
+                    <![CDATA[1]]>
+               </ITEMID>
+               <ITEMTEXT>
+                    <![CDATA[<h3>Informations générales</h3>]]>
+               </ITEMTEXT>
+               <ITEMLABEL>
+                    <![CDATA[Section 1]]>
+               </ITEMLABEL>
+               <PRESENTATION>
+                    <![CDATA[1]]>
+               </PRESENTATION>
+               <OPTIONS>
+                    <![CDATA[]]>
+               </OPTIONS>
+               <DEPENDITEM>
+                    <![CDATA[0]]>
+               </DEPENDITEM>
+               <DEPENDVALUE>
+                    <![CDATA[]]>
+               </DEPENDVALUE>
+          </ITEM>
+          <ITEM TYPE="textfield" REQUIRED="1">
+               <ITEMID>
+                    <![CDATA[2]]>
+               </ITEMID>
+               <ITEMTEXT>
+                    <![CDATA[Classe]]>
+               </ITEMTEXT>
+               <ITEMLABEL>
+                    <![CDATA[Classe]]>
+               </ITEMLABEL>
+               <PRESENTATION>
+                    <![CDATA[30|1]]>
+               </PRESENTATION>
+               <OPTIONS>
+                    <![CDATA[]]>
+               </OPTIONS>
+               <DEPENDITEM>
+                    <![CDATA[0]]>
+               </DEPENDITEM>
+               <DEPENDVALUE>
+                    <![CDATA[]]>
+               </DEPENDVALUE>
+          </ITEM>
+          <ITEM TYPE="textfield" REQUIRED="1">
+               <ITEMID>
+                    <![CDATA[3]]>
+               </ITEMID>
+               <ITEMTEXT>
+                    <![CDATA[LV1]]>
+               </ITEMTEXT>
+               <ITEMLABEL>
+                    <![CDATA[LV1]]>
+               </ITEMLABEL>
+               <PRESENTATION>
+                    <![CDATA[20|1]]>
+               </PRESENTATION>
+               <OPTIONS>
+                    <![CDATA[]]>
+               </OPTIONS>
+               <DEPENDITEM>
+                    <![CDATA[0]]>
+               </DEPENDITEM>
+               <DEPENDVALUE>
+                    <![CDATA[]]>
+               </DEPENDVALUE>
+          </ITEM>
+          <ITEM TYPE="textfield" REQUIRED="1">
+               <ITEMID>
+                    <![CDATA[4]]>
+               </ITEMID>
+               <ITEMTEXT>
+                    <![CDATA[LV2]]>
+               </ITEMTEXT>
+               <ITEMLABEL>
+                    <![CDATA[LV2]]>
+               </ITEMLABEL>
+               <PRESENTATION>
+                    <![CDATA[20|1]]>
+               </PRESENTATION>
+               <OPTIONS>
+                    <![CDATA[]]>
+               </OPTIONS>
+               <DEPENDITEM>
+                    <![CDATA[0]]>
+               </DEPENDITEM>
+               <DEPENDVALUE>
+                    <![CDATA[]]>
+               </DEPENDVALUE>
+          </ITEM>
+          <ITEM TYPE="textfield" REQUIRED="0">
+               <ITEMID>
+                    <![CDATA[5]]>
+               </ITEMID>
+               <ITEMTEXT>
+                    <![CDATA[Option(s)]]>
+               </ITEMTEXT>
+               <ITEMLABEL>
+                    <![CDATA[Options]]>
+               </ITEMLABEL>
+               <PRESENTATION>
+                    <![CDATA[40|1]]>
+               </PRESENTATION>
+               <OPTIONS>
+                    <![CDATA[]]>
+               </OPTIONS>
+               <DEPENDITEM>
+                    <![CDATA[0]]>
+               </DEPENDITEM>
+               <DEPENDVALUE>
+                    <![CDATA[]]>
+               </DEPENDVALUE>
+          </ITEM>
+          <ITEM TYPE="multichoice" REQUIRED="1">
+               <ITEMID>
+                    <![CDATA[6]]>
+               </ITEMID>
+               <ITEMTEXT>
+                    <![CDATA[Régime]]>
+               </ITEMTEXT>
+               <ITEMLABEL>
+                    <![CDATA[Regime]]>
+               </ITEMLABEL>
+               <PRESENTATION>
+                    <![CDATA[r>>>>>Externe|Demi-pensionnaire|Interne]]>
+               </PRESENTATION>
+               <OPTIONS>
+                    <![CDATA[]]>
+               </OPTIONS>
+               <DEPENDITEM>
+                    <![CDATA[0]]>
+               </DEPENDITEM>
+               <DEPENDVALUE>
+                    <![CDATA[]]>
+               </DEPENDVALUE>
+          </ITEM>
+          <ITEM TYPE="textfield" REQUIRED="0">
+               <ITEMID>
+                    <![CDATA[7]]>
+               </ITEMID>
+               <ITEMTEXT>
+                    <![CDATA[Commune de résidence]]>
+               </ITEMTEXT>
+               <ITEMLABEL>
+                    <![CDATA[Commune]]>
+               </ITEMLABEL>
+               <PRESENTATION>
+                    <![CDATA[40|1]]>
+               </PRESENTATION>
+               <OPTIONS>
+                    <![CDATA[]]>
+               </OPTIONS>
+               <DEPENDITEM>
+                    <![CDATA[0]]>
+               </DEPENDITEM>
+               <DEPENDVALUE>
+                    <![CDATA[]]>
+               </DEPENDVALUE>
+          </ITEM>
+          <ITEM TYPE="textfield" REQUIRED="0">
+               <ITEMID>
+                    <![CDATA[8]]>
+               </ITEMID>
+               <ITEMTEXT>
+                    <![CDATA[Temps de trajet matin et soir (pour les externes et demi-pensionnaires)]]>
+               </ITEMTEXT>
+               <ITEMLABEL>
+                    <![CDATA[Trajet]]>
+               </ITEMLABEL>
+               <PRESENTATION>
+                    <![CDATA[30|1]]>
+               </PRESENTATION>
+               <OPTIONS>
+                    <![CDATA[]]>
+               </OPTIONS>
+               <DEPENDITEM>
+                    <![CDATA[0]]>
+               </DEPENDITEM>
+               <DEPENDVALUE>
+                    <![CDATA[]]>
+               </DEPENDVALUE>
+          </ITEM>
+          <ITEM TYPE="info" REQUIRED="0">
+               <ITEMID>
+                    <![CDATA[9]]>
+               </ITEMID>
+               <ITEMTEXT>
+                    <![CDATA[<h3>Bilan du trimestre 1</h3>]]>
+               </ITEMTEXT>
+               <ITEMLABEL>
+                    <![CDATA[Section 2]]>
+               </ITEMLABEL>
+               <PRESENTATION>
+                    <![CDATA[1]]>
+               </PRESENTATION>
+               <OPTIONS>
+                    <![CDATA[]]>
+               </OPTIONS>
+               <DEPENDITEM>
+                    <![CDATA[0]]>
+               </DEPENDITEM>
+               <DEPENDVALUE>
+                    <![CDATA[]]>
+               </DEPENDVALUE>
+          </ITEM>
+          <ITEM TYPE="textarea" REQUIRED="1">
+               <ITEMID>
+                    <![CDATA[10]]>
+               </ITEMID>
+               <ITEMTEXT>
+                    <![CDATA[Quelles sont les matières qui te plaisent ? Pourquoi ?]]>
+               </ITEMTEXT>
+               <ITEMLABEL>
+                    <![CDATA[Matieres_plaisantes]]>
+               </ITEMLABEL>
+               <PRESENTATION>
+                    <![CDATA[60|5]]>
+               </PRESENTATION>
+               <OPTIONS>
+                    <![CDATA[]]>
+               </OPTIONS>
+               <DEPENDITEM>
+                    <![CDATA[0]]>
+               </DEPENDITEM>
+               <DEPENDVALUE>
+                    <![CDATA[]]>
+               </DEPENDVALUE>
+          </ITEM>
+          <ITEM TYPE="textarea" REQUIRED="1">
+               <ITEMID>
+                    <![CDATA[11]]>
+               </ITEMID>
+               <ITEMTEXT>
+                    <![CDATA[Et celles qui te plaisent moins ? Pourquoi ?]]>
+               </ITEMTEXT>
+               <ITEMLABEL>
+                    <![CDATA[Matieres_deplaisantes]]>
+               </ITEMLABEL>
+               <PRESENTATION>
+                    <![CDATA[60|5]]>
+               </PRESENTATION>
+               <OPTIONS>
+                    <![CDATA[]]>
+               </OPTIONS>
+               <DEPENDITEM>
+                    <![CDATA[0]]>
+               </DEPENDITEM>
+               <DEPENDVALUE>
+                    <![CDATA[]]>
+               </DEPENDVALUE>
+          </ITEM>
+          <ITEM TYPE="multichoice" REQUIRED="1">
+               <ITEMID>
+                    <![CDATA[12]]>
+               </ITEMID>
+               <ITEMTEXT>
+                    <![CDATA[Autoévaluation en Français - Comment évalues-tu tes résultats ?]]>
+               </ITEMTEXT>
+               <ITEMLABEL>
+                    <![CDATA[Auto_Francais]]>
+               </ITEMLABEL>
+               <PRESENTATION>
+                    <![CDATA[r>>>>>Très insuffisant|Insuffisant|Satisfaisant|Bien|Très bien]]>
+               </PRESENTATION>
+               <OPTIONS>
+                    <![CDATA[]]>
+               </OPTIONS>
+               <DEPENDITEM>
+                    <![CDATA[0]]>
+               </DEPENDITEM>
+               <DEPENDVALUE>
+                    <![CDATA[]]>
+               </DEPENDVALUE>
+          </ITEM>
+          <ITEM TYPE="multichoice" REQUIRED="1">
+               <ITEMID>
+                    <![CDATA[13]]>
+               </ITEMID>
+               <ITEMTEXT>
+                    <![CDATA[Autoévaluation en Mathématiques]]>
+               </ITEMTEXT>
+               <ITEMLABEL>
+                    <![CDATA[Auto_Maths]]>
+               </ITEMLABEL>
+               <PRESENTATION>
+                    <![CDATA[r>>>>>Très insuffisant|Insuffisant|Satisfaisant|Bien|Très bien]]>
+               </PRESENTATION>
+               <OPTIONS>
+                    <![CDATA[]]>
+               </OPTIONS>
+               <DEPENDITEM>
+                    <![CDATA[0]]>
+               </DEPENDITEM>
+               <DEPENDVALUE>
+                    <![CDATA[]]>
+               </DEPENDVALUE>
+          </ITEM>
+          <ITEM TYPE="multichoice" REQUIRED="1">
+               <ITEMID>
+                    <![CDATA[14]]>
+               </ITEMID>
+               <ITEMTEXT>
+                    <![CDATA[Autoévaluation en Histoire-Géographie]]>
+               </ITEMTEXT>
+               <ITEMLABEL>
+                    <![CDATA[Auto_HG]]>
+               </ITEMLABEL>
+               <PRESENTATION>
+                    <![CDATA[r>>>>>Très insuffisant|Insuffisant|Satisfaisant|Bien|Très bien]]>
+               </PRESENTATION>
+               <OPTIONS>
+                    <![CDATA[]]>
+               </OPTIONS>
+               <DEPENDITEM>
+                    <![CDATA[0]]>
+               </DEPENDITEM>
+               <DEPENDVALUE>
+                    <![CDATA[]]>
+               </DEPENDVALUE>
+          </ITEM>
+          <ITEM TYPE="multichoice" REQUIRED="1">
+               <ITEMID>
+                    <![CDATA[15]]>
+               </ITEMID>
+               <ITEMTEXT>
+                    <![CDATA[Autoévaluation en LV1]]>
+               </ITEMTEXT>
+               <ITEMLABEL>
+                    <![CDATA[Auto_LV1]]>
+               </ITEMLABEL>
+               <PRESENTATION>
+                    <![CDATA[r>>>>>Très insuffisant|Insuffisant|Satisfaisant|Bien|Très bien]]>
+               </PRESENTATION>
+               <OPTIONS>
+                    <![CDATA[]]>
+               </OPTIONS>
+               <DEPENDITEM>
+                    <![CDATA[0]]>
+               </DEPENDITEM>
+               <DEPENDVALUE>
+                    <![CDATA[]]>
+               </DEPENDVALUE>
+          </ITEM>
+          <ITEM TYPE="multichoice" REQUIRED="1">
+               <ITEMID>
+                    <![CDATA[16]]>
+               </ITEMID>
+               <ITEMTEXT>
+                    <![CDATA[Autoévaluation en LV2]]>
+               </ITEMTEXT>
+               <ITEMLABEL>
+                    <![CDATA[Auto_LV2]]>
+               </ITEMLABEL>
+               <PRESENTATION>
+                    <![CDATA[r>>>>>Très insuffisant|Insuffisant|Satisfaisant|Bien|Très bien]]>
+               </PRESENTATION>
+               <OPTIONS>
+                    <![CDATA[]]>
+               </OPTIONS>
+               <DEPENDITEM>
+                    <![CDATA[0]]>
+               </DEPENDITEM>
+               <DEPENDVALUE>
+                    <![CDATA[]]>
+               </DEPENDVALUE>
+          </ITEM>
+          <ITEM TYPE="multichoice" REQUIRED="1">
+               <ITEMID>
+                    <![CDATA[17]]>
+               </ITEMID>
+               <ITEMTEXT>
+                    <![CDATA[Autoévaluation en SVT]]>
+               </ITEMTEXT>
+               <ITEMLABEL>
+                    <![CDATA[Auto_SVT]]>
+               </ITEMLABEL>
+               <PRESENTATION>
+                    <![CDATA[r>>>>>Très insuffisant|Insuffisant|Satisfaisant|Bien|Très bien]]>
+               </PRESENTATION>
+               <OPTIONS>
+                    <![CDATA[]]>
+               </OPTIONS>
+               <DEPENDITEM>
+                    <![CDATA[0]]>
+               </DEPENDITEM>
+               <DEPENDVALUE>
+                    <![CDATA[]]>
+               </DEPENDVALUE>
+          </ITEM>
+          <ITEM TYPE="multichoice" REQUIRED="1">
+               <ITEMID>
+                    <![CDATA[18]]>
+               </ITEMID>
+               <ITEMTEXT>
+                    <![CDATA[Autoévaluation en Sciences Physiques]]>
+               </ITEMTEXT>
+               <ITEMLABEL>
+                    <![CDATA[Auto_Physique]]>
+               </ITEMLABEL>
+               <PRESENTATION>
+                    <![CDATA[r>>>>>Très insuffisant|Insuffisant|Satisfaisant|Bien|Très bien]]>
+               </PRESENTATION>
+               <OPTIONS>
+                    <![CDATA[]]>
+               </OPTIONS>
+               <DEPENDITEM>
+                    <![CDATA[0]]>
+               </DEPENDITEM>
+               <DEPENDVALUE>
+                    <![CDATA[]]>
+               </DEPENDVALUE>
+          </ITEM>
+          <ITEM TYPE="multichoice" REQUIRED="1">
+               <ITEMID>
+                    <![CDATA[19]]>
+               </ITEMID>
+               <ITEMTEXT>
+                    <![CDATA[Autoévaluation en EPS]]>
+               </ITEMTEXT>
+               <ITEMLABEL>
+                    <![CDATA[Auto_EPS]]>
+               </ITEMLABEL>
+               <PRESENTATION>
+                    <![CDATA[r>>>>>Très insuffisant|Insuffisant|Satisfaisant|Bien|Très bien]]>
+               </PRESENTATION>
+               <OPTIONS>
+                    <![CDATA[]]>
+               </OPTIONS>
+               <DEPENDITEM>
+                    <![CDATA[0]]>
+               </DEPENDITEM>
+               <DEPENDVALUE>
+                    <![CDATA[]]>
+               </DEPENDVALUE>
+          </ITEM>
+          <ITEM TYPE="multichoice" REQUIRED="1">
+               <ITEMID>
+                    <![CDATA[20]]>
+               </ITEMID>
+               <ITEMTEXT>
+                    <![CDATA[Autoévaluation en SNT]]>
+               </ITEMTEXT>
+               <ITEMLABEL>
+                    <![CDATA[Auto_SNT]]>
+               </ITEMLABEL>
+               <PRESENTATION>
+                    <![CDATA[r>>>>>Très insuffisant|Insuffisant|Satisfaisant|Bien|Très bien]]>
+               </PRESENTATION>
+               <OPTIONS>
+                    <![CDATA[]]>
+               </OPTIONS>
+               <DEPENDITEM>
+                    <![CDATA[0]]>
+               </DEPENDITEM>
+               <DEPENDVALUE>
+                    <![CDATA[]]>
+               </DEPENDVALUE>
+          </ITEM>
+          <ITEM TYPE="multichoice" REQUIRED="1">
+               <ITEMID>
+                    <![CDATA[21]]>
+               </ITEMID>
+               <ITEMTEXT>
+                    <![CDATA[Comment évolue ta situation depuis le début de l'année ?]]>
+               </ITEMTEXT>
+               <ITEMLABEL>
+                    <![CDATA[Evolution]]>
+               </ITEMLABEL>
+               <PRESENTATION>
+                    <![CDATA[r>>>>>En nette progression|En légère progression|Stable|En légère baisse|En nette baisse]]>
+               </PRESENTATION>
+               <OPTIONS>
+                    <![CDATA[]]>
+               </OPTIONS>
+               <DEPENDITEM>
+                    <![CDATA[0]]>
+               </DEPENDITEM>
+               <DEPENDVALUE>
+                    <![CDATA[]]>
+               </DEPENDVALUE>
+          </ITEM>
+          <ITEM TYPE="info" REQUIRED="0">
+               <ITEMID>
+                    <![CDATA[22]]>
+               </ITEMID>
+               <ITEMTEXT>
+                    <![CDATA[<h3>Méthodes de travail et organisation</h3>]]>
+               </ITEMTEXT>
+               <ITEMLABEL>
+                    <![CDATA[Section 3]]>
+               </ITEMLABEL>
+               <PRESENTATION>
+                    <![CDATA[1]]>
+               </PRESENTATION>
+               <OPTIONS>
+                    <![CDATA[]]>
+               </OPTIONS>
+               <DEPENDITEM>
+                    <![CDATA[0]]>
+               </DEPENDITEM>
+               <DEPENDVALUE>
+                    <![CDATA[]]>
+               </DEPENDVALUE>
+          </ITEM>
+          <ITEM TYPE="multichoice" REQUIRED="1">
+               <ITEMID>
+                    <![CDATA[23]]>
+               </ITEMID>
+               <ITEMTEXT>
+                    <![CDATA[Combien de temps consacres-tu au travail scolaire tous les soirs ?]]>
+               </ITEMTEXT>
+               <ITEMLABEL>
+                    <![CDATA[Temps_travail]]>
+               </ITEMLABEL>
+               <PRESENTATION>
+                    <![CDATA[r>>>>>Moins de 30 minutes|Entre 30 min et 1h|Entre 1h et 2h|Entre 2h et 3h|Plus de 3h]]>
+               </PRESENTATION>
+               <OPTIONS>
+                    <![CDATA[]]>
+               </OPTIONS>
+               <DEPENDITEM>
+                    <![CDATA[0]]>
+               </DEPENDITEM>
+               <DEPENDVALUE>
+                    <![CDATA[]]>
+               </DEPENDVALUE>
+          </ITEM>
+          <ITEM TYPE="multichoice" REQUIRED="1">
+               <ITEMID>
+                    <![CDATA[24]]>
+               </ITEMID>
+               <ITEMTEXT>
+                    <![CDATA[T'avances-tu systématiquement dans ton travail dès que tu en as l'occasion ?]]>
+               </ITEMTEXT>
+               <ITEMLABEL>
+                    <![CDATA[Anticipation]]>
+               </ITEMLABEL>
+               <PRESENTATION>
+                    <![CDATA[r>>>>>Toujours|Souvent|Parfois|Rarement|Jamais]]>
+               </PRESENTATION>
+               <OPTIONS>
+                    <![CDATA[]]>
+               </OPTIONS>
+               <DEPENDITEM>
+                    <![CDATA[0]]>
+               </DEPENDITEM>
+               <DEPENDVALUE>
+                    <![CDATA[]]>
+               </DEPENDVALUE>
+          </ITEM>
+          <ITEM TYPE="multichoice" REQUIRED="1">
+               <ITEMID>
+                    <![CDATA[25]]>
+               </ITEMID>
+               <ITEMTEXT>
+                    <![CDATA[Quand commences-tu tes révisions pour les devoirs surveillés ?]]>
+               </ITEMTEXT>
+               <ITEMLABEL>
+                    <![CDATA[Revisions]]>
+               </ITEMLABEL>
+               <PRESENTATION>
+                    <![CDATA[r>>>>>Une semaine à l'avance|2-3 jours avant|La veille|Jamais]]>
+               </PRESENTATION>
+               <OPTIONS>
+                    <![CDATA[]]>
+               </OPTIONS>
+               <DEPENDITEM>
+                    <![CDATA[0]]>
+               </DEPENDITEM>
+               <DEPENDVALUE>
+                    <![CDATA[]]>
+               </DEPENDVALUE>
+          </ITEM>
+          <ITEM TYPE="info" REQUIRED="0">
+               <ITEMID>
+                    <![CDATA[26]]>
+               </ITEMID>
+               <ITEMTEXT>
+                    <![CDATA[<h3>Vie personnelle et numérique</h3>]]>
+               </ITEMTEXT>
+               <ITEMLABEL>
+                    <![CDATA[Section 4]]>
+               </ITEMLABEL>
+               <PRESENTATION>
+                    <![CDATA[1]]>
+               </PRESENTATION>
+               <OPTIONS>
+                    <![CDATA[]]>
+               </OPTIONS>
+               <DEPENDITEM>
+                    <![CDATA[0]]>
+               </DEPENDITEM>
+               <DEPENDVALUE>
+                    <![CDATA[]]>
+               </DEPENDVALUE>
+          </ITEM>
+          <ITEM TYPE="textarea" REQUIRED="0">
+               <ITEMID>
+                    <![CDATA[27]]>
+               </ITEMID>
+               <ITEMTEXT>
+                    <![CDATA[Quels sont tes loisirs (personnels, sportifs, compétition, culturels, musicaux, etc) et combien de temps par semaine y consacres-tu ?]]>
+               </ITEMTEXT>
+               <ITEMLABEL>
+                    <![CDATA[Loisirs]]>
+               </ITEMLABEL>
+               <PRESENTATION>
+                    <![CDATA[60|3]]>
+               </PRESENTATION>
+               <OPTIONS>
+                    <![CDATA[]]>
+               </OPTIONS>
+               <DEPENDITEM>
+                    <![CDATA[0]]>
+               </DEPENDITEM>
+               <DEPENDVALUE>
+                    <![CDATA[]]>
+               </DEPENDVALUE>
+          </ITEM>
+          <ITEM TYPE="textfield" REQUIRED="0">
+               <ITEMID>
+                    <![CDATA[28]]>
+               </ITEMID>
+               <ITEMTEXT>
+                    <![CDATA[Es-tu adepte des jeux vidéo ? Combien de temps par semaine peux-tu y passer ?]]>
+               </ITEMTEXT>
+               <ITEMLABEL>
+                    <![CDATA[Jeux_video]]>
+               </ITEMLABEL>
+               <PRESENTATION>
+                    <![CDATA[60|1]]>
+               </PRESENTATION>
+               <OPTIONS>
+                    <![CDATA[]]>
+               </OPTIONS>
+               <DEPENDITEM>
+                    <![CDATA[0]]>
+               </DEPENDITEM>
+               <DEPENDVALUE>
+                    <![CDATA[]]>
+               </DEPENDVALUE>
+          </ITEM>
+          <ITEM TYPE="textfield" REQUIRED="0">
+               <ITEMID>
+                    <![CDATA[29]]>
+               </ITEMID>
+               <ITEMTEXT>
+                    <![CDATA[Es-tu "accro" au portable, à Instagram, TikTok ou un autre réseau social ? Combien de temps peux-tu y passer ?]]>
+               </ITEMTEXT>
+               <ITEMLABEL>
+                    <![CDATA[Reseaux_sociaux]]>
+               </ITEMLABEL>
+               <PRESENTATION>
+                    <![CDATA[60|1]]>
+               </PRESENTATION>
+               <OPTIONS>
+                    <![CDATA[]]>
+               </OPTIONS>
+               <DEPENDITEM>
+                    <![CDATA[0]]>
+               </DEPENDITEM>
+               <DEPENDVALUE>
+                    <![CDATA[]]>
+               </DEPENDVALUE>
+          </ITEM>
+          <ITEM TYPE="textfield" REQUIRED="0">
+               <ITEMID>
+                    <![CDATA[30]]>
+               </ITEMID>
+               <ITEMTEXT>
+                    <![CDATA[Quelles sont, en général, tes heures de lever et de coucher en période scolaire ?]]>
+               </ITEMTEXT>
+               <ITEMLABEL>
+                    <![CDATA[Sommeil]]>
+               </ITEMLABEL>
+               <PRESENTATION>
+                    <![CDATA[60|1]]>
+               </PRESENTATION>
+               <OPTIONS>
+                    <![CDATA[]]>
+               </OPTIONS>
+               <DEPENDITEM>
+                    <![CDATA[0]]>
+               </DEPENDITEM>
+               <DEPENDVALUE>
+                    <![CDATA[]]>
+               </DEPENDVALUE>
+          </ITEM>
+          <ITEM TYPE="multichoice" REQUIRED="1">
+               <ITEMID>
+                    <![CDATA[31]]>
+               </ITEMID>
+               <ITEMTEXT>
+                    <![CDATA[Disposes-tu d'un ordinateur personnel pour travailler ?]]>
+               </ITEMTEXT>
+               <ITEMLABEL>
+                    <![CDATA[Ordinateur]]>
+               </ITEMLABEL>
+               <PRESENTATION>
+                    <![CDATA[r>>>>>Oui|Non|Partagé avec la famille]]>
+               </PRESENTATION>
+               <OPTIONS>
+                    <![CDATA[]]>
+               </OPTIONS>
+               <DEPENDITEM>
+                    <![CDATA[0]]>
+               </DEPENDITEM>
+               <DEPENDVALUE>
+                    <![CDATA[]]>
+               </DEPENDVALUE>
+          </ITEM>
+          <ITEM TYPE="multichoice" REQUIRED="1">
+               <ITEMID>
+                    <![CDATA[32]]>
+               </ITEMID>
+               <ITEMTEXT>
+                    <![CDATA[Disposes-tu d'une tablette pour travailler ?]]>
+               </ITEMTEXT>
+               <ITEMLABEL>
+                    <![CDATA[Tablette]]>
+               </ITEMLABEL>
+               <PRESENTATION>
+                    <![CDATA[r>>>>>Oui|Non]]>
+               </PRESENTATION>
+               <OPTIONS>
+                    <![CDATA[]]>
+               </OPTIONS>
+               <DEPENDITEM>
+                    <![CDATA[0]]>
+               </DEPENDITEM>
+               <DEPENDVALUE>
+                    <![CDATA[]]>
+               </DEPENDVALUE>
+          </ITEM>
+          <ITEM TYPE="info" REQUIRED="0">
+               <ITEMID>
+                    <![CDATA[33]]>
+               </ITEMID>
+               <ITEMTEXT>
+                    <![CDATA[<h3>Projet d'orientation</h3>]]>
+               </ITEMTEXT>
+               <ITEMLABEL>
+                    <![CDATA[Section 5]]>
+               </ITEMLABEL>
+               <PRESENTATION>
+                    <![CDATA[1]]>
+               </PRESENTATION>
+               <OPTIONS>
+                    <![CDATA[]]>
+               </OPTIONS>
+               <DEPENDITEM>
+                    <![CDATA[0]]>
+               </DEPENDITEM>
+               <DEPENDVALUE>
+                    <![CDATA[]]>
+               </DEPENDVALUE>
+          </ITEM>
+          <ITEM TYPE="multichoice" REQUIRED="1">
+               <ITEMID>
+                    <![CDATA[34]]>
+               </ITEMID>
+               <ITEMTEXT>
+                    <![CDATA[Je sais quel métier exercer]]>
+               </ITEMTEXT>
+               <ITEMLABEL>
+                    <![CDATA[Metier_connu]]>
+               </ITEMLABEL>
+               <PRESENTATION>
+                    <![CDATA[r>>>>>Oui|Non]]>
+               </PRESENTATION>
+               <OPTIONS>
+                    <![CDATA[]]>
+               </OPTIONS>
+               <DEPENDITEM>
+                    <![CDATA[0]]>
+               </DEPENDITEM>
+               <DEPENDVALUE>
+                    <![CDATA[]]>
+               </DEPENDVALUE>
+          </ITEM>
+          <ITEM TYPE="textfield" REQUIRED="0">
+               <ITEMID>
+                    <![CDATA[35]]>
+               </ITEMID>
+               <ITEMTEXT>
+                    <![CDATA[Si oui, précise quel métier]]>
+               </ITEMTEXT>
+               <ITEMLABEL>
+                    <![CDATA[Quel_metier]]>
+               </ITEMLABEL>
+               <PRESENTATION>
+                    <![CDATA[60|1]]>
+               </PRESENTATION>
+               <OPTIONS>
+                    <![CDATA[]]>
+               </OPTIONS>
+               <DEPENDITEM>
+                    <![CDATA[0]]>
+               </DEPENDITEM>
+               <DEPENDVALUE>
+                    <![CDATA[]]>
+               </DEPENDVALUE>
+          </ITEM>
+          <ITEM TYPE="multichoice" REQUIRED="1">
+               <ITEMID>
+                    <![CDATA[36]]>
+               </ITEMID>
+               <ITEMTEXT>
+                    <![CDATA[Je sais quelles études entreprendre pour y arriver]]>
+               </ITEMTEXT>
+               <ITEMLABEL>
+                    <![CDATA[Etudes_connues]]>
+               </ITEMLABEL>
+               <PRESENTATION>
+                    <![CDATA[r>>>>>Oui|Non]]>
+               </PRESENTATION>
+               <OPTIONS>
+                    <![CDATA[]]>
+               </OPTIONS>
+               <DEPENDITEM>
+                    <![CDATA[0]]>
+               </DEPENDITEM>
+               <DEPENDVALUE>
+                    <![CDATA[]]>
+               </DEPENDVALUE>
+          </ITEM>
+          <ITEM TYPE="textarea" REQUIRED="0">
+               <ITEMID>
+                    <![CDATA[37]]>
+               </ITEMID>
+               <ITEMTEXT>
+                    <![CDATA[J'hésite entre plusieurs métiers - Si oui, lesquels ?]]>
+               </ITEMTEXT>
+               <ITEMLABEL>
+                    <![CDATA[Hesitation_metiers]]>
+               </ITEMLABEL>
+               <PRESENTATION>
+                    <![CDATA[60|3]]>
+               </PRESENTATION>
+               <OPTIONS>
+                    <![CDATA[]]>
+               </OPTIONS>
+               <DEPENDITEM>
+                    <![CDATA[0]]>
+               </DEPENDITEM>
+               <DEPENDVALUE>
+                    <![CDATA[]]>
+               </DEPENDVALUE>
+          </ITEM>
+          <ITEM TYPE="multichoice" REQUIRED="1">
+               <ITEMID>
+                    <![CDATA[38]]>
+               </ITEMID>
+               <ITEMTEXT>
+                    <![CDATA[J'ai une idée du secteur professionnel dans lequel je souhaite travailler]]>
+               </ITEMTEXT>
+               <ITEMLABEL>
+                    <![CDATA[Secteur_connu]]>
+               </ITEMLABEL>
+               <PRESENTATION>
+                    <![CDATA[r>>>>>Oui|Non]]>
+               </PRESENTATION>
+               <OPTIONS>
+                    <![CDATA[]]>
+               </OPTIONS>
+               <DEPENDITEM>
+                    <![CDATA[0]]>
+               </DEPENDITEM>
+               <DEPENDVALUE>
+                    <![CDATA[]]>
+               </DEPENDVALUE>
+          </ITEM>
+          <ITEM TYPE="textfield" REQUIRED="0">
+               <ITEMID>
+                    <![CDATA[39]]>
+               </ITEMID>
+               <ITEMTEXT>
+                    <![CDATA[Si oui, précise le secteur]]>
+               </ITEMTEXT>
+               <ITEMLABEL>
+                    <![CDATA[Quel_secteur]]>
+               </ITEMLABEL>
+               <PRESENTATION>
+                    <![CDATA[60|1]]>
+               </PRESENTATION>
+               <OPTIONS>
+                    <![CDATA[]]>
+               </OPTIONS>
+               <DEPENDITEM>
+                    <![CDATA[0]]>
+               </DEPENDITEM>
+               <DEPENDVALUE>
+                    <![CDATA[]]>
+               </DEPENDVALUE>
+          </ITEM>
+          <ITEM TYPE="multichoice" REQUIRED="0">
+               <ITEMID>
+                    <![CDATA[40]]>
+               </ITEMID>
+               <ITEMTEXT>
+                    <![CDATA[J'envisage des études]]>
+               </ITEMTEXT>
+               <ITEMLABEL>
+                    <![CDATA[Duree_etudes]]>
+               </ITEMLABEL>
+               <PRESENTATION>
+                    <![CDATA[r>>>>>Courtes (BAC +2/+3)|Longues (BAC +5 ou plus)|Je ne sais pas encore]]>
+               </PRESENTATION>
+               <OPTIONS>
+                    <![CDATA[]]>
+               </OPTIONS>
+               <DEPENDITEM>
+                    <![CDATA[0]]>
+               </DEPENDITEM>
+               <DEPENDVALUE>
+                    <![CDATA[]]>
+               </DEPENDVALUE>
+          </ITEM>
+          <ITEM TYPE="textfield" REQUIRED="0">
+               <ITEMID>
+                    <![CDATA[41]]>
+               </ITEMID>
+               <ITEMTEXT>
+                    <![CDATA[Type d'études envisagées (BTS, DUT, Licence, Prépa, École...)]]>
+               </ITEMTEXT>
+               <ITEMLABEL>
+                    <![CDATA[Type_etudes]]>
+               </ITEMLABEL>
+               <PRESENTATION>
+                    <![CDATA[60|1]]>
+               </PRESENTATION>
+               <OPTIONS>
+                    <![CDATA[]]>
+               </OPTIONS>
+               <DEPENDITEM>
+                    <![CDATA[0]]>
+               </DEPENDITEM>
+               <DEPENDVALUE>
+                    <![CDATA[]]>
+               </DEPENDVALUE>
+          </ITEM>
+          <ITEM TYPE="multichoice" REQUIRED="1">
+               <ITEMID>
+                    <![CDATA[42]]>
+               </ITEMID>
+               <ITEMTEXT>
+                    <![CDATA[J'ai déjà une idée du bac que je souhaite préparer]]>
+               </ITEMTEXT>
+               <ITEMLABEL>
+                    <![CDATA[Type_bac]]>
+               </ITEMLABEL>
+               <PRESENTATION>
+                    <![CDATA[r>>>>>Oui, bac général|Oui, bac technologique|Non, je ne sais pas encore]]>
+               </PRESENTATION>
+               <OPTIONS>
+                    <![CDATA[]]>
+               </OPTIONS>
+               <DEPENDITEM>
+                    <![CDATA[0]]>
+               </DEPENDITEM>
+               <DEPENDVALUE>
+                    <![CDATA[]]>
+               </DEPENDVALUE>
+          </ITEM>
+          <ITEM TYPE="multichoice" REQUIRED="1">
+               <ITEMID>
+                    <![CDATA[43]]>
+               </ITEMID>
+               <ITEMTEXT>
+                    <![CDATA[J'ai déjà une idée des spécialités que je vais choisir en première]]>
+               </ITEMTEXT>
+               <ITEMLABEL>
+                    <![CDATA[Specialites_connues]]>
+               </ITEMLABEL>
+               <PRESENTATION>
+                    <![CDATA[r>>>>>Oui|Non]]>
+               </PRESENTATION>
+               <OPTIONS>
+                    <![CDATA[]]>
+               </OPTIONS>
+               <DEPENDITEM>
+                    <![CDATA[0]]>
+               </DEPENDITEM>
+               <DEPENDVALUE>
+                    <![CDATA[]]>
+               </DEPENDVALUE>
+          </ITEM>
+          <ITEM TYPE="textarea" REQUIRED="0">
+               <ITEMID>
+                    <![CDATA[44]]>
+               </ITEMID>
+               <ITEMTEXT>
+                    <![CDATA[Si oui, lesquelles ? (3 spécialités à choisir)]]>
+               </ITEMTEXT>
+               <ITEMLABEL>
+                    <![CDATA[Lesquelles_specialites]]>
+               </ITEMLABEL>
+               <PRESENTATION>
+                    <![CDATA[60|3]]>
+               </PRESENTATION>
+               <OPTIONS>
+                    <![CDATA[]]>
+               </OPTIONS>
+               <DEPENDITEM>
+                    <![CDATA[0]]>
+               </DEPENDITEM>
+               <DEPENDVALUE>
+                    <![CDATA[]]>
+               </DEPENDVALUE>
+          </ITEM>
+          <ITEM TYPE="info" REQUIRED="0">
+               <ITEMID>
+                    <![CDATA[45]]>
+               </ITEMID>
+               <ITEMTEXT>
+                    <![CDATA[<h3>Accompagnement et stages</h3>]]>
+               </ITEMTEXT>
+               <ITEMLABEL>
+                    <![CDATA[Section 6]]>
+               </ITEMLABEL>
+               <PRESENTATION>
+                    <![CDATA[1]]>
+               </PRESENTATION>
+               <OPTIONS>
+                    <![CDATA[]]>
+               </OPTIONS>
+               <DEPENDITEM>
+                    <![CDATA[0]]>
+               </DEPENDITEM>
+               <DEPENDVALUE>
+                    <![CDATA[]]>
+               </DEPENDVALUE>
+          </ITEM>
+          <ITEM TYPE="multichoice" REQUIRED="1">
+               <ITEMID>
+                    <![CDATA[46]]>
+               </ITEMID>
+               <ITEMTEXT>
+                    <![CDATA[Je suis déjà allé au CIO de Brest]]>
+               </ITEMTEXT>
+               <ITEMLABEL>
+                    <![CDATA[CIO_visite]]>
+               </ITEMLABEL>
+               <PRESENTATION>
+                    <![CDATA[r>>>>>Oui|Non]]>
+               </PRESENTATION>
+               <OPTIONS>
+                    <![CDATA[]]>
+               </OPTIONS>
+               <DEPENDITEM>
+                    <![CDATA[0]]>
+               </DEPENDITEM>
+               <DEPENDVALUE>
+                    <![CDATA[]]>
+               </DEPENDVALUE>
+          </ITEM>
+          <ITEM TYPE="multichoice" REQUIRED="1">
+               <ITEMID>
+                    <![CDATA[47]]>
+               </ITEMID>
+               <ITEMTEXT>
+                    <![CDATA[J'ai déjà rencontré le ou la COP (Conseiller d'Orientation Psychologue)]]>
+               </ITEMTEXT>
+               <ITEMLABEL>
+                    <![CDATA[COP_rencontre]]>
+               </ITEMLABEL>
+               <PRESENTATION>
+                    <![CDATA[r>>>>>Oui|Non]]>
+               </PRESENTATION>
+               <OPTIONS>
+                    <![CDATA[]]>
+               </OPTIONS>
+               <DEPENDITEM>
+                    <![CDATA[0]]>
+               </DEPENDITEM>
+               <DEPENDVALUE>
+                    <![CDATA[]]>
+               </DEPENDVALUE>
+          </ITEM>
+          <ITEM TYPE="multichoice" REQUIRED="1">
+               <ITEMID>
+                    <![CDATA[48]]>
+               </ITEMID>
+               <ITEMTEXT>
+                    <![CDATA[Je souhaite prendre rendez-vous avec le ou la COP]]>
+               </ITEMTEXT>
+               <ITEMLABEL>
+                    <![CDATA[COP_RDV]]>
+               </ITEMLABEL>
+               <PRESENTATION>
+                    <![CDATA[r>>>>>Oui|Non|Peut-être]]>
+               </PRESENTATION>
+               <OPTIONS>
+                    <![CDATA[]]>
+               </OPTIONS>
+               <DEPENDITEM>
+                    <![CDATA[0]]>
+               </DEPENDITEM>
+               <DEPENDVALUE>
+                    <![CDATA[]]>
+               </DEPENDVALUE>
+          </ITEM>
+          <ITEM TYPE="multichoice" REQUIRED="1">
+               <ITEMID>
+                    <![CDATA[49]]>
+               </ITEMID>
+               <ITEMTEXT>
+                    <![CDATA[J'ai envie de faire un stage en entreprise pour préciser mon orientation]]>
+               </ITEMTEXT>
+               <ITEMLABEL>
+                    <![CDATA[Envie_stage]]>
+               </ITEMLABEL>
+               <PRESENTATION>
+                    <![CDATA[r>>>>>Oui|Non|Peut-être]]>
+               </PRESENTATION>
+               <OPTIONS>
+                    <![CDATA[]]>
+               </OPTIONS>
+               <DEPENDITEM>
+                    <![CDATA[0]]>
+               </DEPENDITEM>
+               <DEPENDVALUE>
+                    <![CDATA[]]>
+               </DEPENDVALUE>
+          </ITEM>
+          <ITEM TYPE="textfield" REQUIRED="0">
+               <ITEMID>
+                    <![CDATA[50]]>
+               </ITEMID>
+               <ITEMTEXT>
+                    <![CDATA[Si oui, dans quel domaine ?]]>
+               </ITEMTEXT>
+               <ITEMLABEL>
+                    <![CDATA[Domaine_stage]]>
+               </ITEMLABEL>
+               <PRESENTATION>
+                    <![CDATA[60|1]]>
+               </PRESENTATION>
+               <OPTIONS>
+                    <![CDATA[]]>
+               </OPTIONS>
+               <DEPENDITEM>
+                    <![CDATA[0]]>
+               </DEPENDITEM>
+               <DEPENDVALUE>
+                    <![CDATA[]]>
+               </DEPENDVALUE>
+          </ITEM>
+          <ITEM TYPE="multichoice" REQUIRED="0">
+               <ITEMID>
+                    <![CDATA[51]]>
+               </ITEMID>
+               <ITEMTEXT>
+                    <![CDATA[J'ai déjà trouvé un stage]]>
+               </ITEMTEXT>
+               <ITEMLABEL>
+                    <![CDATA[Stage_trouve]]>
+               </ITEMLABEL>
+               <PRESENTATION>
+                    <![CDATA[r>>>>>Oui|Non|Je cherche actuellement]]>
+               </PRESENTATION>
+               <OPTIONS>
+                    <![CDATA[]]>
+               </OPTIONS>
+               <DEPENDITEM>
+                    <![CDATA[0]]>
+               </DEPENDITEM>
+               <DEPENDVALUE>
+                    <![CDATA[]]>
+               </DEPENDVALUE>
+          </ITEM>
+          <ITEM TYPE="info" REQUIRED="0">
+               <ITEMID>
+                    <![CDATA[52]]>
+               </ITEMID>
+               <ITEMTEXT>
+                    <![CDATA[<h3>Pour finir...</h3>]]>
+               </ITEMTEXT>
+               <ITEMLABEL>
+                    <![CDATA[Section 7]]>
+               </ITEMLABEL>
+               <PRESENTATION>
+                    <![CDATA[1]]>
+               </PRESENTATION>
+               <OPTIONS>
+                    <![CDATA[]]>
+               </OPTIONS>
+               <DEPENDITEM>
+                    <![CDATA[0]]>
+               </DEPENDITEM>
+               <DEPENDVALUE>
+                    <![CDATA[]]>
+               </DEPENDVALUE>
+          </ITEM>
+          <ITEM TYPE="textarea" REQUIRED="0">
+               <ITEMID>
+                    <![CDATA[53]]>
+               </ITEMID>
+               <ITEMTEXT>
+                    <![CDATA[Y a-t-il des difficultés particulières que tu souhaites évoquer avec ton professeur principal ?]]>
+               </ITEMTEXT>
+               <ITEMLABEL>
+                    <![CDATA[Difficultes]]>
+               </ITEMLABEL>
+               <PRESENTATION>
+                    <![CDATA[60|5]]>
+               </PRESENTATION>
+               <OPTIONS>
+                    <![CDATA[]]>
+               </OPTIONS>
+               <DEPENDITEM>
+                    <![CDATA[0]]>
+               </DEPENDITEM>
+               <DEPENDVALUE>
+                    <![CDATA[]]>
+               </DEPENDVALUE>
+          </ITEM>
+          <ITEM TYPE="textarea" REQUIRED="0">
+               <ITEMID>
+                    <![CDATA[54]]>
+               </ITEMID>
+               <ITEMTEXT>
+                    <![CDATA[Commentaires libres - Tout ce que tu souhaites ajouter]]>
+               </ITEMTEXT>
+               <ITEMLABEL>
+                    <![CDATA[Commentaires]]>
+               </ITEMLABEL>
+               <PRESENTATION>
+                    <![CDATA[60|5]]>
+               </PRESENTATION>
+               <OPTIONS>
+                    <![CDATA[]]>
+               </OPTIONS>
+               <DEPENDITEM>
+                    <![CDATA[0]]>
+               </DEPENDITEM>
+               <DEPENDVALUE>
+                    <![CDATA[]]>
+               </DEPENDVALUE>
+          </ITEM>
+     </ITEMS>
+</FEEDBACK>

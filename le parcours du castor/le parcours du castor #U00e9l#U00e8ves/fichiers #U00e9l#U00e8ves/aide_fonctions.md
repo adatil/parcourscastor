@@ -49,16 +49,22 @@ Retourne la liste des cases voisines non encore visitées.
 
 ---
 
-#### `chercheChemin(grille)` et `rechercheCasesVoisinesPossibles(...)`
-Recherche un chemin valide avec la méthode du **backtracking** (retour en arrière).
+---
 
-**Ces fonctions sont fournies** car l'algorithme de backtracking est considéré comme trop difficile pour ce niveau. Vous pouvez les utiliser directement.
+## Partie III - Recherche de chemin (DIFFICILE)
+
+#### `chercheChemin(grille)` et `rechercheCasesVoisinesPossibles(...)`
+**À COMPLÉTER** - Recherche un chemin valide avec la méthode du **backtracking** (retour en arrière).
+
+**⚠️ Partie difficile du projet !**
 
 **Principe du backtracking** :
 1. Partir de la case de départ
 2. Choisir une case voisine valide
 3. Si bloqué (cul-de-sac), revenir en arrière et essayer une autre direction
 4. Continuer jusqu'à atteindre l'arrivée ou épuiser les possibilités
+
+**Aide** : Lisez la documentation technique pour comprendre l'algorithme en détail.
 
 ---
 
@@ -75,8 +81,8 @@ Gère le clic sur une case : désactive le bouton et ajoute la case au chemin.
 **Fonction fournie**.
 
 #### `lanceAide(grille)`
-Appelle `chercheChemin` et affiche le résultat sur la grille.
-**Fonction fournie** - vous pouvez vous en inspirer pour `lanceCheminAleatoire1/2()`.
+**À COMPLÉTER** - Appelle `chercheChemin` et affiche le résultat sur la grille.
+Vous pourrez vous en inspirer pour `lanceCheminAleatoire1/2()`.
 
 ---
 
@@ -234,6 +240,11 @@ print(departArrivee(parcours))       # True si bon départ/arrivée
 8. `lanceCheminAleatoire2()` - facile, idem
 9. `cheminAleatoire2()` - moyen/difficile, gestion du hasard
 10. `initialisenew()` - difficile, gestion de l'interface
+
+**Partie III** (DIFFICILE - Backtracking) :
+11. `rechercheCasesVoisinesPossibles()` - filtrage avec règle d'alternance
+12. `chercheChemin()` - algorithme de backtracking complet
+13. `lanceAide()` - affichage du résultat
 
 ---
 

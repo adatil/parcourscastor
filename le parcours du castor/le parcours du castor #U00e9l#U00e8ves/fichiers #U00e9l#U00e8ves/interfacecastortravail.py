@@ -140,14 +140,14 @@ def lanceCheminAleatoire2(grille):
 
 def lanceAide(grille):
     """Lance la recherche de chemin et l'affiche sur la grille."""
-    parcours = chercheChemin(grille)
-    if parcours and parcours[-1] == [0, 0]:
-        # Afficher le chemin trouvé
-        for case in parcours:
-            tableauBoutons[case[0]][case[1]].configure(state=DISABLED)
-        verification(parcours, grille)
-    else:
-        reponse.set("Pas de solution trouvée !")
+    # À COMPLÉTER : Fonction qui utilise chercheChemin pour aider le joueur
+    # 1. Appeler chercheChemin(grille) et stocker le résultat dans parcours
+    # 2. Vérifier si un chemin a été trouvé (parcours non vide et se termine en [0,0])
+    # 3. Si oui :
+    #    - Pour chaque case du parcours, désactiver le bouton correspondant
+    #    - Appeler verification(parcours, grille)
+    # 4. Sinon : afficher "Pas de solution trouvée !" avec reponse.set()
+    pass
 
 
 def verification(chemin, grille):

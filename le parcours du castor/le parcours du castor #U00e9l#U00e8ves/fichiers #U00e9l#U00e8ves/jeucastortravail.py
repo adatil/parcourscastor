@@ -162,39 +162,29 @@ def cheminAleatoire2(grille):
 
 def chercheChemin(grille):
     """
-    Cherche un chemin valide pour le castor avec backtracking.
+    Cherche un chemin valide pour le castor avec backtracking (retour en arrière).
 
     paramètres grille (liste)
 
     renvoie le chemin proposé
     """
-    casecourante = [len(grille)-1, len(grille[0])-1]
-    casearriv = [0, 0]
-    chemin = [casecourante]
-    culDeSac = []
-
-    while casecourante != casearriv and chemin != []:
-        nextmove = rechercheCasesVoisinesPossibles(grille, chemin, casecourante)
-        caseDisponible = False
-        while nextmove != [] and caseDisponible == False:
-            caseEnvisagee = nextmove[0]
-            chemin.append(caseEnvisagee)
-
-            if chemin in culDeSac:
-                nextmove = nextmove[1:]
-                chemin.pop()
-            else:
-                casecourante = caseEnvisagee
-                caseDisponible = True
-
-        if nextmove == []:
-            chem = chemin.copy()
-            culDeSac.append(chem)
-            chemin.pop()
-            if chemin != []:
-                casecourante = chemin[-1]
-
-    return chemin
+    # À COMPLÉTER : Algorithme de backtracking (DIFFICILE - Partie III)
+    # Principe :
+    # 1. Partir de la case de départ
+    # 2. Chercher les cases voisines possibles (avec rechercheCasesVoisinesPossibles)
+    # 3. Essayer la première case disponible
+    # 4. Si on est bloqué (cul-de-sac) :
+    #    - Mémoriser ce chemin comme cul-de-sac
+    #    - Retirer la dernière case du chemin (backtrack)
+    #    - Revenir à la case précédente
+    # 5. Continuer jusqu'à atteindre [0,0] ou épuiser les possibilités
+    #
+    # Variables utiles :
+    # - casecourante : position actuelle
+    # - chemin : liste des cases parcourues
+    # - culDeSac : liste des chemins déjà testés qui ne marchent pas
+    # - nextmove : cases voisines possibles
+    pass
 
 
 def rechercheCasesVoisinesPossibles(grille, cheminParcouru, caseActuelle):
@@ -207,15 +197,12 @@ def rechercheCasesVoisinesPossibles(grille, cheminParcouru, caseActuelle):
 
     renvoie la liste des cases valides
     """
-    # Utilise casesVoisinesPossibles puis filtre selon la règle
-    positionssuivantesvalides = casesVoisinesPossibles(grille, cheminParcouru, caseActuelle)
-
-    # Filtrer les cases qui ne respectent pas la règle des lettres
-    casesValides = []
-    for case in positionssuivantesvalides:
-        cheminParcouru.append(case)
-        if ordreDesCases(cheminParcouru, grille):
-            casesValides.append(case)
-        cheminParcouru.remove(case)
-
-    return casesValides
+    # À COMPLÉTER : Filtrer les cases voisines selon la règle d'alternance
+    # 1. Appeler casesVoisinesPossibles() pour avoir les cases voisines de base
+    # 2. Pour chaque case possible :
+    #    - Ajouter temporairement la case au chemin
+    #    - Tester si ordreDesCases() est respecté
+    #    - Si oui, garder la case dans la liste des cases valides
+    #    - Retirer la case du chemin (c'était juste un test)
+    # 3. Retourner la liste des cases valides
+    pass

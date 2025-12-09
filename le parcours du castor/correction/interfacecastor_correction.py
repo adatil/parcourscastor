@@ -13,7 +13,7 @@ from tkinter import *
 from tkinter import font
 from PIL import Image, ImageTk
 from random import *
-from jeucastor import *
+from jeucastor_correction import *
 from time import *
 import os
 

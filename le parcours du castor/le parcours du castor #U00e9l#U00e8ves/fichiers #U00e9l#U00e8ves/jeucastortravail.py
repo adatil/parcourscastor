@@ -1,206 +1,177 @@
-from random import choice, randint
+from random import *
+chemin=[] #chemin est la variable qui recueille le chemin au fur et à mesure des clics dans la grille
+casedep=[5,4]
+casearriv=[0,0]
+grille_1= [["P","B","P","F","P","P"],["F","P","P","P","B","B"],["P","P","F","P","B","P"],["P","B","F","F","F","B"],["P","B","P","F","B","F"]]
+grillecourante=grille_1.copy()
 
-chemin = []  # chemin est la variable qui recueille le chemin au fur et à mesure des clics dans la grille
-casedep = [5, 4]
-casearriv = [0, 0]
-grille_1 = [["P","B","P","F","P","P"],["F","P","P","P","B","B"],["P","P","F","P","B","P"],["P","B","F","F","F","B"],["P","B","P","F","B","F"]]
-grillecourante = grille_1.copy()
 
 
-def randomGrille(L=6, C=5):
+def randomGrille(L=6,C=5):
     """
-    Création d'une grille aléatoire.
-    Cette fonction modifie au passage la grille courante
-    cette variable est donc déclarée globale.
-
+    créeation d'une grille aléatoire.
+    cette fonction modfie au passage la grille courante
+    cette variable est donc déclarrée globale.
+    
     paramètres L (int) nombre de lignes
                C (int) nombre de colonnes
+    
+    renvoie grille courante (liste)
+    
 
-    renvoie grillecourante (liste)
     """
     global grillecourante
-    # À COMPLÉTER : créer une grille aléatoire avec choice(("P", "B", "F"))
-    pass
-
-
+   
+    
+    
 def sontVoisines(case1, case2):
     """
-    Vérifie si deux cases sont adjacentes (horizontalement ou verticalement).
-
+    vérifie si deux cases sont adjacentes
+    
+       
     paramètres case1 (liste) case 1
                case2 (liste) case 2
-
+    
     renvoie un booléen qui vaut True ou False selon le résultat
+    
+
     """
-    # À COMPLÉTER : calculer la distance entre les deux cases
-    # Deux cases sont voisines si la somme des carrés des différences vaut 1
-    pass
+    
 
 
-def ordreDesCases(parcours, grilleATester):
+
+def ordreDesCases(parcours,grilleATester):
     """
-    Vérifie si l'ordre des cases est respecté (alternance des cases avec un joker permis).
-
-    paramètres parcours (liste)
-               grilleATester (liste)
-
-    renvoie True ou False selon le résultat
+    vérifie si l'odre des cases est respécté (alternance des cases avec un joker permis)
+    
+       
+    paramètres parcours (liste) 
+               grilleATester (liste) 
+    
+    renvoie True ou False selon le résultat    
     """
-    # À COMPLÉTER : construire le mot à partir du parcours
-    # puis compter les lettres consécutives identiques
-    # renvoyer True si au plus 1 joker utilisé
-    pass
+    
+   
+            
 
 
 def cheminContinu(parcours):
     """
-    Vérifie si toutes les cases sont adjacentes consécutivement.
-
-    paramètres parcours (liste)
-
-    renvoie True ou False selon le résultat
+    vérifie si toutes cases sont adjacentes (
+    
+       
+    paramètres parcours (liste) 
+               
+    
+    renvoie True ou False selon le résultat    
     """
-    # À COMPLÉTER : vérifier que chaque case est voisine de la suivante
-    # ATTENTION : le return True doit être EN DEHORS de la boucle for
-    for i in range(len(parcours)-1):
-        if not sontVoisines(parcours[i], parcours[i+1]):
-            return False
-    return True
+    
+    
+    
+   
+    
 
-
-def departArrivee(parcours, grille=grillecourante):
+def departArrivee(parcours,grille=grillecourante):
     """
-    Vérifie si les cases de départ et d'arrivée sont correctes.
-
-    paramètres parcours (liste)
-               grille (par défaut la grillecourante) (liste)
-
-    renvoie True ou False selon le résultat
+    vérifie si les cases de départ et d'arrivée sont correctes.
+    
+       
+    paramètres parcours (liste) 
+               grille (par défaut la grillecourante (liste) 
+    
+    renvoie True ou False selon le résultat    
     """
-    casedep = [len(grille)-1, len(grille[0])-1]
-    casearriv = [0, 0]
-    # À COMPLÉTER : vérifier que parcours[0] == casedep et parcours[-1] == casearriv
-    pass
+    
+   
 
-
-def casesVoisinesPossibles(grille, cheminParcouru, caseActuelle):
+    
+def casesVoisinesPossibles(grille,cheminParcouru,caseActuelle):
     """
-    Propose des cases possibles pour un parcours aléatoire.
-    Cette fonction se contente de proposer des cases voisines qui sont dans la grille.
-
-    paramètres  grille (liste)
-                cheminParcouru (liste)
-                caseActuelle (liste)
-
+    propose des cases possibles pour un parcours aléatoire.
+    Cette fonction se contente de proposer des cases voisines qui sont dans la grille
+    
+      
+    paramètres  grille (liste
+                cheminParcouru (liste) 
+                caseActuelle (liste) 
+    
     renvoie la liste des positions suivantes possibles sous forme d'une liste
     """
-    L = len(grille)
-    C = len(grille[0])
-    cases_grille = [[i, j] for i in range(L) for j in range(C)]
+    
+    
 
-    x, y = caseActuelle[0], caseActuelle[1]
-    positionssuivantespossibles = [[x - 1, y], [x, y - 1], [x, y + 1], [x + 1, y]]
-    positionssuivantesvalides = []
-
-    # À COMPLÉTER : filtrer les positions qui sont dans la grille et pas déjà parcourues
-    for p in positionssuivantespossibles:
-        if (p in cases_grille) and not (p in cheminParcouru):
-            positionssuivantesvalides.append(p)
-
-    return positionssuivantesvalides
 
 
 def cheminAleatoire1(grille):
     """
-    Propose un chemin aléatoire progressant vers l'arrivée (déplacement vers le haut ou la gauche uniquement).
-
-    paramètres grille (liste)
-
-    renvoie le chemin proposé
+    propose un chemin aléatoire progressant vers l'arrivée (déplacement vers le haut ou la gauche uniquement)
+    
+       
+    paramètres grille (liste) 
+    
+    renvoie le chemin proposé  
     """
-    casedep = [len(grille)-1, len(grille[0])-1]
-    chemin = [casedep]
-    case = casedep
+    
 
-    # À COMPLÉTER : avancer vers [0,0] en allant vers le haut ou la gauche
-    # utiliser randint(0,1) pour choisir aléatoirement
-    pass
+    
+
+
+
 
 
 def cheminAleatoire2(grille):
     """
-    Propose un chemin aléatoire progressant aléatoirement.
-
-    paramètres grille (liste)
-
-    renvoie le chemin proposé
+    propose un chemin aléatoire progressant aléatoirement .
+    
+       
+    paramètres grille (liste) 
+               
+    
+    renvoie le chemin proposé  
     """
-    casedep = [len(grille)-1, len(grille[0])-1]
-    casearriv = [0, 0]
-    chemin = [casedep]
-    case = casedep
-    nextmove = None
+    
+    
+    
 
-    # À COMPLÉTER : utiliser casesVoisinesPossibles et choice pour avancer
-    pass
+    
 
 
 def chercheChemin(grille):
+   """
+    cherche un chemin valide pour le castor
+    
+       
+    paramètres grille(liste)
+    
+    renvoie le chemin proposé  
     """
-    Cherche un chemin valide pour le castor avec backtracking.
+   
+        
 
-    paramètres grille (liste)
+         
+                    
+                    
+        
+        
+       
 
-    renvoie le chemin proposé
+def rechercheCasesVoisinesPossibles(grille,cheminParcouru,caseActuelle):
     """
-    casecourante = [len(grille)-1, len(grille[0])-1]
-    casearriv = [0, 0]
-    chemin = [casecourante]
-    culDeSac = []
-
-    while casecourante != casearriv and chemin != []:
-        nextmove = rechercheCasesVoisinesPossibles(grille, chemin, casecourante)
-        caseDisponible = False
-        while nextmove != [] and caseDisponible == False:
-            caseEnvisagee = nextmove[0]
-            chemin.append(caseEnvisagee)
-
-            if chemin in culDeSac:
-                nextmove = nextmove[1:]
-                chemin.pop()
-            else:
-                casecourante = caseEnvisagee
-                caseDisponible = True
-
-        if nextmove == []:
-            chem = chemin.copy()
-            culDeSac.append(chem)
-            chemin.pop()
-            if chemin != []:
-                casecourante = chemin[-1]
-
-    return chemin
-
-
-def rechercheCasesVoisinesPossibles(grille, cheminParcouru, caseActuelle):
-    """
-    Recherche les cases voisines possibles en vérifiant la règle des lettres.
-
-    paramètres grille (liste)
+    cherche les cases possibles au cours du mouvement
+    
+       
+    paramètres grille (liste) 
                cheminParcouru (liste) : le chemin déjà parcouru
                caseActuelle (liste) : case sur laquelle se trouve le castor
-
-    renvoie la liste des cases valides
+    
+    renvoie le chemin proposé  
     """
-    # Utilise casesVoisinesPossibles puis filtre selon la règle
-    positionssuivantesvalides = casesVoisinesPossibles(grille, cheminParcouru, caseActuelle)
+    
+    pass
 
-    # Filtrer les cases qui ne respectent pas la règle des lettres
-    casesValides = []
-    for case in positionssuivantesvalides:
-        cheminParcouru.append(case)
-        if ordreDesCases(cheminParcouru, grille):
-            casesValides.append(case)
-        cheminParcouru.remove(case)
-
-    return casesValides
+ 
+    
+    
+    
+    
+    

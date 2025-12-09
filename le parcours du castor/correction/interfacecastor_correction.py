@@ -13,13 +13,20 @@ from tkinter import *
 from tkinter import font
 from PIL import Image, ImageTk
 from random import *
-from jeucastor_correction import *
 from time import *
 import os
+import sys
 
-# ===== CONFIGURATION DU CHEMIN DES IMAGES =====
-# Permet de charger les images même si le script n'est pas lancé depuis son dossier
+# ===== CONFIGURATION DU CHEMIN DES IMAGES ET MODULES =====
+# Permet de charger les images et modules même si le script n'est pas lancé depuis son dossier
 SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
+
+# Ajouter le répertoire du script au path Python pour l'import
+if SCRIPT_DIR not in sys.path:
+    sys.path.insert(0, SCRIPT_DIR)
+
+# Importer le module de jeu depuis le même dossier
+from jeucastor_correction import *
 
 # ===== CONSTRUCTION DE LA FENÊTRE PRINCIPALE =====
 

@@ -1,0 +1,246 @@
+\documentclass{article}
+\usepackage[left=1.5cm,right=1.5cm,top=2cm,bottom=2cm]{geometry}
+\usepackage[utf8]{inputenc}		        % Accents, encodage utf8
+\usepackage[T1]{fontenc}		        		% Encodage des caractères
+\usepackage{lmodern}			        		% Choix de la fonte (Latin Modern de D. Knuth)
+\usepackage[francais]{babel}	        		% Les règles de typo. françaises
+\usepackage{multicol} 					% Multi-colonnes
+\usepackage{calc} 						% Calculs 
+\usepackage{enumerate}					% Pour modifier les numérotations
+\usepackage{enumitem}
+\usepackage{graphicx}					% Pour insérer des images
+\usepackage{tabularx}					% Pour faire des tableaux
+\usepackage{pgf,tikz}					% Pour les images et figures géométriques
+\usepackage{pgfplots}
+
+\usepackage{mathrsfs}
+\usetikzlibrary{arrows,calc,fit,patterns,plotmarks,shapes.geometric,shapes.misc,shapes.symbols,shapes.arrows,
+shapes.callouts, shapes.multipart, shapes.gates.logic.US,shapes.gates.logic.IEC, er, automata,backgrounds,chains,topaths,trees,petri,mindmap,matrix, calendar, folding,fadings,through,positioning,scopes,decorations.fractals,decorations.shapes,decorations.text,decorations.pathmorphing,decorations.pathreplacing,decorations.footprints,decorations.markings,shadows,babel} % Charge toutes les librairies de Tikz
+
+\usepackage{tkz-base,tkz-fct,tkz-tab,tkz-euclide,}	% Géométrie euclidienne avec TikZ
+	
+\usepackage{amsmath,amsfonts,amssymb,mathrsfs}  % Spécial math
+\usepackage[squaren]{SIunits}			% Pour les unités (gère le conflits avec  \square de l'extension amssymb)
+\usepackage{pifont}						% Pour les symboles "ding"
+\usepackage{bbding}						% Pour les symboles
+\usepackage[misc]{ifsym}					% Pour les symboles
+\usepackage{cancel}						% Pour pouvoir barrer les nombres
+\usepackage{url} 			        		% Pour afficher correctement les url
+ \urlstyle{sf}                          	% qui s'afficheront en police sans serif
+\usepackage{eurosym}					% Pour utiliser la commande \euro
+\usepackage{fancyhdr,lastpage}          	% En-têtes et pieds
+ \pagestyle{fancy}                      	% de pages personnalisés
+\usepackage{fancybox}					% Pour les encadrés
+\usepackage{xlop}						% Pour les calculs posés
+\usepackage{standalone}					% Pour avoir un apercu d'un fichier qui sera utilisé avec un input
+\usepackage{multido}					% Pour faire des boucles
+\usepackage{hyperref}					% Pour gérer les liens hyper-texte
+\usepackage{fourier}
+\usepackage{colortbl} 					% Pour des tableaux en couleur
+\usepackage{setspace}					% Pour \begin{spacing}{2.0} \end{spacing}
+\usepackage{multirow}					% Pour des cellules multilignes dans un tableau
+\usepackage{import}						% Equivalent de input mais en spécifiant le répertoire de travail
+\usepackage[]{qrcode}
+\usepackage{pdflscape}
+\usepackage[framemethod=tikz]{mdframed} % Pour les cadres
+\usepackage{tikzsymbols}
+\usepackage{tasks}						% Pour les listes horizontales
+\usepackage{hyperref}
+\hypersetup{hidelinks}
+\usepackage{color}
+
+\definecolor{mygreen}{rgb}{0,0.6,0}
+\definecolor{mygray}{gray}{0.85}
+\definecolor{mymauve}{rgb}{0.58,0,0.82}
+% Mise en forme des codes python
+\usepackage{listingsutf8}
+\lstset{
+	language=python,
+	inputencoding=utf8/latin1,
+	extendedchars=true,
+	keywordstyle=\bfseries\ttfamily\color{blue},
+	identifierstyle=\ttfamily,
+	commentstyle=\color{mymauve},
+	stringstyle=\ttfamily\color{mygreen},
+	showstringspaces=false,
+	basicstyle=\footnotesize\ttfamily,
+	tabsize=2,
+	breaklines=true,
+	extendedchars=true,
+	xleftmargin=1cm, 
+	xrightmargin=1cm,
+	backgroundcolor=\color{mygray},
+	literate=%
+	{é}{{\'{e}}}1
+	{è}{{\`{e}}}1
+	{ê}{{\^{e}}}1
+	{ë}{{\¨{e}}}1
+	{û}{{\^{u}}}1
+	{ù}{{\`{u}}}1
+	{â}{{\^{a}}}1
+	{à}{{\`{a}}}1
+	{î}{{\^{i}}}1
+	{ô}{{\^{o}}}1
+	{ç}{{\c{c}}}1
+}
+
+				
+\setlength{\parindent}{0mm}				% Pas de retrait en début de paragraphe
+
+\renewcommand{\arraystretch}{1.5}		% Interligne dans les tableaux
+
+
+\newcounter{exo}          				% déclaration du numéro d'exo (pas utilisé ici)
+\setcounter{exo}{0}   					% initialisation du numero
+\newcommand{\exo}[1]{					% \exo
+  	\stepcounter{exo}        			% incrémentation du numéro
+  	\subsection*{Exercice n°{\theexo} ~ \textmd{\normalsize #1}}
+  	}
+  	
+\renewcommand{\labelenumi}{\textbf{\theenumi{}.}}			% Numérotation en gras
+\renewcommand{\labelenumii}{\textbf{\theenumii{}.}}		% Numérotation de niveau 2 en gras
+\renewcommand{\thesection}{\Roman{section}.}				% Numérotation des sections en chiffres romains
+\renewcommand{\thesubsection}{\alph{subsection})}			% Numérotation des sous-sections en lettres
+
+\newcommand{\version}[1]{\fancyhead[R]{Version #1}}
+
+\setlength{\fboxsep}{3mm}
+
+\graphicspath{{./images/}}
+
+
+\newmdenv[startcode={\setcounter{exo}{0}},linecolor=red,roundcorner=10pt, linewidth=3pt,frametitlerule=true,frametitlebackgroundcolor=gray!20,apptotikzsetting={\tikzset{mdfframetitlebackground/.append style={shade,left color=gray!20, right color=gray!80}}},frametitlerulewidth=1pt,frametitle=Corrections,innerbottommargin=10pt,innertopmargin=10pt,everyline=true]{correction}
+
+\begin{document}
+\fancyhead[C]{\LARGE{Projet n°2 : Le parcours du castor}}
+\fancyhead[L]{}
+\fancyhead[R]{NSI \\Décembre 2022}
+
+
+\fancyfoot[C]{\textbf{page \thepage}} 
+\fancyfoot[L]{ }
+\fancyfoot[R]{}
+
+\includegraphics[scale=0.75]{grille.png}
+
+Dans ce projet nous allons jouer à un jeu tiré du concours castor (2021)\\
+Voici les règles :
+\begin{itemize}
+	\item A chaque mouvement, le castor se déplace sur une case adjacente à celle qu'il occupe actuellement selon les 4 directions habituelles : haut, bas, droite gauche.
+	\item Une case ne peut être empruntée qu'une seule fois tout au long du parcours.
+	\item Le castor ne peut pas aller sur une case du même type que celle qu'il occupe actuellement. Mais il a toutefois le 
+	droit à un joker qui lui permet de pas respecter cette règle une seule fois sur tout son parcours.
+	\item Le but du castor est de pouvoir rejoindre la case qui comprend le drapeau sur la grille.
+
+\end{itemize}
+Pour l'interface graphique nous utiliserons la bibliothèque Tkinter de Python.
+
+
+Dans le fichier de travail interfacecastor.py, une interface graphique comprenant une première grille a été créée.
+Cette grille comprend des boutons actifs.
+Cela devrait vous permettre de découvrir (un peu) Tkinter.
+Nous ne représenterons pas le castor ni le drapeau sur la case d'arrivée.
+
+\section{Première partie: Une grille exemple}
+
+Dans cette partie on considère une seule grille de taille fixe 5$\times$6 , celle qui est donnée ci dessus.
+C'est elle qui sert aussi de modèle dans votre fichier de travail. On considère ici que les points de départ et d'arrivée sont toujours les mêmes. Plus généralement même si les grilles changent de taille, le départ sera la case en bas à droite et l'arrivée en haut à gauche.
+
+
+\subsection{Points clés des fichiers de travail}
+\begin{itemize}
+	\item Vous avez deux fichiers à votre disposition. interfacecastortravail.py qui s'occupe de l'interaction avec le joueur.
+	Le fichier jeucastortravail.py comprend quant à lui les autres fonctions (de validation, recherche etc...)
+	\item Une grille est une liste de liste qui comprend des "P" pour pierre, des "B" pour bois et "F" pour feuille. Les coordonnées sont données sous la forme Ligne colonne : ainsi le drapeau est en sur la case [0,0] et le départ du castor en [4,5].
+	\item Le début du programme permet de créer l'interface pour une grille donnée. Chaque case est cliquable. Tous les boutons sont stockés dans la variable tableauBoutons (dans lequel un bouton donné est repéré par ses coordonnées)
+	Elle crée aussi un bouton "j'ai fini" qui permet de dire lorsque votre parcours est terminé. Au fur et à mesure des clics les cases sont désactivées et, à la fin, le chemin parcouru est mémorisé sous forme d'une liste de liste.
+	
+
+\end{itemize}
+
+\subsection{Rappel des règles}
+Un parcours est valide si les 3 conditions suivantes sont remplies :
+\begin{itemize}
+	\item Le parcours débute et termine sur les bonnes cases ici [4,5] et [0,0]
+	\item Toutes les cases lors du parcours sont adjacentes
+	\item Toutes les cases du parcours respectent la règle d'alternance : pas deux cases identiques à la suite sauf une seule fois (utilisation du joker)
+	
+\end{itemize}
+\subsection{A faire}
+Vous devez donc écrire 3 fonctions qui se chargent de vérifier si ces règles sont remplies.
+Une quatrième indiquera au joueur s'il a gagné ou perdu via un message sur l'interface.
+\begin{itemize}
+	\item departArrivee(parcours)  vérifie la validité des points de départ et d'arrivée.
+	\item cheminContinu(parcours)  vérifie l'adjacence des cases lors du parcours. Cette fonction fera appel à la fonction sontVoisines(case1,case2) qui vérifie si deux cases sont adjacentes
+	\item ordreDesCases(parcours) se charge de vérifier la règle d'alternance des cases (en tenant compte du joker)
+	\item enfin la fonction verification(parcours) se charge de d'annoncer si le chemin est correct ou non via l'interface et affiche "Bravo " ou "Perdu".
+	
+\end{itemize}
+\section{Un peu d'aléatoire }
+Dans cette partie on va s'intéresser à des chemins aléatoires empruntés par le castor.
+
+\subsection{Le castor progresse toujours vers son objectif}
+Dans un premier temps, à chaque étape le castor, pressé d'arriver, avance toujours soit vers le haut, soit vers la gauche afin de pas perdre de temps en route \\
+Vous devez écrire une fonction cheminAleatoire1(grille) qui crée et renvoie un chemin aléatoire entre les points de départ .
+Du côté interface un bouton déclenchera l'appel de cette fonction ainsi que la vérification de la validité du chemin créé.
+
+
+\subsection{Le castor se déplace sur une case disponible autour de lui }
+Maintenant le castor choisit une case au hasard adjacente disponible (donc non déjà visitée).
+Il risque toutefois d'être de rester coincé et de ne jamais atteindre son but!\\
+Vous devez ici écrire une fonction cheminAleatoire2(grille) qui crée et renvoie un chemin aléatoire entre les points de départ et d'arrivée ou tout autre point s'il reste coincé. Désorienté, mais pas complètement fou, s'il est à une case de l'arrivée, il privilégie ce mouvement.
+Du côté interface un bouton déclenchera l'appel de cette fonction ainsi que la vérification de la validité du chemin créé.
+
+\subsection{Le castor s'ennuie...}
+Un peu fatigué d'explorer toujours la même grille, notre castor veut des nouvelles grilles.
+Il vous faut donc écrire une fonction  randomGrille qui génère une nouvelle grille à taille variable (par défaut de 5$\times$6).
+On créera aussi une fonction initialisenew qui se chargera d'effacer l'affichage précédent de changer la grille courante.
+Cette fonction sera appelée par un bouton "nouvelle grille"
+
+
+\section{Recherche d'un chemin : plus difficile !}
+Notre pauvre castor semble un peu perdu. \\ Ecrire une fonction qui recherche et permet de proposer un chemin valide s'il existe ou à défaut de dire s'il n'en n'existe pas.
+Attention on ne veut pas ici de fonction récursive (c'est à dire qui se rappelle elle même)
+
+Aide : le principe est de créer un chemin valide pas à pas jusqu'a éventuellement être bloqué et rebrousser chemin.
+Pour cette question vous fournirez un schéma qui indique la méthode retenue pour explorer votre grille.
+L'idéal serait de présenter une grille et sa résolution à la main.
+
+\section{Améliorations possibles}
+Voici quelques améliorations possibles pour votre projet :
+\begin{itemize}
+	\item Ajouter des boutons (type scale) pour gérer la taille des grilles que l'on veut générer.
+	\item Ajouter un bouton qui permet d'annuler le dernier déplacement (lorsque l'on cherche à trouver soi même un chemin)
+	\item Montrer le castor qui se déplace sur la grille.
+	\item Annuler le parcours proposé et en proposé un nouveau.
+	
+Cette liste n'est bien sûr pas limitative.
+	
+\end{itemize}
+
+
+
+\section{Conseils}
+Pour mener à bien ce projet, vous veillerez à bien utiliser les deux fichiers proposés (que vous pourrez renommer en supprimant le suffixe travail)
+L'intérêt du fichier jeucastortravail.py est de pouvoir tester vos fonctions sans l'interface.
+Vous rendrez un rapport en pdf du même type que celui du projet 1\\
+Un organigramme des fonctions est demandé. \\
+Bien évidemment votre code sera correctement commenté et les fonctions documentées.
+
+
+\end{document}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,2167 @@
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.8.28) (preloaded format=pdflatex 2022.10.19)  6 DEC 2022 21:54
+entering extended mode
+ restricted \write18 enabled.
+ %&-line parsing enabled.
+**./enonce.tex
+(enonce.tex
+LaTeX2e <2022-06-01> patch level 5
+L3 programming layer <2022-08-30> (H:\miKtex\tex/latex/base\article.cls
+Document Class: article 2021/10/04 v1.4n Standard LaTeX document class
+(H:\miKtex\tex/latex/base\size10.clo
+File: size10.clo 2021/10/04 v1.4n Standard LaTeX file (size option)
+)
+\c@part=\count185
+\c@section=\count186
+\c@subsection=\count187
+\c@subsubsection=\count188
+\c@paragraph=\count189
+\c@subparagraph=\count190
+\c@figure=\count191
+\c@table=\count192
+\abovecaptionskip=\skip47
+\belowcaptionskip=\skip48
+\bibindent=\dimen138
+)
+(H:\miKtex\tex/latex/geometry\geometry.sty
+Package: geometry 2020/01/02 v5.9 Page Geometry
+
+(H:\miKtex\tex/latex/graphics\keyval.sty
+Package: keyval 2022/05/29 v1.15 key=value parser (DPC)
+\KV@toks@=\toks16
+)
+(H:\miKtex\tex/generic/iftex\ifvtex.sty
+Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
+ (H:\miKtex\tex/generic/iftex\iftex.sty
+Package: iftex 2022/02/03 v1.0f TeX engine tests
+))
+\Gm@cnth=\count193
+\Gm@cntv=\count194
+\c@Gm@tempcnt=\count195
+\Gm@bindingoffset=\dimen139
+\Gm@wd@mp=\dimen140
+\Gm@odd@mp=\dimen141
+\Gm@even@mp=\dimen142
+\Gm@layoutwidth=\dimen143
+\Gm@layoutheight=\dimen144
+\Gm@layouthoffset=\dimen145
+\Gm@layoutvoffset=\dimen146
+\Gm@dimlist=\toks17
+ (H:\miKtex\tex/latex/geometry\geometry.cfg))
+(H:\miKtex\tex/latex/base\inputenc.sty
+Package: inputenc 2021/02/14 v1.3d Input encoding file
+\inpenc@prehook=\toks18
+\inpenc@posthook=\toks19
+) (H:\miKtex\tex/latex/base\fontenc.sty
+Package: fontenc 2021/04/29 v2.0v Standard LaTeX package
+)
+(H:\miKtex\tex/latex/lm\lmodern.sty
+Package: lmodern 2015/05/01 v1.6.1 Latin Modern Fonts
+LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
+(Font)                  OT1/cmr/m/n --> OT1/lmr/m/n on input line 22.
+LaTeX Font Info:    Overwriting symbol font `letters' in version `normal'
+(Font)                  OML/cmm/m/it --> OML/lmm/m/it on input line 23.
+LaTeX Font Info:    Overwriting symbol font `symbols' in version `normal'
+(Font)                  OMS/cmsy/m/n --> OMS/lmsy/m/n on input line 24.
+LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `normal'
+(Font)                  OMX/cmex/m/n --> OMX/lmex/m/n on input line 25.
+LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
+(Font)                  OT1/cmr/bx/n --> OT1/lmr/bx/n on input line 26.
+LaTeX Font Info:    Overwriting symbol font `letters' in version `bold'
+(Font)                  OML/cmm/b/it --> OML/lmm/b/it on input line 27.
+LaTeX Font Info:    Overwriting symbol font `symbols' in version `bold'
+(Font)                  OMS/cmsy/b/n --> OMS/lmsy/b/n on input line 28.
+LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `bold'
+(Font)                  OMX/cmex/m/n --> OMX/lmex/m/n on input line 29.
+LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
+(Font)                  OT1/cmr/bx/n --> OT1/lmr/bx/n on input line 31.
+LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `normal'
+(Font)                  OT1/cmss/m/n --> OT1/lmss/m/n on input line 32.
+LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
+(Font)                  OT1/cmr/m/it --> OT1/lmr/m/it on input line 33.
+LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `normal'
+(Font)                  OT1/cmtt/m/n --> OT1/lmtt/m/n on input line 34.
+LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `bold'
+(Font)                  OT1/cmr/bx/n --> OT1/lmr/bx/n on input line 35.
+LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
+(Font)                  OT1/cmss/bx/n --> OT1/lmss/bx/n on input line 36.
+LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
+(Font)                  OT1/cmr/bx/it --> OT1/lmr/bx/it on input line 37.
+LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
+(Font)                  OT1/cmtt/m/n --> OT1/lmtt/m/n on input line 38.
+) (H:\miKtex\tex/generic/babel\babel.sty
+Package: babel 2022/09/17 3.80 The Babel package
+\babel@savecnt=\count196
+\U@D=\dimen147
+\l@unhyphenated=\language79
+
+(H:\miKtex\tex/generic/babel\txtbabel.def)
+\bbl@readstream=\read2
+\bbl@dirlevel=\count197
+
+*************************************
+* Local config file bblopts.cfg used
+*
+(H:\miKtex\tex/latex/arabi\bblopts.cfg
+File: bblopts.cfg 2005/09/08 v0.1 add Arabic and Farsi to "declared" options of
+ babel
+)
+(H:\miKtex\tex/generic/babel-french\francais.ldf
+Language: francais 2022/04/18 v3.5n French support from the babel system
+
+
+Package francais.ldf Warning: Option `francais' for Babel is *deprecated*,
+(francais.ldf)                it might be removed sooner or later. Please
+(francais.ldf)                use `french' instead; reported on input line 31.
+
+(H:\miKtex\tex/generic/babel-french\french.ldf
+Language: french 2022/04/18 v3.5n French support from the babel system
+Package babel Info: Hyphen rules for 'acadian' set to \l@french
+(babel)             (\language22). Reported on input line 91.
+Package babel Info: Hyphen rules for 'canadien' set to \l@french
+(babel)             (\language22). Reported on input line 92.
+\FB@nonchar=\count198
+Package babel Info: Making : an active character on input line 430.
+Package babel Info: Making ; an active character on input line 431.
+Package babel Info: Making ! an active character on input line 432.
+Package babel Info: Making ? an active character on input line 433.
+\FBguill@level=\count199
+\FBold@everypar=\toks20
+\FB@Mht=\dimen148
+\mc@charclass=\count266
+\mc@charfam=\count267
+\mc@charslot=\count268
+\std@mcc=\count269
+\dec@mcc=\count270
+\listindentFB=\dimen149
+\descindentFB=\dimen150
+\labelindentFB=\dimen151
+\labelwidthFB=\dimen152
+\leftmarginFB=\dimen153
+\parindentFFN=\dimen154
+\FBfnindent=\dimen155
+)))
+(H:\miKtex\tex/latex/carlisle\scalefnt.sty)
+(H:\miKtex\tex/latex/tools\multicol.sty
+Package: multicol 2021/10/28 v1.9b multicolumn formatting (FMi)
+\c@tracingmulticols=\count271
+\mult@box=\box51
+\multicol@leftmargin=\dimen156
+\c@unbalance=\count272
+\c@collectmore=\count273
+\doublecol@number=\count274
+\multicoltolerance=\count275
+\multicolpretolerance=\count276
+\full@width=\dimen157
+\page@free=\dimen158
+\premulticols=\dimen159
+\postmulticols=\dimen160
+\multicolsep=\skip49
+\multicolbaselineskip=\skip50
+\partial@page=\box52
+\last@line=\box53
+\maxbalancingoverflow=\dimen161
+\mult@rightbox=\box54
+\mult@grightbox=\box55
+\mult@firstbox=\box56
+\mult@gfirstbox=\box57
+\@tempa=\box58
+\@tempa=\box59
+\@tempa=\box60
+\@tempa=\box61
+\@tempa=\box62
+\@tempa=\box63
+\@tempa=\box64
+\@tempa=\box65
+\@tempa=\box66
+\@tempa=\box67
+\@tempa=\box68
+\@tempa=\box69
+\@tempa=\box70
+\@tempa=\box71
+\@tempa=\box72
+\@tempa=\box73
+\@tempa=\box74
+\@tempa=\box75
+\@tempa=\box76
+\@tempa=\box77
+\@tempa=\box78
+\@tempa=\box79
+\@tempa=\box80
+\@tempa=\box81
+\@tempa=\box82
+\@tempa=\box83
+\@tempa=\box84
+\@tempa=\box85
+\@tempa=\box86
+\@tempa=\box87
+\@tempa=\box88
+\@tempa=\box89
+\@tempa=\box90
+\@tempa=\box91
+\@tempa=\box92
+\@tempa=\box93
+\c@minrows=\count277
+\c@columnbadness=\count278
+\c@finalcolumnbadness=\count279
+\last@try=\dimen162
+\multicolovershoot=\dimen163
+\multicolundershoot=\dimen164
+\mult@nat@firstbox=\box94
+\colbreak@box=\box95
+\mc@col@check@num=\count280
+) (H:\miKtex\tex/latex/tools\calc.sty
+Package: calc 2017/05/25 v4.3 Infix arithmetic (KKT,FJ)
+\calc@Acount=\count281
+\calc@Bcount=\count282
+\calc@Adimen=\dimen165
+\calc@Bdimen=\dimen166
+\calc@Askip=\skip51
+\calc@Bskip=\skip52
+LaTeX Info: Redefining \setlength on input line 80.
+LaTeX Info: Redefining \addtolength on input line 81.
+\calc@Ccount=\count283
+\calc@Cskip=\skip53
+)
+(H:\miKtex\tex/latex/tools\enumerate.sty
+Package: enumerate 2015/07/23 v3.00 enumerate extensions (DPC)
+\@enLab=\toks21
+)
+(H:\miKtex\tex/latex/enumitem\enumitem.sty
+Package: enumitem 2019/06/20 v3.9 Customized lists
+\labelindent=\skip54
+\enit@outerparindent=\dimen167
+\enit@toks=\toks22
+\enit@inbox=\box96
+\enit@count@id=\count284
+\enitdp@description=\count285
+)
+(H:\miKtex\tex/latex/graphics\graphicx.sty
+Package: graphicx 2021/09/16 v1.2d Enhanced LaTeX Graphics (DPC,SPQR)
+
+(H:\miKtex\tex/latex/graphics\graphics.sty
+Package: graphics 2022/03/10 v1.4e Standard LaTeX Graphics (DPC,SPQR)
+
+(H:\miKtex\tex/latex/graphics\trig.sty
+Package: trig 2021/08/11 v1.11 sin cos tan (DPC)
+)
+(H:\miKtex\tex/latex/graphics-cfg\graphics.cfg
+File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
+)
+Package graphics Info: Driver file: pdftex.def on input line 107.
+
+(H:\miKtex\tex/latex/graphics-def\pdftex.def
+File: pdftex.def 2020/10/05 v1.2a Graphics/color driver for pdftex
+))
+\Gin@req@height=\dimen168
+\Gin@req@width=\dimen169
+)
+(H:\miKtex\tex/latex/tools\tabularx.sty
+Package: tabularx 2020/01/15 v2.11c `tabularx' package (DPC)
+ (H:\miKtex\tex/latex/tools\array.sty
+Package: array 2021/10/04 v2.5f Tabular extension package (FMi)
+\col@sep=\dimen170
+\ar@mcellbox=\box97
+\extrarowheight=\dimen171
+\NC@list=\toks23
+\extratabsurround=\skip55
+\backup@length=\skip56
+\ar@cellbox=\box98
+)
+\TX@col@width=\dimen172
+\TX@old@table=\dimen173
+\TX@old@col=\dimen174
+\TX@target=\dimen175
+\TX@delta=\dimen176
+\TX@cols=\count286
+\TX@ftn=\toks24
+)
+(H:\miKtex\tex/latex/pgf/basiclayer\pgf.sty
+(H:\miKtex\tex/latex/pgf/utilities\pgfrcs.sty
+(H:\miKtex\tex/generic/pgf/utilities\pgfutil-common.tex
+\pgfutil@everybye=\toks25
+\pgfutil@tempdima=\dimen177
+\pgfutil@tempdimb=\dimen178
+
+(H:\miKtex\tex/generic/pgf/utilities\pgfutil-common-lists.tex))
+(H:\miKtex\tex/generic/pgf/utilities\pgfutil-latex.def
+\pgfutil@abb=\box99
+)
+(H:\miKtex\tex/generic/pgf/utilities\pgfrcs.code.tex
+(H:\miKtex\tex/generic/pgf\pgf.revision.tex)
+Package: pgfrcs 2021/05/15 v3.1.9a (3.1.9a)
+))
+Package: pgf 2021/05/15 v3.1.9a (3.1.9a)
+
+(H:\miKtex\tex/latex/pgf/basiclayer\pgfcore.sty
+(H:\miKtex\tex/latex/pgf/systemlayer\pgfsys.sty
+(H:\miKtex\tex/generic/pgf/systemlayer\pgfsys.code.tex
+Package: pgfsys 2021/05/15 v3.1.9a (3.1.9a)
+
+(H:\miKtex\tex/generic/pgf/utilities\pgfkeys.code.tex
+\pgfkeys@pathtoks=\toks26
+\pgfkeys@temptoks=\toks27
+
+(H:\miKtex\tex/generic/pgf/utilities\pgfkeysfiltered.code.tex
+\pgfkeys@tmptoks=\toks28
+))
+\pgf@x=\dimen179
+\pgf@y=\dimen180
+\pgf@xa=\dimen181
+\pgf@ya=\dimen182
+\pgf@xb=\dimen183
+\pgf@yb=\dimen184
+\pgf@xc=\dimen185
+\pgf@yc=\dimen186
+\pgf@xd=\dimen187
+\pgf@yd=\dimen188
+\w@pgf@writea=\write3
+\r@pgf@reada=\read3
+\c@pgf@counta=\count287
+\c@pgf@countb=\count288
+\c@pgf@countc=\count289
+\c@pgf@countd=\count290
+\t@pgf@toka=\toks29
+\t@pgf@tokb=\toks30
+\t@pgf@tokc=\toks31
+\pgf@sys@id@count=\count291
+
+(H:\miKtex\tex/generic/pgf/systemlayer\pgf.cfg
+File: pgf.cfg 2021/05/15 v3.1.9a (3.1.9a)
+)
+Driver file for pgf: pgfsys-pdftex.def
+
+(H:\miKtex\tex/generic/pgf/systemlayer\pgfsys-pdftex.def
+File: pgfsys-pdftex.def 2021/05/15 v3.1.9a (3.1.9a)
+
+(H:\miKtex\tex/generic/pgf/systemlayer\pgfsys-common-pdf.def
+File: pgfsys-common-pdf.def 2021/05/15 v3.1.9a (3.1.9a)
+)))
+(H:\miKtex\tex/generic/pgf/systemlayer\pgfsyssoftpath.code.tex
+File: pgfsyssoftpath.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+\pgfsyssoftpath@smallbuffer@items=\count292
+\pgfsyssoftpath@bigbuffer@items=\count293
+)
+(H:\miKtex\tex/generic/pgf/systemlayer\pgfsysprotocol.code.tex
+File: pgfsysprotocol.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+))
+(H:\miKtex\tex/latex/xcolor\xcolor.sty
+Package: xcolor 2022/06/12 v2.14 LaTeX color extensions (UK)
+
+(H:\miKtex\tex/latex/graphics-cfg\color.cfg
+File: color.cfg 2016/01/02 v1.6 sample color configuration
+)
+Package xcolor Info: Driver file: pdftex.def on input line 227.
+
+(H:\miKtex\tex/latex-dev/graphics\mathcolor.ltx)
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1353.
+Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1357.
+Package xcolor Info: Model `RGB' extended on input line 1369.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1371.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1372.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1373.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1374.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1375.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1376.
+)
+(H:\miKtex\tex/generic/pgf/basiclayer\pgfcore.code.tex
+Package: pgfcore 2021/05/15 v3.1.9a (3.1.9a)
+
+(H:\miKtex\tex/generic/pgf/math\pgfmath.code.tex
+(H:\miKtex\tex/generic/pgf/math\pgfmathcalc.code.tex
+(H:\miKtex\tex/generic/pgf/math\pgfmathutil.code.tex)
+(H:\miKtex\tex/generic/pgf/math\pgfmathparser.code.tex
+\pgfmath@dimen=\dimen189
+\pgfmath@count=\count294
+\pgfmath@box=\box100
+\pgfmath@toks=\toks32
+\pgfmath@stack@operand=\toks33
+\pgfmath@stack@operation=\toks34
+)
+(H:\miKtex\tex/generic/pgf/math\pgfmathfunctions.code.tex
+(H:\miKtex\tex/generic/pgf/math\pgfmathfunctions.basic.code.tex)
+(H:\miKtex\tex/generic/pgf/math\pgfmathfunctions.trigonometric.code.tex)
+(H:\miKtex\tex/generic/pgf/math\pgfmathfunctions.random.code.tex)
+(H:\miKtex\tex/generic/pgf/math\pgfmathfunctions.comparison.code.tex)
+(H:\miKtex\tex/generic/pgf/math\pgfmathfunctions.base.code.tex)
+(H:\miKtex\tex/generic/pgf/math\pgfmathfunctions.round.code.tex)
+(H:\miKtex\tex/generic/pgf/math\pgfmathfunctions.misc.code.tex)
+(H:\miKtex\tex/generic/pgf/math\pgfmathfunctions.integerarithmetics.code.tex)))
+(H:\miKtex\tex/generic/pgf/math\pgfmathfloat.code.tex
+\c@pgfmathroundto@lastzeros=\count295
+))
+(H:\miKtex\tex/generic/pgf/math\pgfint.code.tex)
+(H:\miKtex\tex/generic/pgf/basiclayer\pgfcorepoints.code.tex
+File: pgfcorepoints.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+\pgf@picminx=\dimen190
+\pgf@picmaxx=\dimen191
+\pgf@picminy=\dimen192
+\pgf@picmaxy=\dimen193
+\pgf@pathminx=\dimen194
+\pgf@pathmaxx=\dimen195
+\pgf@pathminy=\dimen196
+\pgf@pathmaxy=\dimen197
+\pgf@xx=\dimen198
+\pgf@xy=\dimen199
+\pgf@yx=\dimen256
+\pgf@yy=\dimen257
+\pgf@zx=\dimen258
+\pgf@zy=\dimen259
+)
+(H:\miKtex\tex/generic/pgf/basiclayer\pgfcorepathconstruct.code.tex
+File: pgfcorepathconstruct.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+\pgf@path@lastx=\dimen260
+\pgf@path@lasty=\dimen261
+)
+(H:\miKtex\tex/generic/pgf/basiclayer\pgfcorepathusage.code.tex
+File: pgfcorepathusage.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+\pgf@shorten@end@additional=\dimen262
+\pgf@shorten@start@additional=\dimen263
+)
+(H:\miKtex\tex/generic/pgf/basiclayer\pgfcorescopes.code.tex
+File: pgfcorescopes.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+\pgfpic=\box101
+\pgf@hbox=\box102
+\pgf@layerbox@main=\box103
+\pgf@picture@serial@count=\count296
+)
+(H:\miKtex\tex/generic/pgf/basiclayer\pgfcoregraphicstate.code.tex
+File: pgfcoregraphicstate.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+\pgflinewidth=\dimen264
+)
+(H:\miKtex\tex/generic/pgf/basiclayer\pgfcoretransformations.code.tex
+File: pgfcoretransformations.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+\pgf@pt@x=\dimen265
+\pgf@pt@y=\dimen266
+\pgf@pt@temp=\dimen267
+)
+(H:\miKtex\tex/generic/pgf/basiclayer\pgfcorequick.code.tex
+File: pgfcorequick.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+)
+(H:\miKtex\tex/generic/pgf/basiclayer\pgfcoreobjects.code.tex
+File: pgfcoreobjects.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+)
+(H:\miKtex\tex/generic/pgf/basiclayer\pgfcorepathprocessing.code.tex
+File: pgfcorepathprocessing.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+)
+(H:\miKtex\tex/generic/pgf/basiclayer\pgfcorearrows.code.tex
+File: pgfcorearrows.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+\pgfarrowsep=\dimen268
+)
+(H:\miKtex\tex/generic/pgf/basiclayer\pgfcoreshade.code.tex
+File: pgfcoreshade.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+\pgf@max=\dimen269
+\pgf@sys@shading@range@num=\count297
+\pgf@shadingcount=\count298
+)
+(H:\miKtex\tex/generic/pgf/basiclayer\pgfcoreimage.code.tex
+File: pgfcoreimage.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+
+(H:\miKtex\tex/generic/pgf/basiclayer\pgfcoreexternal.code.tex
+File: pgfcoreexternal.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+\pgfexternal@startupbox=\box104
+))
+(H:\miKtex\tex/generic/pgf/basiclayer\pgfcorelayers.code.tex
+File: pgfcorelayers.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+)
+(H:\miKtex\tex/generic/pgf/basiclayer\pgfcoretransparency.code.tex
+File: pgfcoretransparency.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+)
+(H:\miKtex\tex/generic/pgf/basiclayer\pgfcorepatterns.code.tex
+File: pgfcorepatterns.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+)
+(H:\miKtex\tex/generic/pgf/basiclayer\pgfcorerdf.code.tex
+File: pgfcorerdf.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+)))
+(H:\miKtex\tex/generic/pgf/modules\pgfmoduleshapes.code.tex
+File: pgfmoduleshapes.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+\pgfnodeparttextbox=\box105
+)
+(H:\miKtex\tex/generic/pgf/modules\pgfmoduleplot.code.tex
+File: pgfmoduleplot.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+)
+(H:\miKtex\tex/latex/pgf/compatibility\pgfcomp-version-0-65.sty
+Package: pgfcomp-version-0-65 2021/05/15 v3.1.9a (3.1.9a)
+\pgf@nodesepstart=\dimen270
+\pgf@nodesepend=\dimen271
+)
+(H:\miKtex\tex/latex/pgf/compatibility\pgfcomp-version-1-18.sty
+Package: pgfcomp-version-1-18 2021/05/15 v3.1.9a (3.1.9a)
+))
+(H:\miKtex\tex/latex/pgf/frontendlayer\tikz.sty
+(H:\miKtex\tex/latex/pgf/utilities\pgffor.sty
+(H:\miKtex\tex/latex/pgf/utilities\pgfkeys.sty
+(H:\miKtex\tex/generic/pgf/utilities\pgfkeys.code.tex))
+(H:\miKtex\tex/latex/pgf/math\pgfmath.sty
+(H:\miKtex\tex/generic/pgf/math\pgfmath.code.tex))
+(H:\miKtex\tex/generic/pgf/utilities\pgffor.code.tex
+Package: pgffor 2021/05/15 v3.1.9a (3.1.9a)
+
+(H:\miKtex\tex/generic/pgf/math\pgfmath.code.tex)
+\pgffor@iter=\dimen272
+\pgffor@skip=\dimen273
+\pgffor@stack=\toks35
+\pgffor@toks=\toks36
+))
+(H:\miKtex\tex/generic/pgf/frontendlayer/tikz\tikz.code.tex
+Package: tikz 2021/05/15 v3.1.9a (3.1.9a)
+
+(H:\miKtex\tex/generic/pgf/libraries\pgflibraryplothandlers.code.tex
+File: pgflibraryplothandlers.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+\pgf@plot@mark@count=\count299
+\pgfplotmarksize=\dimen274
+)
+\tikz@lastx=\dimen275
+\tikz@lasty=\dimen276
+\tikz@lastxsaved=\dimen277
+\tikz@lastysaved=\dimen278
+\tikz@lastmovetox=\dimen279
+\tikz@lastmovetoy=\dimen280
+\tikzleveldistance=\dimen281
+\tikzsiblingdistance=\dimen282
+\tikz@figbox=\box106
+\tikz@figbox@bg=\box107
+\tikz@tempbox=\box108
+\tikz@tempbox@bg=\box109
+\tikztreelevel=\count300
+\tikznumberofchildren=\count301
+\tikznumberofcurrentchild=\count302
+\tikz@fig@count=\count303
+
+(H:\miKtex\tex/generic/pgf/modules\pgfmodulematrix.code.tex
+File: pgfmodulematrix.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+\pgfmatrixcurrentrow=\count304
+\pgfmatrixcurrentcolumn=\count305
+\pgf@matrix@numberofcolumns=\count306
+)
+\tikz@expandcount=\count307
+
+(H:\miKtex\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibrarytopaths.code
+.tex
+File: tikzlibrarytopaths.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+))) (H:\miKtex\tex/latex/pgfplots\pgfplots.sty
+(H:\miKtex\tex/generic/pgfplots\pgfplots.revision.tex)
+Package: pgfplots 2021/05/15 v1.18.1 Data Visualization (1.18.1)
+
+(H:\miKtex\tex/generic/pgfplots\pgfplots.code.tex
+(H:\miKtex\tex/generic/pgfplots\pgfplotscore.code.tex
+\t@pgfplots@toka=\toks37
+\t@pgfplots@tokb=\toks38
+\t@pgfplots@tokc=\toks39
+\pgfplots@tmpa=\dimen283
+\c@pgfplots@coordindex=\count308
+\c@pgfplots@scanlineindex=\count309
+
+(H:\miKtex\tex/generic/pgfplots/sys\pgfplotssysgeneric.code.tex))
+(H:\miKtex\tex/generic/pgfplots/libs\pgfplotslibrary.code.tex)
+(H:\miKtex\tex/generic/pgfplots/oldpgfcompatib\pgfplotsoldpgfsupp_loader.code.t
+ex (H:\miKtex\tex/generic/pgf/libraries\pgflibraryfpu.code.tex))
+(H:\miKtex\tex/generic/pgfplots/util\pgfplotsutil.code.tex
+(H:\miKtex\tex/generic/pgfplots/liststructure\pgfplotsliststructure.code.tex)
+(H:\miKtex\tex/generic/pgfplots/liststructure\pgfplotsliststructureext.code.tex
+) (H:\miKtex\tex/generic/pgfplots/liststructure\pgfplotsarray.code.tex
+\c@pgfplotsarray@tmp=\count310
+)
+(H:\miKtex\tex/generic/pgfplots/liststructure\pgfplotsmatrix.code.tex)
+(H:\miKtex\tex/generic/pgfplots/numtable\pgfplotstableshared.code.tex
+\c@pgfplotstable@counta=\count311
+\t@pgfplotstable@a=\toks40
+)
+(H:\miKtex\tex/generic/pgfplots/liststructure\pgfplotsdeque.code.tex)
+(H:\miKtex\tex/generic/pgfplots/util\pgfplotsbinary.code.tex
+(H:\miKtex\tex/generic/pgfplots/util\pgfplotsbinary.data.code.tex))
+(H:\miKtex\tex/generic/pgfplots/util\pgfplotsutil.verb.code.tex)
+(H:\miKtex\tex/generic/pgfplots/libs\pgflibrarypgfplots.surfshading.code.tex
+\c@pgfplotslibrarysurf@no=\count312
+
+(H:\miKtex\tex/generic/pgfplots/sys\pgflibrarypgfplots.surfshading.pgfsys-pdfte
+x.def))) (H:\miKtex\tex/generic/pgfplots/util\pgfplotscolormap.code.tex
+(H:\miKtex\tex/generic/pgfplots/util\pgfplotscolor.code.tex))
+(H:\miKtex\tex/generic/pgfplots\pgfplotsstackedplots.code.tex)
+(H:\miKtex\tex/generic/pgfplots\pgfplotsplothandlers.code.tex
+(H:\miKtex\tex/generic/pgfplots\pgfplotsmeshplothandler.code.tex
+(H:\miKtex\tex/generic/pgfplots\pgfplotsmeshplotimage.code.tex)))
+(H:\miKtex\tex/generic/pgfplots\pgfplots.scaling.code.tex)
+(H:\miKtex\tex/generic/pgfplots\pgfplotscoordprocessing.code.tex)
+(H:\miKtex\tex/generic/pgfplots\pgfplots.errorbars.code.tex)
+(H:\miKtex\tex/generic/pgfplots\pgfplots.markers.code.tex)
+(H:\miKtex\tex/generic/pgfplots\pgfplotsticks.code.tex)
+(H:\miKtex\tex/generic/pgfplots\pgfplots.paths.code.tex)
+(H:\miKtex\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibrarydecorations.
+code.tex (H:\miKtex\tex/generic/pgf/modules\pgfmoduledecorations.code.tex
+\pgfdecoratedcompleteddistance=\dimen284
+\pgfdecoratedremainingdistance=\dimen285
+\pgfdecoratedinputsegmentcompleteddistance=\dimen286
+\pgfdecoratedinputsegmentremainingdistance=\dimen287
+\pgf@decorate@distancetomove=\dimen288
+\pgf@decorate@repeatstate=\count313
+\pgfdecorationsegmentamplitude=\dimen289
+\pgfdecorationsegmentlength=\dimen290
+)
+\tikz@lib@dec@box=\box110
+)
+(H:\miKtex\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibrarydecorations.
+pathmorphing.code.tex
+(H:\miKtex\tex/generic/pgf/libraries/decorations\pgflibrarydecorations.pathmorp
+hing.code.tex))
+(H:\miKtex\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibrarydecorations.
+pathreplacing.code.tex
+(H:\miKtex\tex/generic/pgf/libraries/decorations\pgflibrarydecorations.pathrepl
+acing.code.tex))
+(H:\miKtex\tex/generic/pgfplots/libs\tikzlibrarypgfplots.contourlua.code.tex)
+\pgfplots@numplots=\count314
+\pgfplots@xmin@reg=\dimen291
+\pgfplots@xmax@reg=\dimen292
+\pgfplots@ymin@reg=\dimen293
+\pgfplots@ymax@reg=\dimen294
+\pgfplots@zmin@reg=\dimen295
+\pgfplots@zmax@reg=\dimen296
+)
+(H:\miKtex\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibraryplotmarks.co
+de.tex
+File: tikzlibraryplotmarks.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+ (H:\miKtex\tex/generic/pgf/libraries\pgflibraryplotmarks.code.tex
+File: pgflibraryplotmarks.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+)))
+(H:\miKtex\tex/latex/jknappen\mathrsfs.sty
+Package: mathrsfs 1996/01/01 Math RSFS package v1.0 (jk)
+\symrsfs=\mathgroup4
+)
+(H:\miKtex\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibraryarrows.code.
+tex
+File: tikzlibraryarrows.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+ (H:\miKtex\tex/generic/pgf/libraries\pgflibraryarrows.code.tex
+File: pgflibraryarrows.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+\arrowsize=\dimen297
+))
+(H:\miKtex\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibrarycalc.code.te
+x
+File: tikzlibrarycalc.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+)
+(H:\miKtex\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibraryfit.code.tex
+File: tikzlibraryfit.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+)
+(H:\miKtex\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibrarypatterns.cod
+e.tex
+File: tikzlibrarypatterns.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+ (H:\miKtex\tex/generic/pgf/libraries\pgflibrarypatterns.code.tex
+File: pgflibrarypatterns.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+))
+(H:\miKtex\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibraryshapes.geome
+tric.code.tex
+File: tikzlibraryshapes.geometric.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+
+(H:\miKtex\tex/generic/pgf/libraries/shapes\pgflibraryshapes.geometric.code.tex
+File: pgflibraryshapes.geometric.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+))
+(H:\miKtex\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibraryshapes.misc.
+code.tex
+File: tikzlibraryshapes.misc.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+
+(H:\miKtex\tex/generic/pgf/libraries/shapes\pgflibraryshapes.misc.code.tex
+File: pgflibraryshapes.misc.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+))
+(H:\miKtex\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibraryshapes.symbo
+ls.code.tex
+File: tikzlibraryshapes.symbols.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+
+(H:\miKtex\tex/generic/pgf/libraries/shapes\pgflibraryshapes.symbols.code.tex
+File: pgflibraryshapes.symbols.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+))
+(H:\miKtex\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibraryshapes.arrow
+s.code.tex
+File: tikzlibraryshapes.arrows.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+
+(H:\miKtex\tex/generic/pgf/libraries/shapes\pgflibraryshapes.arrows.code.tex
+File: pgflibraryshapes.arrows.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+))
+(H:\miKtex\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibraryshapes.callo
+uts.code.tex
+(H:\miKtex\tex/generic/pgf/libraries/shapes\pgflibraryshapes.callouts.code.tex)
+)
+(H:\miKtex\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibraryshapes.multi
+part.code.tex
+File: tikzlibraryshapes.multipart.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+
+(H:\miKtex\tex/generic/pgf/libraries/shapes\pgflibraryshapes.multipart.code.tex
+File: pgflibraryshapes.multipart.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+\pgfnodepartlowerbox=\box111
+\pgfnodeparttwobox=\box112
+\pgfnodepartthreebox=\box113
+\pgfnodepartfourbox=\box114
+\pgfnodeparttwentybox=\box115
+\pgfnodepartnineteenbox=\box116
+\pgfnodeparteighteenbox=\box117
+\pgfnodepartseventeenbox=\box118
+\pgfnodepartsixteenbox=\box119
+\pgfnodepartfifteenbox=\box120
+\pgfnodepartfourteenbox=\box121
+\pgfnodepartthirteenbox=\box122
+\pgfnodeparttwelvebox=\box123
+\pgfnodepartelevenbox=\box124
+\pgfnodeparttenbox=\box125
+\pgfnodepartninebox=\box126
+\pgfnodeparteightbox=\box127
+\pgfnodepartsevenbox=\box128
+\pgfnodepartsixbox=\box129
+\pgfnodepartfivebox=\box130
+))
+(H:\miKtex\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibraryshapes.gates
+.logic.US.code.tex
+File: tikzlibraryshapes.gates.logic.US.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+
+(H:\miKtex\tex/generic/pgf/libraries/shapes/circuits\pgflibraryshapes.gates.log
+ic.US.code.tex
+(H:\miKtex\tex/generic/pgf/libraries/shapes/circuits\pgflibraryshapes.gates.log
+ic.code.tex)))
+(H:\miKtex\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibraryshapes.gates
+.logic.IEC.code.tex
+File: tikzlibraryshapes.gates.logic.IEC.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+
+(H:\miKtex\tex/generic/pgf/libraries/shapes/circuits\pgflibraryshapes.gates.log
+ic.IEC.code.tex))
+(H:\miKtex\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibraryer.code.tex
+File: tikzlibraryer.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+)
+(H:\miKtex\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibraryautomata.cod
+e.tex
+File: tikzlibraryautomata.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+)
+(H:\miKtex\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibrarybackgrounds.
+code.tex
+File: tikzlibrarybackgrounds.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+\pgf@layerbox@background=\box131
+\pgf@layerboxsaved@background=\box132
+)
+(H:\miKtex\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibrarychains.code.
+tex
+File: tikzlibrarychains.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+
+(H:\miKtex\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibrarypositioning.
+code.tex
+File: tikzlibrarypositioning.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+))
+(H:\miKtex\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibrarytrees.code.t
+ex
+File: tikzlibrarytrees.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+)
+(H:\miKtex\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibrarypetri.code.t
+ex
+File: tikzlibrarypetri.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+)
+(H:\miKtex\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibrarymindmap.code
+.tex
+File: tikzlibrarymindmap.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+)
+(H:\miKtex\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibrarymatrix.code.
+tex
+File: tikzlibrarymatrix.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+)
+(H:\miKtex\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibrarycalendar.cod
+e.tex
+File: tikzlibrarycalendar.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+ (H:\miKtex\tex/latex/pgf/utilities\pgfcalendar.sty
+(H:\miKtex\tex/generic/pgf/utilities\pgfcalendar.code.tex
+File: pgfcalendar.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+
+(H:\miKtex\tex/generic/pgf/math\pgfint.code.tex)
+\pgfcalendarcurrentjulian=\count315
+\pgf@cal@easter@Y=\count316
+\pgf@cal@easter@G=\count317
+\pgf@cal@easter@C=\count318
+\pgf@cal@easter@X=\count319
+\pgf@cal@easter@Z=\count320
+\pgf@cal@easter@D=\count321
+\pgf@cal@easter@E=\count322
+\pgf@cal@easter@N=\count323
+\pgf@cal@easter@M=\count324
+\pgf@cal@easter@julianday=\count325
+)))
+(H:\miKtex\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibraryfolding.code
+.tex
+File: tikzlibraryfolding.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+\tikz@lib@fold@length=\dimen298
+)
+(H:\miKtex\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibraryfadings.code
+.tex
+File: tikzlibraryfadings.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+ (H:\miKtex\tex/generic/pgf/libraries\pgflibraryfadings.code.tex
+File: pgflibraryfadings.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+))
+(H:\miKtex\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibrarythrough.code
+.tex
+File: tikzlibrarythrough.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+)
+(H:\miKtex\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibraryscopes.code.
+tex
+File: tikzlibraryscopes.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+)
+(H:\miKtex\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibrarydecorations.
+fractals.code.tex
+(H:\miKtex\tex/generic/pgf/libraries/decorations\pgflibrarydecorations.fractals
+.code.tex))
+(H:\miKtex\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibrarydecorations.
+shapes.code.tex
+(H:\miKtex\tex/generic/pgf/libraries/decorations\pgflibrarydecorations.shapes.c
+ode.tex))
+(H:\miKtex\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibrarydecorations.
+text.code.tex
+(H:\miKtex\tex/generic/pgf/libraries/decorations\pgflibrarydecorations.text.cod
+e.tex
+\pgf@lib@dec@text@box=\box133
+)
+\tikz@lib@dec@te@box=\box134
+)
+(H:\miKtex\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibrarydecorations.
+footprints.code.tex
+(H:\miKtex\tex/generic/pgf/libraries/decorations\pgflibrarydecorations.footprin
+ts.code.tex))
+(H:\miKtex\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibrarydecorations.
+markings.code.tex
+(H:\miKtex\tex/generic/pgf/libraries/decorations\pgflibrarydecorations.markings
+.code.tex))
+(H:\miKtex\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibraryshadows.code
+.tex
+File: tikzlibraryshadows.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+)
+(H:\miKtex\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibrarybabel.code.t
+ex
+File: tikzlibrarybabel.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+) (H:\miKtex\tex/latex/tkz-base\tkz-base.sty
+2022/07/14 4.2c tkz-base.sty
+Package: tkz-base 2022/07/14 4.2c tkz-base
+
+(H:\miKtex\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibraryangles.code.
+tex
+File: tikzlibraryangles.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+) (H:\miKtex\tex/generic/pgf/libraries\pgflibraryarrows.meta.code.tex
+File: pgflibraryarrows.meta.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+\pgfarrowinset=\dimen299
+\pgfarrowlength=\dimen300
+\pgfarrowwidth=\dimen301
+\pgfarrowlinewidth=\dimen302
+)
+(H:\miKtex\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibraryintersection
+s.code.tex
+(H:\miKtex\tex/generic/pgf/libraries\pgflibraryintersections.code.tex
+\pgf@intersect@solutions=\count326
+))
+(H:\miKtex\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibraryquotes.code.
+tex
+File: tikzlibraryquotes.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+) (H:\miKtex\tex/latex/numprint\numprint.sty
+Package: numprint 2012/08/20 v1.39 Print numbers (HH)
+\c@nprt@mantissa@digitsbefore=\count327
+\c@nprt@mantissa@digitsafter=\count328
+\c@nprt@exponent@digitsbefore=\count329
+\c@nprt@exponent@digitsafter=\count330
+\nprt@digitwidth=\skip57
+\nprt@sepwidth=\skip58
+\nprt@decimalwidth=\skip59
+\nprt@blockwidth=\skip60
+\nprt@digittoks=\toks41
+\nprt@pretoks=\toks42
+\nprt@posttoks=\toks43
+\nprt@thisdigit=\count331
+\nprt@curpos=\count332
+\nprt@rndpos=\count333
+\c@nprt@digitsfirstblock=\count334
+\c@nprt@blockcnt=\count335
+\c@nprt@cntprint=\count336
+
+No configuration file `numprint.cfg' found.)
+(H:\miKtex\tex/latex/l3packages/xfp\xfp.sty
+(H:\miKtex\tex/latex/l3kernel\expl3.sty
+Package: expl3 2022-08-30 L3 programming layer (loader) 
+
+(H:\miKtex\tex/latex/l3backend\l3backend-pdftex.def
+File: l3backend-pdftex.def 2022-08-30 L3 backend support: PDF output (pdfTeX)
+\l__color_backend_stack_int=\count337
+\l__pdf_internal_box=\box135
+))
+Package: xfp 2022-06-22 L3 Floating point unit
+)
+(H:\miKtex\tex/latex/fp\fp.sty
+Package: fp 1995/04/02
+
+`Fixed Point Package', Version 0.8, April 2, 1995 (C) Michael Mehlich
+(H:\miKtex\tex/latex/fp\defpattern.sty
+Package: defpattern 1994/10/12
+\actioncount=\count338
+) (H:\miKtex\tex/latex/fp\fp-basic.sty
+Package: fp-basic 1996/05/13
+\FP@xs=\count339
+\FP@xia=\count340
+\FP@xib=\count341
+\FP@xfa=\count342
+\FP@xfb=\count343
+\FP@rega=\count344
+\FP@regb=\count345
+\FP@regs=\count346
+\FP@times=\count347
+)
+(H:\miKtex\tex/latex/fp\fp-addons.sty
+Package: fp-addons 1995/03/15
+) (H:\miKtex\tex/latex/fp\fp-snap.sty
+Package: fp-snap 1995/04/05
+)
+(H:\miKtex\tex/latex/fp\fp-exp.sty
+Package: fp-exp 1995/04/03
+) (H:\miKtex\tex/latex/fp\fp-trigo.sty
+Package: fp-trigo 1995/04/14
+)
+(H:\miKtex\tex/latex/fp\fp-pas.sty
+Package: fp-pas 1994/08/29
+) (H:\miKtex\tex/latex/fp\fp-random.sty
+Package: fp-random 1995/02/23
+\FPseed=\count348
+)
+(H:\miKtex\tex/latex/fp\fp-eqn.sty
+Package: fp-eqn 1995/04/03
+) (H:\miKtex\tex/latex/fp\fp-upn.sty
+Package: fp-upn 1996/10/21
+)
+(H:\miKtex\tex/latex/fp\fp-eval.sty
+Package: fp-eval 1995/04/03
+))
+\tkz@ax=\dimen303
+\tkz@ay=\dimen304
+\tkz@bx=\dimen305
+\tkz@by=\dimen306
+\tkz@cx=\dimen307
+\tkz@cy=\dimen308
+\tkz@dx=\dimen309
+\tkz@dy=\dimen310
+\tkz@tax=\dimen311
+\tkz@tay=\dimen312
+\tkz@tbx=\dimen313
+\tkz@tby=\dimen314
+\tkz@tcx=\dimen315
+\tkz@tcy=\dimen316
+\tkz@tdx=\dimen317
+\tkz@tdy=\dimen318
+\tkz@cntmk=\count349
+
+Local configuration file tkz-base.cfg found and used
+(H:\miKtex\tex/latex/tkz-base\tkz-base.cfg
+2022/07/14 4.2c tkz-base.cfg
+) (H:\miKtex\tex/latex/tkz-base\tkz-tools-modules.tex
+2022/07/14 4.2c tkz-tools-modules.tex
+) (H:\miKtex\tex/latex/tkz-base\tkz-lib-marks.tex
+2022/07/14 4.2c tkz-lib-marks.tex
+) (H:\miKtex\tex/latex/tkz-base\tkz-lib-shape.tex
+2022/07/14 4.2c tkz-lib-shape.tex
+) (H:\miKtex\tex/latex/tkz-base\tkz-tools-base.tex
+2022/07/14 4.2c tkz-tools-base.tex
+) (H:\miKtex\tex/latex/tkz-base\tkz-tools-utilities.tex
+2022/07/14 4.2c tkz-tools-utilities.tex
+) (H:\miKtex\tex/latex/tkz-base\tkz-tools-colors.tex
+2022/07/14 4.2c tkz-tools-colors
+) (H:\miKtex\tex/latex/tkz-base\tkz-tools-text.tex
+2022/07/14 4.2c tkz-tools-text.tex
+) (H:\miKtex\tex/latex/tkz-base\tkz-tools-BB.tex
+2022/07/14 4.2c tkz-obj-BB.tex
+) (H:\miKtex\tex/latex/tkz-base\tkz-tools-arith.tex
+2022/07/14 4.2c tkz-tools-arith.tex
+File: tkz-tool-arith.tex tkz-tool-arith 3.02 c
+) (H:\miKtex\tex/latex/tkz-base\tkz-tools-print.tex
+2022/07/14 4.2c tkz-tools-print
+) (H:\miKtex\tex/latex/tkz-base\tkz-tools-misc.tex
+2022/07/14 4.2c tkz-tools-misc.tex
+) (H:\miKtex\tex/latex/tkz-base\tkz-obj-axes.tex
+2022/07/14 4.2c tkz-obj-axes
+) (H:\miKtex\tex/latex/tkz-base\tkz-obj-grids.tex
+2022/07/14 4.2c tkz-obj-grids.tex
+) (H:\miKtex\tex/latex/tkz-base\tkz-obj-marks.tex
+2022/07/14 4.2c tkz-obj-marks.tex
+) (H:\miKtex\tex/latex/tkz-base\tkz-obj-points.tex
+2022/07/14 4.2c tkz-obj-points.tex
+) (H:\miKtex\tex/latex/tkz-base\tkz-obj-rep.tex
+2022/07/14 4.2c tkz-obj-rep.tex
+)) (H:\miKtex\tex/latex/tkz-fct\tkz-fct.sty
+2022/01/27 1.7c function tkz-fct
+Package: tkz-fct 2022/01/27 1.7c function 
+\tkz@tkzf@fct=\count350
+( FP-EVAL ( FP-UPN ) ) ( FP-EVAL ( FP-UPN ) ) ( FP-EVAL ( FP-UPN ( FP-SUB ) )
+) ( FP-EVAL ( FP-UPN ) ) ( FP-EVAL ( FP-UPN ( FP-SUB ) ) ) ( FP-EVAL ( FP-UPN
+) )) (H:\miKtex\tex/latex/tkz-tab\tkz-tab.sty
+Package: tkz-tab 2020/04/29 v2.12c variations (ctan version)
+
+(H:\miKtex\tex/latex/base\ifthen.sty
+Package: ifthen 2022/04/13 v1.1d Standard LaTeX ifthen package (DPC)
+) (H:\miKtex\tex/latex/xkeyval\xkeyval.sty
+Package: xkeyval 2022/06/16 v2.9 package option processing (HA)
+
+(H:\miKtex\tex/generic/xkeyval\xkeyval.tex
+(H:\miKtex\tex/generic/xkeyval\xkvutils.tex
+\XKV@toks=\toks44
+\XKV@tempa@toks=\toks45
+)
+\XKV@depth=\count351
+File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
+))
+\tkz@XF=\dimen319
+\tkz@YF=\dimen320
+\c@tkz@cnt@line=\count352
+\c@tkz@cnt@lg=\count353
+\c@tkz@cnt@cl=\count354
+\c@tkz@cnt@pred=\count355
+\c@tkz@cnt@temp=\count356
+\c@tkz@cnt@arrow=\count357
+\c@tkz@cnt@zone=\count358
+\c@tkz@cnt@lgnext=\count359
+\c@tkz@cnt@clnext=\count360
+\c@tkz@cnt@pair=\count361
+\c@tkz@cnt@impair=\count362
+\c@tkz@cnt@aw=\count363
+)
+(H:\miKtex\tex/latex/tkz-euclide\tkz-euclide.sty
+2022/09/23 4.25c tkz-euclide.sty
+Package: tkz-euclide  2022/09/23 4.25c for pure Euclidean Geometry 
+\tkzRadius=\dimen321
+\tkzLength=\dimen322
+\tkz@radi=\dimen323
+(H:\miKtex\tex/latex/tkz-euclide\tkz-tools-eu-angles.tex
+2022/09/23 4.25c tkz-tools-eu-angles.tex
+) (H:\miKtex\tex/latex/tkz-euclide\tkz-tools-eu-intersections.tex
+2022/09/23 4.25c tkz-tools-eu-intersections.tex
+) (H:\miKtex\tex/latex/tkz-euclide\tkz-tools-eu-math.tex
+2022/09/23 4.25c tkz-tools-eu-math.tex
+) (H:\miKtex\tex/latex/tkz-euclide\tkz-obj-eu-compass.tex
+2022/09/23 4.25c tkz-obj-eu-compass.tex
+) (H:\miKtex\tex/latex/tkz-euclide\tkz-obj-eu-circles.tex
+2022/09/23 4.25c tkz-obj-eu-circles.tex
+) (H:\miKtex\tex/latex/tkz-euclide\tkz-obj-eu-circles-by.tex
+2022/09/23 4.25c tkz-obj-eu-circles.tex
+) (H:\miKtex\tex/latex/tkz-euclide\tkz-obj-eu-draw-angles.tex
+2022/09/23 4.25c tkz-tool-eu-angles.tex
+) (H:\miKtex\tex/latex/tkz-euclide\tkz-obj-eu-draw-circles.tex
+2022/09/23 4.25c tkz-obj-eu-draw-circles.tex
+) (H:\miKtex\tex/latex/tkz-euclide\tkz-obj-eu-draw-lines.tex
+2022/09/23 4.25c tkz-obj-eu-draw-lines.tex
+) (H:\miKtex\tex/latex/tkz-euclide\tkz-obj-eu-draw-polygons.tex
+2022/09/23 4.25c tkz-obj-eu-polygons.tex
+) (H:\miKtex\tex/latex/tkz-euclide\tkz-obj-eu-lines.tex
+2022/09/23 4.25c tkz-obj-eu-lines.tex
+) (H:\miKtex\tex/latex/tkz-euclide\tkz-obj-eu-points-by.tex
+2022/09/23 4.25c tkz-tools-eu-points-by.tex
+) (H:\miKtex\tex/latex/tkz-euclide\tkz-obj-eu-points-rnd.tex
+2022/09/23 4.25c tkz-obj-eu-points-rnd.tex
+) (H:\miKtex\tex/latex/tkz-euclide\tkz-obj-eu-points-spc.tex
+2022/09/23 4.25c tkz-obj-eu-points.tex
+) (H:\miKtex\tex/latex/tkz-euclide\tkz-obj-eu-points-with.tex
+2022/09/23 4.25c tkz-obj-eu-points-with.tex
+) (H:\miKtex\tex/latex/tkz-euclide\tkz-obj-eu-polygons.tex
+2022/09/23 4.25c tkz-obj-eu-polygons.tex
+) (H:\miKtex\tex/latex/tkz-euclide\tkz-obj-eu-protractor.tex
+2022/09/23 4.25c tkz-obj-eu-protractor.tex
+) (H:\miKtex\tex/latex/tkz-euclide\tkz-obj-eu-sectors.tex
+2022/09/23 4.25c tkz-obj-eu-sectors.tex
+) (H:\miKtex\tex/latex/tkz-euclide\tkz-obj-eu-show.tex
+2022/09/23 4.25c tkz-obj-eu-show.tex
+) (H:\miKtex\tex/latex/tkz-euclide\tkz-obj-eu-triangles.tex
+2022/09/23 4.25c tkz-obj-eu-triangles.tex
+)) (H:\miKtex\tex/latex/amsmath\amsmath.sty
+Package: amsmath 2022/04/08 v2.17n AMS math features
+\@mathmargin=\skip61
+
+For additional information on amsmath, use the `?' option.
+(H:\miKtex\tex/latex/amsmath\amstext.sty
+Package: amstext 2021/08/26 v2.01 AMS text
+
+(H:\miKtex\tex/latex/amsmath\amsgen.sty
+File: amsgen.sty 1999/11/30 v2.0 generic functions
+\@emptytoks=\toks46
+\ex@=\dimen324
+))
+(H:\miKtex\tex/latex/amsmath\amsbsy.sty
+Package: amsbsy 1999/11/29 v1.2d Bold Symbols
+\pmbraise@=\dimen325
+)
+(H:\miKtex\tex/latex/amsmath\amsopn.sty
+Package: amsopn 2022/04/08 v2.04 operator names
+)
+\inf@bad=\count364
+LaTeX Info: Redefining \frac on input line 234.
+\uproot@=\count365
+\leftroot@=\count366
+LaTeX Info: Redefining \overline on input line 399.
+LaTeX Info: Redefining \colon on input line 410.
+\classnum@=\count367
+\DOTSCASE@=\count368
+LaTeX Info: Redefining \ldots on input line 496.
+LaTeX Info: Redefining \dots on input line 499.
+LaTeX Info: Redefining \cdots on input line 620.
+\Mathstrutbox@=\box136
+\strutbox@=\box137
+LaTeX Info: Redefining \big on input line 722.
+LaTeX Info: Redefining \Big on input line 723.
+LaTeX Info: Redefining \bigg on input line 724.
+LaTeX Info: Redefining \Bigg on input line 725.
+\big@size=\dimen326
+LaTeX Font Info:    Redeclaring font encoding OML on input line 743.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 744.
+\macc@depth=\count369
+LaTeX Info: Redefining \bmod on input line 905.
+LaTeX Info: Redefining \pmod on input line 910.
+LaTeX Info: Redefining \smash on input line 940.
+LaTeX Info: Redefining \relbar on input line 970.
+LaTeX Info: Redefining \Relbar on input line 971.
+\c@MaxMatrixCols=\count370
+\dotsspace@=\muskip16
+\c@parentequation=\count371
+\dspbrk@lvl=\count372
+\tag@help=\toks47
+\row@=\count373
+\column@=\count374
+\maxfields@=\count375
+\andhelp@=\toks48
+\eqnshift@=\dimen327
+\alignsep@=\dimen328
+\tagshift@=\dimen329
+\tagwidth@=\dimen330
+\totwidth@=\dimen331
+\lineht@=\dimen332
+\@envbody=\toks49
+\multlinegap=\skip62
+\multlinetaggap=\skip63
+\mathdisplay@stack=\toks50
+LaTeX Info: Redefining \[ on input line 2953.
+LaTeX Info: Redefining \] on input line 2954.
+)
+(H:\miKtex\tex/latex/amsfonts\amsfonts.sty
+Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
+\symAMSa=\mathgroup5
+\symAMSb=\mathgroup6
+LaTeX Font Info:    Redeclaring math symbol \hbar on input line 98.
+LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
+(Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
+)
+(H:\miKtex\tex/latex/amsfonts\amssymb.sty
+Package: amssymb 2013/01/14 v3.01 AMS font symbols
+)
+(H:\miKtex\tex/latex/siunits\SIunits.sty
+Package: SIunits 2007/12/02 v1.36 Support for the International System of units
+ (MH)
+
+
+\@qskwidth=\skip64
+LaTeX Font Info:    Redeclaring font encoding TS1 on input line 46.
+\symgreek=\mathgroup7
+(H:\miKtex\tex/latex/siunits\SIunits.cfg)
+Option `squaren' provided!
+) (H:\miKtex\tex/latex/psnfss\pifont.sty
+Package: pifont 2020/03/25 PSNFSS-v9.3 Pi font support (SPQR) 
+LaTeX Font Info:    Trying to load font information for U+pzd on input line 63.
+
+ (H:\miKtex\tex/latex/psnfss\upzd.fd
+File: upzd.fd 2001/06/04 font definitions for U/pzd.
+)
+LaTeX Font Info:    Trying to load font information for U+psy on input line 64.
+
+
+(H:\miKtex\tex/latex/psnfss\upsy.fd
+File: upsy.fd 2001/06/04 font definitions for U/psy.
+)) (H:\miKtex\tex/latex/bbding\bbding.sty
+Package: bbding 1999/04/15 v1.01 Dingbats symbols
+)
+(H:\miKtex\tex/fonts/ifsym\ifsym.sty
+Package: ifsym 2000/04/18 I.Kloeckl
+\c@ifsymcnt=\count376
+) (H:\miKtex\tex/latex/cancel\cancel.sty
+Package: cancel 2013/04/12 v2.2 Cancel math terms
+)
+(H:\miKtex\tex/latex/url\url.sty
+\Urlmuskip=\muskip17
+Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
+) (H:\miKtex\tex/latex/eurosym\eurosym.sty
+Package: eurosym 1998/08/06 v1.1 European currency symbol ``Euro''
+\@eurobox=\box138
+)
+(H:\miKtex\tex/latex/fancyhdr\fancyhdr.sty
+Package: fancyhdr 2022/05/18 v4.0.3 Extensive control of page headers and foote
+rs
+\f@nch@headwidth=\skip65
+\f@nch@O@elh=\skip66
+\f@nch@O@erh=\skip67
+\f@nch@O@olh=\skip68
+\f@nch@O@orh=\skip69
+\f@nch@O@elf=\skip70
+\f@nch@O@erf=\skip71
+\f@nch@O@olf=\skip72
+\f@nch@O@orf=\skip73
+)
+(H:\miKtex\tex/latex/lastpage\lastpage.sty
+Package: lastpage 2021/09/03 v1.2n Refers to last page's name (HMM; JPG)
+)
+(H:\miKtex\tex/latex/fancybox\fancybox.sty
+Package: fancybox 2010/05/15 1.4
+
+Style option: `fancybox' v1.4 <2010/05/15> (tvz)
+\@fancybox=\box139
+\shadowsize=\dimen333
+\@Sbox=\box140
+\do@VerbBox=\toks51
+\the@fancyput=\toks52
+\this@fancyput=\toks53
+\EndVerbatimTokens=\toks54
+\Verbatim@Outfile=\write4
+\Verbatim@Infile=\read4
+) (H:\miKtex\tex/latex/xlop\xlop.sty
+Package: xlop 2020/04/26 package wrapper for xlop.tex
+ (H:\miKtex\tex/generic/xlop\xlop.tex
+\op@count@z=\count377
+\op@count@i=\count378
+\op@count@ii=\count379
+\op@count@iii=\count380
+\op@count@iv=\count381
+\op@count@v=\count382
+\op@count@vi=\count383
+\op@nbop=\count384
+\op@currentstyle=\toks55
+
+`xlop' v0.28  <2020/11/11> (jcc)
+\opcolumnwidth=\dimen334
+\oplineheight=\dimen335
+\op@strutbox=\box141
+\op@decimalsepwidth=\dimen336
+\op@decimalsepoffset=\dimen337
+\op@hrulewidth=\dimen338
+\op@vrulewidth=\dimen339
+\op@parenthesis=\count385
+\op@token=\count386
+\op@stack=\count387
+\op@stackb=\count388
+)) (H:\miKtex\tex/latex/standalone\standalone.sty
+Package: standalone 2018/03/26 v1.3a Package to include TeX sub-files with prea
+mbles
+
+(H:\miKtex\tex/latex/tools\shellesc.sty
+Package: shellesc 2019/11/08 v1.0c unified shell escape interface for LaTeX
+Package shellesc Info: Restricted shell escape enabled on input line 77.
+)
+(H:\miKtex\tex/latex/currfile\currfile.sty
+Package: currfile 2020/09/29 v0.7d Provides the file path elements of the curre
+nt input file
+
+(H:\miKtex\tex/latex/kvoptions\kvoptions.sty
+Package: kvoptions 2022-06-15 v3.15 Key value format for package options (HO)
+
+(H:\miKtex\tex/generic/ltxcmds\ltxcmds.sty
+Package: ltxcmds 2020-05-10 v1.25 LaTeX kernel commands for general use (HO)
+)
+(H:\miKtex\tex/generic/kvsetkeys\kvsetkeys.sty
+Package: kvsetkeys 2019/12/15 v1.18 Key value parser (HO)
+))
+(H:\miKtex\tex/latex/filehook\filehook.sty
+Package: filehook 2020/09/29 v0.8a Hooks for input files
+
+(H:\miKtex\tex/latex/filehook\filehook-2020.sty
+Package: filehook-2020 2020/09/29 v0.8a Hooks for input files
+))
+\c@currfiledepth=\count389
+)
+(H:\miKtex\tex/latex/gincltex\gincltex.sty
+(H:\miKtex\tex/latex/svn-prov\svn-prov.sty
+Package: svn-prov 2010/04/24 v3.1862 Package Date/Version from SVN Keywords
+)
+Package: gincltex 2011/09/04 v0.3 Include external LaTeX files like graphics
+
+(H:\miKtex\tex/latex/adjustbox\adjustbox.sty
+Package: adjustbox 2020/08/19 v1.3 Adjusting TeX boxes (trim, clip, ...)
+
+(H:\miKtex\tex/latex/adjustbox\adjcalc.sty
+Package: adjcalc 2012/05/16 v1.1 Provides advanced setlength with multiple back
+-ends (calc, etex, pgfmath)
+)
+(H:\miKtex\tex/latex/adjustbox\trimclip.sty
+Package: trimclip 2020/08/19 v1.2 Trim and clip general TeX material
+
+(H:\miKtex\tex/latex/collectbox\collectbox.sty
+Package: collectbox 2012/05/17 v0.4b Collect macro arguments as boxes
+\collectedbox=\box142
+)
+\tc@llx=\dimen340
+\tc@lly=\dimen341
+\tc@urx=\dimen342
+\tc@ury=\dimen343
+Package trimclip Info: Using driver 'tc-pdftex.def'.
+
+(H:\miKtex\tex/latex/adjustbox\tc-pdftex.def
+File: tc-pdftex.def 2019/01/04 v2.2 Clipping driver for pdftex
+))
+\adjbox@Width=\dimen344
+\adjbox@Height=\dimen345
+\adjbox@Depth=\dimen346
+\adjbox@Totalheight=\dimen347
+\adjbox@pwidth=\dimen348
+\adjbox@pheight=\dimen349
+\adjbox@pdepth=\dimen350
+\adjbox@ptotalheight=\dimen351
+
+(H:\miKtex\tex/latex/ifoddpage\ifoddpage.sty
+Package: ifoddpage 2016/04/23 v1.1 Conditionals for odd/even page detection
+\c@checkoddpage=\count390
+)
+(H:\miKtex\tex/latex/varwidth\varwidth.sty
+Package: varwidth 2009/03/30 ver 0.92;  Variable-width minipages
+\@vwid@box=\box143
+\sift@deathcycles=\count391
+\@vwid@loff=\dimen352
+\@vwid@roff=\dimen353
+))
+\gincltex@box=\box144
+)
+(H:\miKtex\tex/latex/filemod\filemod-expmin.sty
+Package: filemod-expmin 2011/09/19 v1.2 Get and compare file modification times
+ (expandable; minimal)
+))
+(H:\miKtex\tex/latex/multido\multido.sty
+Package: multido 2004/05/17 package wrapper for PSTricks `multido.tex', (HV/RN)
+
+
+(H:\miKtex\tex/generic/multido\multido.tex  v1.42, 2010/05/14 <tvz>
+\multido@count=\count392
+\multidocount=\count393
+\multido@stuff=\toks56
+)
+File: multido.tex 2010/05/14 v1.42 `multido' (tvz,hv)
+)
+(H:\miKtex\tex/latex/hyperref\hyperref.sty
+Package: hyperref 2022-09-22 v7.00t Hypertext links for LaTeX
+
+(H:\miKtex\tex/generic/pdftexcmds\pdftexcmds.sty
+Package: pdftexcmds 2020-06-27 v0.33 Utility functions of pdfTeX for LuaTeX (HO
+)
+
+(H:\miKtex\tex/generic/infwarerr\infwarerr.sty
+Package: infwarerr 2019/12/03 v1.5 Providing info/warning/error messages (HO)
+)
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode found.
+)
+(H:\miKtex\tex/generic/kvdefinekeys\kvdefinekeys.sty
+Package: kvdefinekeys 2019-12-19 v1.6 Define keys (HO)
+)
+(H:\miKtex\tex/generic/pdfescape\pdfescape.sty
+Package: pdfescape 2019/12/09 v1.15 Implements pdfTeX's escape features (HO)
+)
+(H:\miKtex\tex/latex/hycolor\hycolor.sty
+Package: hycolor 2020-01-27 v1.10 Color options for hyperref/bookmark (HO)
+)
+(H:\miKtex\tex/latex/letltxmacro\letltxmacro.sty
+Package: letltxmacro 2019/12/03 v1.6 Let assignment for LaTeX macros (HO)
+)
+(H:\miKtex\tex/latex/auxhook\auxhook.sty
+Package: auxhook 2019-12-17 v1.6 Hooks for auxiliary files (HO)
+)
+(H:\miKtex\tex/latex/hyperref\nameref.sty
+Package: nameref 2022-05-17 v2.50 Cross-referencing by name of section
+
+(H:\miKtex\tex/latex/refcount\refcount.sty
+Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
+)
+(H:\miKtex\tex/generic/gettitlestring\gettitlestring.sty
+Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
+)
+\c@section@level=\count394
+)
+\@linkdim=\dimen354
+\Hy@linkcounter=\count395
+\Hy@pagecounter=\count396
+
+(H:\miKtex\tex/latex/hyperref\pd1enc.def
+File: pd1enc.def 2022-09-22 v7.00t Hyperref: PDFDocEncoding definition (HO)
+Now handling font encoding PD1 ...
+... no UTF-8 mapping file for font encoding PD1
+)
+(H:\miKtex\tex/generic/intcalc\intcalc.sty
+Package: intcalc 2019/12/15 v1.3 Expandable calculations with integers (HO)
+)
+(H:\miKtex\tex/generic/etexcmds\etexcmds.sty
+Package: etexcmds 2019/12/15 v1.7 Avoid name clashes with e-TeX commands (HO)
+)
+\Hy@SavedSpaceFactor=\count397
+
+(H:\miKtex\tex/latex/hyperref\puenc.def
+File: puenc.def 2022-09-22 v7.00t Hyperref: PDF Unicode definition (HO)
+Now handling font encoding PU ...
+... no UTF-8 mapping file for font encoding PU
+)
+Package hyperref Info: Hyper figures OFF on input line 4162.
+Package hyperref Info: Link nesting OFF on input line 4167.
+Package hyperref Info: Hyper index ON on input line 4170.
+Package hyperref Info: Plain pages OFF on input line 4177.
+Package hyperref Info: Backreferencing OFF on input line 4182.
+Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
+\stockwidth=\dimen355
+\stockheight=\dimen356
+Package hyperref Info: Bookmarks ON on input line 4410.
+\c@Hy@tempcnt=\count398
+LaTeX Info: Redefining \url on input line 4748.
+\XeTeXLinkMargin=\dimen357
+
+(H:\miKtex\tex/generic/bitset\bitset.sty
+Package: bitset 2019/12/09 v1.3 Handle bit-vector datatype (HO)
+
+(H:\miKtex\tex/generic/bigintcalc\bigintcalc.sty
+Package: bigintcalc 2019/12/15 v1.5 Expandable calculations on big integers (HO
+)
+))
+\Fld@menulength=\count399
+\Field@Width=\dimen358
+\Fld@charsize=\dimen359
+Package hyperref Info: Hyper figures OFF on input line 6027.
+Package hyperref Info: Link nesting OFF on input line 6032.
+Package hyperref Info: Hyper index ON on input line 6035.
+Package hyperref Info: backreferencing OFF on input line 6042.
+Package hyperref Info: Link coloring OFF on input line 6047.
+Package hyperref Info: Link coloring with OCG OFF on input line 6052.
+Package hyperref Info: PDF/A mode OFF on input line 6057.
+
+(H:\miKtex\tex/latex/base\atbegshi-ltx.sty
+Package: atbegshi-ltx 2021/01/10 v1.0c Emulation of the original atbegshi
+package with kernel methods
+)
+\Hy@abspage=\count400
+\c@Item=\count401
+\c@Hfootnote=\count402
+)
+Package hyperref Info: Driver (autodetected): hpdftex.
+
+(H:\miKtex\tex/latex/hyperref\hpdftex.def
+File: hpdftex.def 2022-09-22 v7.00t Hyperref driver for pdfTeX
+
+(H:\miKtex\tex/latex/base\atveryend-ltx.sty
+Package: atveryend-ltx 2020/08/19 v1.0a Emulation of the original atveryend pac
+kage
+with kernel methods
+)
+\Fld@listcount=\count403
+\c@bookmark@seq@number=\count404
+
+(H:\miKtex\tex/latex/rerunfilecheck\rerunfilecheck.sty
+Package: rerunfilecheck 2022-07-10 v1.10 Rerun checks for auxiliary files (HO)
+
+(H:\miKtex\tex/generic/uniquecounter\uniquecounter.sty
+Package: uniquecounter 2019/12/15 v1.4 Provide unlimited unique counter (HO)
+)
+Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
+85.
+)
+\Hy@SectionHShift=\skip74
+)
+(H:\miKtex\tex/latex/fourier\fourier.sty
+Package: fourier 2022/02/05 2.3 fourier-GUTenberg package
+Now handling font encoding FML ...
+... no UTF-8 mapping file for font encoding FML
+Now handling font encoding FMS ...
+... no UTF-8 mapping file for font encoding FMS
+Now handling font encoding FMX ...
+... no UTF-8 mapping file for font encoding FMX
+ (H:\miKtex\tex/latex/base\fontenc.sty
+Package: fontenc 2021/04/29 v2.0v Standard LaTeX package
+LaTeX Font Info:    Trying to load font information for T1+futs on input line 1
+12.
+
+(H:\miKtex\tex/latex/fourier\t1futs.fd
+File: t1futs.fd 2004/03/02 Fontinst v1.926 font definitions for T1/futs.
+)) (H:\miKtex\tex/latex/base\textcomp.sty
+Package: textcomp 2020/02/02 v2.0n Standard LaTeX package
+) (H:\miKtex\tex/latex/fourier\fourier-orns.sty
+Package: fourier-orns 2022/02/05 2.3 fourier-ornaments package
+)
+LaTeX Font Info:    Redeclaring symbol font `operators' on input line 63.
+LaTeX Font Info:    Encoding `OT1' has changed to `T1' for symbol font
+(Font)              `operators' in the math version `normal' on input line 63.
+LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
+(Font)                  OT1/lmr/m/n --> T1/futs/m/n on input line 63.
+LaTeX Font Info:    Encoding `OT1' has changed to `T1' for symbol font
+(Font)              `operators' in the math version `bold' on input line 63.
+LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
+(Font)                  OT1/lmr/bx/n --> T1/futs/m/n on input line 63.
+LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
+(Font)                  T1/futs/m/n --> T1/futs/b/n on input line 64.
+LaTeX Font Info:    Redeclaring symbol font `letters' on input line 72.
+LaTeX Font Info:    Encoding `OML' has changed to `FML' for symbol font
+(Font)              `letters' in the math version `normal' on input line 72.
+LaTeX Font Info:    Overwriting symbol font `letters' in version `normal'
+(Font)                  OML/lmm/m/it --> FML/futmi/m/it on input line 72.
+LaTeX Font Info:    Encoding `OML' has changed to `FML' for symbol font
+(Font)              `letters' in the math version `bold' on input line 72.
+LaTeX Font Info:    Overwriting symbol font `letters' in version `bold'
+(Font)                  OML/lmm/b/it --> FML/futmi/m/it on input line 72.
+\symotherletters=\mathgroup8
+LaTeX Font Info:    Overwriting symbol font `letters' in version `bold'
+(Font)                  FML/futmi/m/it --> FML/futmi/b/it on input line 74.
+LaTeX Font Info:    Overwriting symbol font `otherletters' in version `bold'
+(Font)                  FML/futm/m/it --> FML/futm/b/it on input line 75.
+LaTeX Font Info:    Redeclaring math symbol \Gamma on input line 76.
+LaTeX Font Info:    Redeclaring math symbol \Delta on input line 77.
+LaTeX Font Info:    Redeclaring math symbol \Theta on input line 78.
+LaTeX Font Info:    Redeclaring math symbol \Lambda on input line 79.
+LaTeX Font Info:    Redeclaring math symbol \Xi on input line 80.
+LaTeX Font Info:    Redeclaring math symbol \Pi on input line 81.
+LaTeX Font Info:    Redeclaring math symbol \Sigma on input line 82.
+LaTeX Font Info:    Redeclaring math symbol \Upsilon on input line 83.
+LaTeX Font Info:    Redeclaring math symbol \Phi on input line 84.
+LaTeX Font Info:    Redeclaring math symbol \Psi on input line 85.
+LaTeX Font Info:    Redeclaring math symbol \Omega on input line 86.
+LaTeX Font Info:    Redeclaring symbol font `symbols' on input line 126.
+LaTeX Font Info:    Encoding `OMS' has changed to `FMS' for symbol font
+(Font)              `symbols' in the math version `normal' on input line 126.
+LaTeX Font Info:    Overwriting symbol font `symbols' in version `normal'
+(Font)                  OMS/lmsy/m/n --> FMS/futm/m/n on input line 126.
+LaTeX Font Info:    Encoding `OMS' has changed to `FMS' for symbol font
+(Font)              `symbols' in the math version `bold' on input line 126.
+LaTeX Font Info:    Overwriting symbol font `symbols' in version `bold'
+(Font)                  OMS/lmsy/b/n --> FMS/futm/m/n on input line 126.
+LaTeX Font Info:    Redeclaring symbol font `largesymbols' on input line 127.
+LaTeX Font Info:    Encoding `OMX' has changed to `FMX' for symbol font
+(Font)              `largesymbols' in the math version `normal' on input line 1
+27.
+LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `normal'
+(Font)                  OMX/lmex/m/n --> FMX/futm/m/n on input line 127.
+LaTeX Font Info:    Encoding `OMX' has changed to `FMX' for symbol font
+(Font)              `largesymbols' in the math version `bold' on input line 127
+.
+LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `bold'
+(Font)                  OMX/lmex/m/n --> FMX/futm/m/n on input line 127.
+LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 128.
+LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
+(Font)                  OT1/lmr/bx/n --> T1/futs/bx/n on input line 128.
+LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `bold'
+(Font)                  OT1/lmr/bx/n --> T1/futs/bx/n on input line 128.
+LaTeX Font Info:    Redeclaring math alphabet \mathrm on input line 129.
+LaTeX Font Info:    Redeclaring math alphabet \mathit on input line 130.
+LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
+(Font)                  OT1/lmr/m/it --> T1/futs/m/it on input line 130.
+LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
+(Font)                  OT1/lmr/bx/it --> T1/futs/m/it on input line 130.
+LaTeX Font Info:    Redeclaring math alphabet \mathcal on input line 131.
+LaTeX Font Info:    Redeclaring math symbol \varkappa on input line 132.
+LaTeX Font Info:    Redeclaring math symbol \leqslant on input line 138.
+LaTeX Font Info:    Redeclaring math symbol \geqslant on input line 139.
+LaTeX Font Info:    Redeclaring math symbol \vDash on input line 142.
+LaTeX Font Info:    Redeclaring math symbol \blacktriangleleft on input line 14
+3.
+LaTeX Font Info:    Redeclaring math symbol \blacktriangleright on input line 1
+44.
+LaTeX Font Info:    Redeclaring math symbol \nleqslant on input line 145.
+LaTeX Font Info:    Redeclaring math symbol \ngeqslant on input line 146.
+LaTeX Font Info:    Redeclaring math symbol \parallel on input line 147.
+LaTeX Font Info:    Redeclaring math symbol \nparallel on input line 148.
+LaTeX Font Info:    Redeclaring math symbol \nvDash on input line 150.
+LaTeX Font Info:    Redeclaring math symbol \intercal on input line 151.
+LaTeX Font Info:    Redeclaring math symbol \hslash on input line 152.
+LaTeX Font Info:    Redeclaring math symbol \nexists on input line 153.
+LaTeX Font Info:    Redeclaring math symbol \complement on input line 154.
+LaTeX Font Info:    Redeclaring math symbol \varsubsetneq on input line 155.
+LaTeX Font Info:    Redeclaring math symbol \hbar on input line 161.
+LaTeX Font Info:    Redeclaring math symbol \smallsetminus on input line 162.
+LaTeX Font Info:    Redeclaring math symbol \subsetneqq on input line 163.
+LaTeX Font Info:    Redeclaring math symbol \rightrightarrows on input line 164
+.
+LaTeX Font Info:    Redeclaring math symbol \leftleftarrows on input line 165.
+LaTeX Font Info:    Redeclaring math symbol \square on input line 166.
+LaTeX Font Info:    Redeclaring math symbol \curvearrowleft on input line 167.
+LaTeX Font Info:    Redeclaring math symbol \curvearrowright on input line 168.
+
+LaTeX Font Info:    Redeclaring math symbol \blacksquare on input line 169.
+LaTeX Font Info:    Redeclaring math symbol \varkappa on input line 199.
+LaTeX Font Info:    Redeclaring math symbol \varvarrho on input line 200.
+LaTeX Font Info:    Redeclaring math delimiter \Vert on input line 223.
+LaTeX Font Info:    Redeclaring math delimiter \vert on input line 228.
+LaTeX Font Info:    Redeclaring math delimiter \lvert on input line 230.
+LaTeX Font Info:    Redeclaring math delimiter \rvert on input line 232.
+LaTeX Font Info:    Redeclaring math delimiter \lVert on input line 234.
+LaTeX Font Info:    Redeclaring math delimiter \rVert on input line 236.
+LaTeX Font Info:    Redeclaring math delimiter \Downarrow on input line 238.
+LaTeX Font Info:    Redeclaring math delimiter \backslash on input line 240.
+LaTeX Font Info:    Redeclaring math delimiter \rangle on input line 242.
+LaTeX Font Info:    Redeclaring math delimiter \langle on input line 244.
+LaTeX Font Info:    Redeclaring math delimiter \rbrace on input line 246.
+LaTeX Font Info:    Redeclaring math delimiter \lbrace on input line 248.
+LaTeX Font Info:    Redeclaring math delimiter \rceil on input line 250.
+LaTeX Font Info:    Redeclaring math delimiter \lceil on input line 252.
+LaTeX Font Info:    Redeclaring math delimiter \rfloor on input line 254.
+LaTeX Font Info:    Redeclaring math delimiter \lfloor on input line 256.
+LaTeX Font Info:    Redeclaring math accent \acute on input line 260.
+LaTeX Font Info:    Redeclaring math accent \grave on input line 261.
+LaTeX Font Info:    Redeclaring math accent \ddot on input line 262.
+LaTeX Font Info:    Redeclaring math accent \tilde on input line 263.
+LaTeX Font Info:    Redeclaring math accent \bar on input line 264.
+LaTeX Font Info:    Redeclaring math accent \breve on input line 265.
+LaTeX Font Info:    Redeclaring math accent \check on input line 266.
+LaTeX Font Info:    Redeclaring math accent \hat on input line 267.
+LaTeX Font Info:    Redeclaring math accent \dot on input line 268.
+LaTeX Font Info:    Redeclaring math accent \mathring on input line 269.
+\symUfutm=\mathgroup9
+)
+(H:\miKtex\tex/latex/colortbl\colortbl.sty
+Package: colortbl 2022/06/20 v1.0f Color table columns (DPC)
+\everycr=\toks57
+\minrowclearance=\skip75
+\rownum=\count405
+)
+(H:\miKtex\tex/latex/setspace\setspace.sty
+Package: setspace 2011/12/19 v6.7a set line spacing
+)
+(H:\miKtex\tex/latex/multirow\multirow.sty
+Package: multirow 2021/03/15 v2.8 Span multiple rows of a table
+\multirow@colwidth=\skip76
+\multirow@cntb=\count406
+\multirow@dima=\skip77
+\bigstrutjot=\dimen360
+)
+(H:\miKtex\tex/latex/import\import.sty
+Package: import 2020/04/01  v 6.2
+) (H:\miKtex\tex/latex/qrcode\qrcode.sty
+Package: qrcode 2015/01/08 v1.51 QR code generation
+\c@qr@i=\count407
+\c@qr@j=\count408
+\qr@a=\count409
+\qr@b=\count410
+\qr@c=\count411
+\qr@for@depth=\count412
+\qr@for@maxdepth=\count413
+\qr@for@start=\count414
+\qr@for@end=\count415
+\qr@for@step=\count416
+\qr@newforcount=\count417
+\qr@newforcount=\count418
+\qr@desiredheight=\skip78
+\qr@modulesize=\skip79
+\qr@minipagewidth=\skip80
+\c@maski=\count419
+\c@maskj=\count420
+\c@totalones=\count421
+\c@penaltyi=\count422
+\c@penaltyii=\count423
+\c@penaltyiii=\count424
+\c@penaltyiv=\count425
+\c@qr@hexchars=\count426
+\qr@newforcount=\count427
+\c@qr@divisionsremaining=\count428
+) (H:\miKtex\tex/latex/pdflscape\pdflscape.sty
+Package: pdflscape 2019/12/05 v0.12 Display of landscape pages in PDF (HO)
+
+(H:\miKtex\tex/latex/graphics\lscape.sty
+Package: lscape 2020/05/28 v3.02 Landscape Pages (DPC)
+)
+Package pdflscape Info: Auto-detected driver: pdftex on input line 81.
+)
+(H:\miKtex\tex/latex/mdframed\mdframed.sty
+Package: mdframed 2013/07/01 1.9b: mdframed
+
+(H:\miKtex\tex/latex/l3packages/xparse\xparse.sty
+Package: xparse 2022-06-22 L3 Experimental document command parser
+)
+(H:\miKtex\tex/latex/etoolbox\etoolbox.sty
+Package: etoolbox 2020/10/05 v2.5k e-TeX tools for LaTeX (JAW)
+\etb@tempcnta=\count429
+)
+(H:\miKtex\tex/latex/zref\zref-abspage.sty
+Package: zref-abspage 2022-04-07 v2.34 Module abspage for zref (HO)
+
+(H:\miKtex\tex/latex/zref\zref-base.sty
+Package: zref-base 2022-04-07 v2.34 Module base for zref (HO)
+Package zref Info: New property list: main on input line 767.
+Package zref Info: New property: default on input line 768.
+Package zref Info: New property: page on input line 769.
+)
+\c@abspage=\count430
+Package zref Info: New property: abspage on input line 65.
+)
+(H:\miKtex\tex/latex/needspace\needspace.sty
+Package: needspace 2010/09/12 v1.3d reserve vertical space
+)
+\mdf@templength=\skip81
+\c@mdf@globalstyle@cnt=\count431
+\mdf@skipabove@length=\skip82
+\mdf@skipbelow@length=\skip83
+\mdf@leftmargin@length=\skip84
+\mdf@rightmargin@length=\skip85
+\mdf@innerleftmargin@length=\skip86
+\mdf@innerrightmargin@length=\skip87
+\mdf@innertopmargin@length=\skip88
+\mdf@innerbottommargin@length=\skip89
+\mdf@splittopskip@length=\skip90
+\mdf@splitbottomskip@length=\skip91
+\mdf@outermargin@length=\skip92
+\mdf@innermargin@length=\skip93
+\mdf@linewidth@length=\skip94
+\mdf@innerlinewidth@length=\skip95
+\mdf@middlelinewidth@length=\skip96
+\mdf@outerlinewidth@length=\skip97
+\mdf@roundcorner@length=\skip98
+\mdf@footenotedistance@length=\skip99
+\mdf@userdefinedwidth@length=\skip100
+\mdf@needspace@length=\skip101
+\mdf@frametitleaboveskip@length=\skip102
+\mdf@frametitlebelowskip@length=\skip103
+\mdf@frametitlerulewidth@length=\skip104
+\mdf@frametitleleftmargin@length=\skip105
+\mdf@frametitlerightmargin@length=\skip106
+\mdf@shadowsize@length=\skip107
+\mdf@extratopheight@length=\skip108
+\mdf@subtitleabovelinewidth@length=\skip109
+\mdf@subtitlebelowlinewidth@length=\skip110
+\mdf@subtitleaboveskip@length=\skip111
+\mdf@subtitlebelowskip@length=\skip112
+\mdf@subtitleinneraboveskip@length=\skip113
+\mdf@subtitleinnerbelowskip@length=\skip114
+\mdf@subsubtitleabovelinewidth@length=\skip115
+\mdf@subsubtitlebelowlinewidth@length=\skip116
+\mdf@subsubtitleaboveskip@length=\skip117
+\mdf@subsubtitlebelowskip@length=\skip118
+\mdf@subsubtitleinneraboveskip@length=\skip119
+\mdf@subsubtitleinnerbelowskip@length=\skip120
+
+(H:\miKtex\tex/latex/mdframed\md-frame-1.mdf
+File: md-frame-1.mdf 2013/07/01\ 1.9b: md-frame-1
+)
+\mdf@frametitlebox=\box145
+\mdf@footnotebox=\box146
+\mdf@splitbox@one=\box147
+\mdf@splitbox@two=\box148
+\mdf@splitbox@save=\box149
+\mdfsplitboxwidth=\skip121
+\mdfsplitboxtotalwidth=\skip122
+\mdfsplitboxheight=\skip123
+\mdfsplitboxdepth=\skip124
+\mdfsplitboxtotalheight=\skip125
+\mdfframetitleboxwidth=\skip126
+\mdfframetitleboxtotalwidth=\skip127
+\mdfframetitleboxheight=\skip128
+\mdfframetitleboxdepth=\skip129
+\mdfframetitleboxtotalheight=\skip130
+\mdffootnoteboxwidth=\skip131
+\mdffootnoteboxtotalwidth=\skip132
+\mdffootnoteboxheight=\skip133
+\mdffootnoteboxdepth=\skip134
+\mdffootnoteboxtotalheight=\skip135
+\mdftotallinewidth=\skip136
+\mdfboundingboxwidth=\skip137
+\mdfboundingboxtotalwidth=\skip138
+\mdfboundingboxheight=\skip139
+\mdfboundingboxdepth=\skip140
+\mdfboundingboxtotalheight=\skip141
+\mdf@freevspace@length=\skip142
+\mdf@horizontalwidthofbox@length=\skip143
+\mdf@verticalmarginwhole@length=\skip144
+\mdf@horizontalspaceofbox=\skip145
+\mdfsubtitleheight=\skip146
+\mdfsubsubtitleheight=\skip147
+\c@mdfcountframes=\count432
+
+****** mdframed patching \endmdf@trivlist
+
+****** -- success******
+
+\mdf@envdepth=\count433
+\c@mdf@env@i=\count434
+\c@mdf@env@ii=\count435
+\c@mdf@zref@counter=\count436
+Package zref Info: New property: mdf@pagevalue on input line 895.
+)
+(H:\miKtex\tex/latex/tikzsymbols\tikzsymbols.sty
+Package: tikzsymbols 2021/12/14 v4.12a Some symbols created using tikz and LaTe
+X3.
+
+(H:\miKtex\tex/latex/tools\xspace.sty
+Package: xspace 2014/10/28 v1.13 Space after command names (DPC,MH)
+)
+(H:\miKtex\tex/latex/l3packages/l3keys2e\l3keys2e.sty
+Package: l3keys2e 2022-06-22 LaTeX2e option processing using LaTeX3 keys
+)
+\l__tikzsymbols_Moai_thickness_dim=\dimen361
+\l__tikzsymbols_Kochtopf_nr_arguments_int=\count437
+\l__tikzsymbols_Bratpfanne_nr_arguments_int=\count438
+\l__tikzsymbols_Schneebesen_nr_arguments_int=\count439
+\l__tikzsymbols_Sieb_nr_arguments_int=\count440
+\l__tikzsymbols_Purierstab_nr_arguments_int=\count441
+\l__tikzsymbols_Dreizack_nr_arguments_int=\count442
+\l__tikzsymbols_Backblech_nr_arguments_int=\count443
+\l__tikzsymbols_Ofen_nr_arguments_int=\count444
+\l__tikzsymbols_Pfanne_nr_arguments_int=\count445
+\l__tikzsymbols_Herd_nr_arguments_int=\count446
+\l__tikzsymbols_Saftpresse_nr_arguments_int=\count447
+\l__tikzsymbols_Schussel_nr_arguments_int=\count448
+\l__tikzsymbols_Schaler_nr_arguments_int=\count449
+\l__tikzsymbols_Reibe_nr_arguments_int=\count450
+\l__tikzsymbols_Flasche_nr_arguments_int=\count451
+\l__tikzsymbols_Nudelholz_nr_arguments_int=\count452
+\l__tikzsymbols_Knoblauchpresse_nr_arguments_int=\count453
+\l__tikzsymbols_Sadey_nr_arguments_int=\count454
+\l__tikzsymbols_dSadey_nr_arguments_int=\count455
+\l__tikzsymbols_Changey_nr_arguments_int=\count456
+\l__tikzsymbols_dChangey_nr_arguments_int=\count457
+\l__tikzsymbols_cChangey_nr_arguments_int=\count458
+\l__tikzsymbols_dcChangey_nr_arguments_int=\count459
+\l__tikzsymbols_Annoey_nr_arguments_int=\count460
+\l__tikzsymbols_dAnnoey_nr_arguments_int=\count461
+\l__tikzsymbols_Smiley_nr_arguments_int=\count462
+\l__tikzsymbols_dSmiley_nr_arguments_int=\count463
+\l__tikzsymbols_Laughey_nr_arguments_int=\count464
+\l__tikzsymbols_dLaughey_nr_arguments_int=\count465
+\l__tikzsymbols_Neutrey_nr_arguments_int=\count466
+\l__tikzsymbols_dNeutrey_nr_arguments_int=\count467
+\l__tikzsymbols_Winkey_nr_arguments_int=\count468
+\l__tikzsymbols_oldWinkey_nr_arguments_int=\count469
+\l__tikzsymbols_dWinkey_nr_arguments_int=\count470
+\l__tikzsymbols_olddWinkey_nr_arguments_int=\count471
+\l__tikzsymbols_Sey_nr_arguments_int=\count472
+\l__tikzsymbols_dSey_nr_arguments_int=\count473
+\l__tikzsymbols_Xey_nr_arguments_int=\count474
+\l__tikzsymbols_dXey_nr_arguments_int=\count475
+\l__tikzsymbols_Innocey_nr_arguments_int=\count476
+\l__tikzsymbols_wInnocey_nr_arguments_int=\count477
+\l__tikzsymbols_dInnocey_nr_arguments_int=\count478
+\l__tikzsymbols_Cooley_nr_arguments_int=\count479
+\l__tikzsymbols_dCooley_nr_arguments_int=\count480
+\l__tikzsymbols_Tongey_nr_arguments_int=\count481
+\l__tikzsymbols_dTongey_nr_arguments_int=\count482
+\l__tikzsymbols_Nursey_nr_arguments_int=\count483
+\l__tikzsymbols_dNursey_nr_arguments_int=\count484
+\l__tikzsymbols_Vomey_nr_arguments_int=\count485
+\l__tikzsymbols_dVomey_nr_arguments_int=\count486
+\l__tikzsymbols_Walley_nr_arguments_int=\count487
+\l__tikzsymbols_rWalley_nr_arguments_int=\count488
+\l__tikzsymbols_dWalley_nr_arguments_int=\count489
+\l__tikzsymbols_drWalley_nr_arguments_int=\count490
+\l__tikzsymbols_Cat_nr_arguments_int=\count491
+\l__tikzsymbols_SchrodingersCat_nr_arguments_int=\count492
+\l__tikzsymbols_Ninja_nr_arguments_int=\count493
+\l__tikzsymbols_dNinja_nr_arguments_int=\count494
+\l__tikzsymbols_Sleepey_nr_arguments_int=\count495
+\l__tikzsymbols_dSleepey_nr_arguments_int=\count496
+\l__tikzsymbols_Maskey_nr_arguments_int=\count497
+\l__tikzsymbols_NiceReapey_nr_arguments_int=\count498
+\l__tikzsymbols_Strichmaxerl_nr_arguments_int=\count499
+\l__tikzsymbols_Person_nr_arguments_int=\count500
+\l__tikzsymbols_Heart_nr_arguments_int=\count501
+\l__tikzsymbols_dHeart_nr_arguments_int=\count502
+\l__tikzsymbols_HeartBroken_nr_arguments_int=\count503
+\l__tikzsymbols_Candle_nr_arguments_int=\count504
+\l__tikzsymbols_Fire_nr_arguments_int=\count505
+\l__tikzsymbols_Coffeecup_nr_arguments_int=\count506
+\l__tikzsymbols_Chair_nr_arguments_int=\count507
+\l__tikzsymbols_Bed_nr_arguments_int=\count508
+\l__tikzsymbols_Tribar_nr_arguments_int=\count509
+\l__tikzsymbols_Moai_nr_arguments_int=\count510
+\l__tikzsymbols_Snowman_nr_arguments_int=\count511
+\l__tikzsymbols_BasicTree_nr_arguments_int=\count512
+\l__tikzsymbols_WorstTree_nr_arguments_int=\count513
+\l__tikzsymbols_Springtree_nr_arguments_int=\count514
+\l__tikzsymbols_Summertree_nr_arguments_int=\count515
+\l__tikzsymbols_Autumntree_nr_arguments_int=\count516
+\l__tikzsymbols_Wintertree_nr_arguments_int=\count517
+)
+(H:\miKtex\tex/latex/tasks\tasks.sty
+(H:\miKtex\tex/latex/l3packages/xtemplate\xtemplate.sty
+Package: xtemplate 2022-06-22 L3 Experimental prototype document functions
+\l__xtemplate_tmp_dim=\dimen362
+\l__xtemplate_tmp_int=\count518
+\l__xtemplate_tmp_muskip=\muskip18
+\l__xtemplate_tmp_skip=\skip148
+)
+Package: tasks 2022/01/08 v1.4a lists with columns filled horizontally
+\g__tasks_total_items_int=\count519
+\l__tasks_columns_int=\count520
+\g__tasks_rows_int=\count521
+\g__tasks_current_col_num_int=\count522
+\g__tasks_current_row_num_int=\count523
+\l__tasks_item_columns_int=\count524
+\g__tasks_env_int=\count525
+\l__tasks_start_int=\count526
+\l__tasks_item_indent_dim=\dimen363
+\l__tasks_item_default_indent_dim=\dimen364
+\l__tasks_item_width_dim=\dimen365
+\l__tasks_label_width_dim=\dimen366
+\l__tasks_label_default_width_dim=\dimen367
+\l__tasks_label_offset_dim=\dimen368
+\l__tasks_label_default_offset_dim=\dimen369
+\l__tasks_column_sep_dim=\dimen370
+\l__tasks_correction_dim=\dimen371
+\l__tasks_full_width_dim=\dimen372
+\l__tasks_after_item_skip=\skip149
+\l__tasks_custom_after_item_skip=\skip150
+\l__tasks_before_list_skip=\skip151
+\l__tasks_after_list_skip=\skip152
+\l__tasks_item_coffin=\box150
+\l__tasks_label_coffin=\box151
+\c@task=\count527
+\l__tasks_tmpa_int=\count528
+\l__tasks_tmpb_int=\count529
+\l__tasks_tmpa_coffin=\box152
+\l__tasks_tmpa_box=\box153
+
+Package xtemplate Info: Declaring object type 'tasks' taking 3 argument(s) on
+(xtemplate)             line 450.
+
+
+(H:\miKtex\tex/latex/tasks\tasks.cfg))
+(H:\miKtex\tex/latex/listingsutf8\listingsutf8.sty
+Package: listingsutf8 2019-12-10 v1.5 Allow UTF-8 in listings input (HO)
+
+(H:\miKtex\tex/latex/listings\listings.sty
+\lst@mode=\count530
+\lst@gtempboxa=\box154
+\lst@token=\toks58
+\lst@length=\count531
+\lst@currlwidth=\dimen373
+\lst@column=\count532
+\lst@pos=\count533
+\lst@lostspace=\dimen374
+\lst@width=\dimen375
+\lst@newlines=\count534
+\lst@lineno=\count535
+\lst@maxwidth=\dimen376
+
+(H:\miKtex\tex/latex/listings\lstmisc.sty
+File: lstmisc.sty 2020/03/24 1.8d (Carsten Heinz)
+\c@lstnumber=\count536
+\lst@skipnumbers=\count537
+\lst@framebox=\box155
+)
+(H:\miKtex\tex/latex/listings\listings.cfg
+File: listings.cfg 2020/03/24 1.8d listings configuration
+))
+Package: listings 2020/03/24 1.8d (Carsten Heinz)
+
+(H:\miKtex\tex/generic/stringenc\stringenc.sty
+Package: stringenc 2019/11/29 v1.12 Convert strings between diff. encodings (HO
+)
+))
+(H:\miKtex\tex/latex/listings\lstlang1.sty
+File: lstlang1.sty 2020/03/24 1.8d listings language file
+)
+\c@exo=\count538
+ (enonce.aux
+(H:\miKtex\tex/generic/babel/locale/fr\babel-french.tex
+Package babel Info: Importing font and identification data for french
+(babel)             from babel-fr.ini. Reported on input line 11.
+))
+\openout1 = `enonce.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 114.
+LaTeX Font Info:    ... okay on input line 114.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 114.
+LaTeX Font Info:    ... okay on input line 114.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 114.
+LaTeX Font Info:    ... okay on input line 114.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 114.
+LaTeX Font Info:    ... okay on input line 114.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 114.
+LaTeX Font Info:    ... okay on input line 114.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 114.
+LaTeX Font Info:    ... okay on input line 114.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 114.
+LaTeX Font Info:    ... okay on input line 114.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 114.
+LaTeX Font Info:    ... okay on input line 114.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 114.
+LaTeX Font Info:    ... okay on input line 114.
+LaTeX Font Info:    Checking defaults for FML/futm/m/it on input line 114.
+LaTeX Font Info:    Trying to load font information for FML+futm on input line 
+114.
+
+(H:\miKtex\tex/latex/fourier\fmlfutm.fd
+File: fmlfutm.fd 2004/10/30 Fontinst v1.926 font definitions for FML/futm.
+)
+LaTeX Font Info:    ... okay on input line 114.
+LaTeX Font Info:    Checking defaults for FMS/futm/m/n on input line 114.
+LaTeX Font Info:    Trying to load font information for FMS+futm on input line 
+114.
+
+(H:\miKtex\tex/latex/fourier\fmsfutm.fd
+File: fmsfutm.fd 2004/10/30 Fontinst v1.926 font definitions for FMS/futm.
+)
+LaTeX Font Info:    ... okay on input line 114.
+LaTeX Font Info:    Checking defaults for FMX/futm/m/n on input line 114.
+LaTeX Font Info:    Trying to load font information for FMX+futm on input line 
+114.
+
+(H:\miKtex\tex/latex/fourier\fmxfutm.fd
+File: fmxfutm.fd futm-extension
+)
+LaTeX Font Info:    ... okay on input line 114.
+
+*geometry* driver: auto-detecting
+*geometry* detected driver: pdftex
+*geometry* verbose mode - [ preamble ] result:
+* driver: pdftex
+* paper: <default>
+* layout: <same size as paper>
+* layoutoffset:(h,v)=(0.0pt,0.0pt)
+* modes: 
+* h-part:(L,W,R)=(42.67912pt, 528.93675pt, 42.67912pt)
+* v-part:(T,H,B)=(56.9055pt, 681.15898pt, 56.9055pt)
+* \paperwidth=614.295pt
+* \paperheight=794.96999pt
+* \textwidth=528.93675pt
+* \textheight=681.15898pt
+* \oddsidemargin=-29.59087pt
+* \evensidemargin=-29.59087pt
+* \topmargin=-52.36449pt
+* \headheight=12.0pt
+* \headsep=25.0pt
+* \topskip=10.0pt
+* \footskip=30.0pt
+* \marginparwidth=65.0pt
+* \marginparsep=11.0pt
+* \columnsep=10.0pt
+* \skip\footins=9.0pt plus 4.0pt minus 2.0pt
+* \hoffset=0.0pt
+* \voffset=0.0pt
+* \mag=1000
+* \@twocolumnfalse
+* \@twosidefalse
+* \@mparswitchfalse
+* \@reversemarginfalse
+* (1in=72.27pt=25.4mm, 1cm=28.453pt)
+
+LaTeX Info: Redefining \degres on input line 114.
+Package french.ldf Info: Setting StandardItemizeEnv=true for
+(french.ldf)             compatibility with enumitem package,
+(french.ldf)             reported on input line 114.
+Package french.ldf Info: Setting StandardEnumerateEnv=true for
+(french.ldf)             compatibility with enumitem package,
+(french.ldf)             reported on input line 114.
+LaTeX Info: Redefining \up on input line 114.
+(H:\miKtex\tex/context/base/mkii\supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count539
+\scratchdimen=\dimen377
+\scratchbox=\box156
+\nofMPsegments=\count540
+\nofMParguments=\count541
+\everyMPshowfont=\toks59
+\MPscratchCnt=\count542
+\MPscratchDim=\dimen378
+\MPnumerator=\count543
+\makeMPintoPDFobject=\count544
+\everyMPtoPDFconversion=\toks60
+) (H:\miKtex\tex/latex/epstopdf-pkg\epstopdf-base.sty
+Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
+Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
+85.
+
+(H:\miKtex\tex/latex/00miktex\epstopdf-sys.cfg
+File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
+))
+
+Package pgfplots Warning: running in backwards compatibility mode (unsuitable t
+ick labels; missing features). Consider writing \pgfplotsset{compat=1.18} into 
+your preamble.
+ on input line 114.
+
+Option `squaren' provided! 
+ Command \squaren defined by SIunits package!
+
+Package lastpage Info: Please have a look at the pageslts package at
+(lastpage)             https://www.ctan.org/pkg/pageslts
+(lastpage)             ! on input line 114.
+Package hyperref Info: Link coloring OFF on input line 114.
+(enonce.out) (enonce.out)
+\@outlinefile=\write5
+\openout5 = `enonce.out'.
+
+LaTeX Font Info:    Redeclaring math accent \widehat on input line 114.
+LaTeX Font Info:    Redeclaring math accent \widetilde on input line 114.
+\c@lstlisting=\count545
+<grille.png, id=74, 360.59718pt x 304.88907pt>
+File: grille.png Graphic file (type png)
+<use grille.png>
+Package pdftex.def Info: grille.png  used on input line 124.
+(pdftex.def)             Requested size: 270.44722pt x 228.66623pt.
+LaTeX Font Info:    Trying to load font information for FML+futmi on input line
+ 146.
+ (H:\miKtex\tex/latex/fourier\fmlfutmi.fd
+File: fmlfutmi.fd 2004/10/30 Fontinst v1.926 font definitions for FML/futmi.
+)
+LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
+(Font)              scaled to size 9.19998pt on input line 146.
+LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
+(Font)              scaled to size 6.99199pt on input line 146.
+LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
+(Font)              scaled to size 5.51999pt on input line 146.
+LaTeX Font Info:    Trying to load font information for U+rsfs on input line 14
+6.
+
+(H:\miKtex\tex/latex/jknappen\ursfs.fd
+File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
+)
+LaTeX Font Info:    Trying to load font information for U+msa on input line 146
+.
+ (H:\miKtex\tex/latex/amsfonts\umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Trying to load font information for U+msb on input line 146
+.
+
+(H:\miKtex\tex/latex/amsfonts\umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+)
+LaTeX Font Info:    Font shape `U/futm/m/n' will be
+(Font)              scaled to size 9.19998pt on input line 146.
+LaTeX Font Info:    Font shape `U/futm/m/n' will be
+(Font)              scaled to size 6.99199pt on input line 146.
+LaTeX Font Info:    Font shape `U/futm/m/n' will be
+(Font)              scaled to size 5.51999pt on input line 146.
+LaTeX Font Info:    Trying to load font information for TS1+futs on input line 
+168.
+ (H:\miKtex\tex/latex/fourier\ts1futs.fd
+File: ts1futs.fd 2003/09/14 Fontinst v1.801 font definitions for TS1/futs.
+)
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 25.11006pt, for example:
+(fancyhdr)                \setlength{\headheight}{25.11006pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-13.11006pt}.
+
+[1{C:/Users/Lazebule/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}
+
+ <./grille.png>]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 25.11006pt, for example:
+(fancyhdr)                \setlength{\headheight}{25.11006pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-13.11006pt}.
+
+[2] 
+AED: lastpage setting LastPage
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 25.11006pt, for example:
+(fancyhdr)                \setlength{\headheight}{25.11006pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-13.11006pt}.
+
+[3] (enonce.aux)
+Package rerunfilecheck Info: File `enonce.out' has not changed.
+(rerunfilecheck)             Checksum: 27851BC48C0D1D37704688B883AA9A20;2250.
+ ) 
+Here is how much of TeX's memory you used:
+ 52514 strings out of 475389
+ 1169481 string characters out of 2793405
+ 1941616 words of memory out of 3000000
+ 72724 multiletter control sequences out of 15000+600000
+ 522876 words of font info for 81 fonts, out of 8000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 95i,11n,92p,908b,609s stack positions out of 10000i,1000n,20000p,200000b,80000s
+{H:/miKtex/fonts/enc/dvips/base/8r.enc}<H:/miKtex/fonts/type1/public/fourier/
+fourier-ms.pfb><H:/miKtex/fonts/type1/adobe/utopia/putb8a.pfb><H:/miKtex/fonts/
+type1/adobe/utopia/putr8a.pfb>
+Output written on enonce.pdf (3 pages, 139598 bytes).
+PDF statistics:
+ 113 PDF objects out of 1000 (max. 8388607)
+ 15 named destinations out of 1000 (max. 500000)
+ 202 words of extra memory for PDF output out of 10000 (max. 10000000)
+

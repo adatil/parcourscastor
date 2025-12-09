@@ -88,7 +88,8 @@ def clic(g, btn, ligne, colon, typecase):
 
     btn["state"] = DISABLED  # on désactive le bouton
     global chemin  # on modifie ici la variable globale chemin
-    chemin.append([ligne, colon])  # on ajoute la case au chemin
+    chemin.append([ligne, colon])  # on ajoute  la case au chemin
+
 
 #####################################################################################################################
 
@@ -100,42 +101,53 @@ def initialisenew(grilleinit=grille_1):
     paramètre : grilleinit (list).
 
     """
-    # À COMPLÉTER
+    # À COMPLÉTER :
+    # 1. Réinitialiser la variable globale chemin à []
+    # 2. Réinitialiser la variable globale grillecourante avec grilleinit
+    # 3. Effacer les anciens boutons de la grille :
+    #    - Parcourir tous les boutons avec fenetre.grid_slaves()
+    #    - Détruire ceux qui sont dans les limites de la grille avec button.destroy()
+    # 4. Réinitialiser le message reponse.set("")
+    # 5. Recréer la grille comme dans initialise()
     pass
 
 
 def lanceCheminAleatoire1(grille):
     """ fonction qui répond au bouton chemin aléatoire1
-    elle appelle la fonction cheminAléatoire1
+    elle appelle la fonction cheminAleatoire1
     elle appelle ensuite la fonction de validation de chemin
     paramètre : grille (list).
 
     """
-    # À COMPLÉTER : appeler cheminAleatoire1, désactiver les boutons, puis verification
+    # À COMPLÉTER :
+    # 1. Appeler cheminAleatoire1(grille) et stocker le résultat dans parcours
+    # 2. Pour chaque case du parcours, désactiver le bouton correspondant
+    #    tableauBoutons[case[0]][case[1]].configure(state=DISABLED)
+    # 3. Appeler verification(parcours, grille)
     pass
 
 
 def lanceCheminAleatoire2(grille):
     """ fonction qui répond au bouton chemin aléatoire2
-    elle appelle la fonction cheminAléatoire2
+    elle appelle la fonction cheminAleatoire2
     elle appelle ensuite la fonction de validation de chemin
     paramètre : grille (list).
 
     """
-    # À COMPLÉTER : appeler cheminAleatoire2, désactiver les boutons, puis verification
+    # À COMPLÉTER : même chose que lanceCheminAleatoire1 mais avec cheminAleatoire2
     pass
 
 
 def lanceAide(grille):
     """Lance la recherche de chemin et l'affiche sur la grille."""
-    parcours = chercheChemin(grille)
-    if parcours and parcours[-1] == [0, 0]:
-        # Afficher le chemin trouvé
-        for case in parcours:
-            tableauBoutons[case[0]][case[1]].configure(state=DISABLED)
-        verification(parcours, grille)
-    else:
-        reponse.set("Pas de solution trouvée !")
+    # À COMPLÉTER : Fonction qui utilise chercheChemin pour aider le joueur
+    # 1. Appeler chercheChemin(grille) et stocker le résultat dans parcours
+    # 2. Vérifier si un chemin a été trouvé (parcours non vide et se termine en [0,0])
+    # 3. Si oui :
+    #    - Pour chaque case du parcours, désactiver le bouton correspondant
+    #    - Appeler verification(parcours, grille)
+    # 4. Sinon : afficher "Pas de solution trouvée !" avec reponse.set()
+    pass
 
 
 def verification(chemin, grille):
@@ -145,8 +157,14 @@ def verification(chemin, grille):
                 grille (liste)
     affichera le message "Bravo" ou "Perdu" sur la grille
     """
-    # À COMPLÉTER : utiliser cheminContinu, ordreDesCases, departArrivee
-    # et afficher "Bravo" ou "Perdu" avec reponse.set()
+    # À COMPLÉTER :
+    # 1. Réinitialiser le message : reponse.set("")
+    # 2. Vérifier les 3 conditions avec les fonctions de jeucastortravail.py :
+    #    - cheminContinu(chemin)
+    #    - ordreDesCases(chemin, grille)
+    #    - departArrivee(chemin, grille)
+    # 3. Si toutes les conditions sont vraies : reponse.set("Bravo")
+    # 4. Sinon : reponse.set("Perdu")
     pass
 
 

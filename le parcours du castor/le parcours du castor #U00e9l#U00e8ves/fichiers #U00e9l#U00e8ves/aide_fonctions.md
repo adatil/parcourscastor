@@ -93,13 +93,13 @@ Vous pourrez vous en inspirer pour `lanceCheminAleatoire1/2()`.
 #### `sontVoisines(case1, case2)`
 **But** : Vérifie si deux cases sont adjacentes (horizontalement ou verticalement).
 
-**Indice** : Deux cases `[l1,c1]` et `[l2,c2]` sont voisines si la somme des carrés des différences vaut 1.
+**Indice** : Réfléchissez à la distance entre deux cases. Deux cases voisines ont une différence de 1 sur une seule dimension (ligne OU colonne, pas les deux).
 
-**Formule** : `(l1-l2)² + (c1-c2)² == 1`
-
-**Exemple** :
-- `[0,0]` et `[0,1]` → voisines (distance = 1)
-- `[0,0]` et `[1,1]` → non voisines (distance diagonale)
+**Exemples** :
+- `[0,0]` et `[0,1]` → voisines (même ligne, colonnes différentes de 1)
+- `[0,0]` et `[1,0]` → voisines (lignes différentes de 1, même colonne)
+- `[0,0]` et `[1,1]` → NON voisines (diagonale)
+- `[0,0]` et `[2,0]` → NON voisines (trop éloignées)
 
 ---
 

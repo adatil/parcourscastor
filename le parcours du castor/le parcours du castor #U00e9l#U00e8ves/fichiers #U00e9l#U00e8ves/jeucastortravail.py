@@ -33,8 +33,8 @@ def sontVoisines(case1, case2):
 
     renvoie un booléen qui vaut True ou False selon le résultat
     """
-    # À COMPLÉTER 
-   
+    # À COMPLÉTER
+
     pass
 
 

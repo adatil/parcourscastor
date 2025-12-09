@@ -20,7 +20,7 @@ def randomGrille(L=6, C=5):
     """
     global grillecourante
     # À COMPLÉTER : créer une grille aléatoire avec choice(("P", "B", "F"))
-    # Utiliser une liste en compréhension : [[choice(...) for j in range(C)] for i in range(L)]
+    
     pass
 
 
@@ -33,9 +33,8 @@ def sontVoisines(case1, case2):
 
     renvoie un booléen qui vaut True ou False selon le résultat
     """
-    # À COMPLÉTER : calculer la distance entre les deux cases
-    # Deux cases sont voisines si la somme des carrés des différences vaut 1
-    # Formule : (ligne1-ligne2)**2 + (colonne1-colonne2)**2 == 1
+    # À COMPLÉTER 
+   
     pass
 
 
@@ -48,11 +47,7 @@ def ordreDesCases(parcours, grilleATester):
 
     renvoie True ou False selon le résultat
     """
-    # À COMPLÉTER : construire le mot à partir du parcours
-    # 1. Créer une variable mot = '' vide
-    # 2. Pour chaque case du parcours, ajouter la lettre correspondante au mot
-    # 3. Compter combien de fois on a deux lettres consécutives identiques
-    # 4. Renvoyer True si au plus 1 joker utilisé (<=1), False sinon
+    # À COMPLÉTER 
     pass
 
 
@@ -65,11 +60,7 @@ def cheminContinu(parcours):
     renvoie True ou False selon le résultat
     """
     # À COMPLÉTER : vérifier que chaque case est voisine de la suivante
-    # ATTENTION : le return True doit être EN DEHORS de la boucle for
-    for i in range(len(parcours)-1):
-        if not sontVoisines(parcours[i], parcours[i+1]):
-            return False
-    return True
+   
 
 
 def departArrivee(parcours, grille=grillecourante):
@@ -81,9 +72,7 @@ def departArrivee(parcours, grille=grillecourante):
 
     renvoie True ou False selon le résultat
     """
-    casedep = [len(grille)-1, len(grille[0])-1]
-    casearriv = [0, 0]
-    # À COMPLÉTER : vérifier que parcours[0] == casedep et parcours[-1] == casearriv
+  
     pass
 
 
@@ -98,20 +87,7 @@ def casesVoisinesPossibles(grille, cheminParcouru, caseActuelle):
 
     renvoie la liste des positions suivantes possibles sous forme d'une liste
     """
-    L = len(grille)
-    C = len(grille[0])
-    cases_grille = [[i, j] for i in range(L) for j in range(C)]
 
-    x, y = caseActuelle[0], caseActuelle[1]
-    positionssuivantespossibles = [[x - 1, y], [x, y - 1], [x, y + 1], [x + 1, y]]
-    positionssuivantesvalides = []
-
-    # À COMPLÉTER : filtrer les positions qui sont dans la grille et pas déjà parcourues
-    for p in positionssuivantespossibles:
-        if (p in cases_grille) and not (p in cheminParcouru):
-            positionssuivantesvalides.append(p)
-
-    return positionssuivantesvalides
 
 
 def cheminAleatoire1(grille):
@@ -127,12 +103,7 @@ def cheminAleatoire1(grille):
     case = casedep
 
     # À COMPLÉTER : avancer vers [0,0] en allant vers le haut ou la gauche
-    # 1. Boucle while case != casearriv:
-    # 2. Si on est sur la ligne 0 : aller à gauche
-    # 3. Si on est sur la colonne 0 : aller en haut
-    # 4. Sinon : choisir aléatoirement avec randint(0,1)
-    # 5. Ajouter la nouvelle case au chemin
-    # 6. Retourner le chemin
+    
     pass
 
 
@@ -150,13 +121,7 @@ def cheminAleatoire2(grille):
     case = casedep
     nextmove = None
 
-    # À COMPLÉTER : utiliser casesVoisinesPossibles et choice pour avancer
-    # 1. Boucle while case != casearriv et nextmove != []:
-    # 2. Appeler casesVoisinesPossibles pour avoir les cases possibles
-    # 3. Si casearriv est dans les cases possibles, y aller directement
-    # 4. Sinon, choisir une case au hasard avec choice()
-    # 5. Ajouter la case au chemin
-    # 6. Retourner le chemin
+    # À COMPLÉTER 
     pass
 
 
@@ -206,3 +171,4 @@ def rechercheCasesVoisinesPossibles(grille, cheminParcouru, caseActuelle):
     #    - Retirer la case du chemin (c'était juste un test)
     # 3. Retourner la liste des cases valides
     pass
+

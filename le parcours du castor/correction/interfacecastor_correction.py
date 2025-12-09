@@ -238,11 +238,17 @@ def verification(chemin, grille):
         grille (list): Grille de jeu
 
     Affichage:
+        - "Aucun parcours !" si le chemin est vide
         - "Bravo" si les 3 conditions sont remplies
         - "Pas arrivé à destination !" si la dernière case n'est pas [0, 0]
         - "Perdu" dans les autres cas
     """
     reponse.set("")  # Effacer l'ancien message
+
+    # Vérifier d'abord que le chemin n'est pas vide
+    if len(chemin) == 0:
+        reponse.set("Aucun parcours !")
+        return
 
     # Vérifier les 3 conditions
     if cheminContinu(chemin) and ordreDesCases(chemin, grille) and departArrivee(chemin, grille):

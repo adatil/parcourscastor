@@ -76,7 +76,14 @@ def ordreDesCases(parcours, grilleATester):
         1. Construire le "mot" correspondant au parcours (ex: "PBFBP")
         2. Compter le nombre de répétitions consécutives (ex: "PPBF" = 1 répétition)
         3. Retourner True si ≤ 1 joker utilisé
+
+    Gestion des cas particuliers:
+        - Si le parcours est vide ou contient une seule case → True (pas de répétition)
     """
+    # Un parcours vide ou d'une seule case respecte trivialement la règle
+    if len(parcours) <= 1:
+        return True
+
     mot = ''
     jokerutilise = 0
 
@@ -106,7 +113,14 @@ def cheminContinu(parcours):
     Note importante:
         Le return True doit être EN DEHORS de la boucle for, sinon la fonction
         retournerait True dès la première paire de cases voisines testée.
+
+    Gestion des cas particuliers:
+        - Si le parcours est vide ou contient une seule case → True (trivialement vrai)
     """
+    # Un parcours vide ou d'une seule case est trivialement continu
+    if len(parcours) <= 1:
+        return True
+
     for i in range(len(parcours) - 1):
         if not sontVoisines(parcours[i], parcours[i + 1]):
             return False
@@ -129,7 +143,15 @@ def departArrivee(parcours, grille=grillecourante):
         - Case d'arrivée = [0, 0] (coin haut-gauche)
         - parcours[0] = première case du parcours
         - parcours[-1] = dernière case du parcours
+
+    Gestion des cas particuliers:
+        - Si le parcours est vide → False (pas de départ ni d'arrivée)
+        - Si le parcours contient une seule case → vérifier si c'est à la fois départ ET arrivée
     """
+    # Vérifier que le parcours n'est pas vide
+    if len(parcours) == 0:
+        return False
+
     casedep = [len(grille) - 1, len(grille[0]) - 1]
     casearriv = [0, 0]
     return parcours[0] == casedep and parcours[-1] == casearriv

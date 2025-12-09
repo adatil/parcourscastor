@@ -185,6 +185,22 @@ Ces fichiers sont **richement commentés** avec :
    - ❌ Ne pas mémoriser les culs-de-sac (boucle infinie)
    - ✅ Utiliser la liste `culDeSac` pour éviter de retester
 
+7. **ERREUR CRITIQUE - Parcours vide (IndexError)**
+   - ❌ Accéder à `parcours[0]` ou `parcours[-1]` sans vérifier si la liste est vide
+   - ✅ **Toujours vérifier** : `if len(parcours) == 0: return False` AVANT d'accéder aux indices
+   - 🐛 **Bug typique** : Cliquer sur "Parcours terminé" sans avoir cliqué sur aucune case
+   - 📍 **Fonctions concernées** : `departArrivee()`, `verification()`, et potentiellement `cheminContinu()` et `ordreDesCases()`
+   - 💡 **Solution recommandée** : Gérer les cas limites en début de fonction
+     ```python
+     # Exemple pour departArrivee()
+     if len(parcours) == 0:
+         return False
+
+     # Exemple pour cheminContinu() et ordreDesCases()
+     if len(parcours) <= 1:
+         return True  # Trivialement vrai
+     ```
+
 ---
 
 ## 🔍 Grilles de test

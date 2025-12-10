@@ -1,0 +1,805 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guide complet - Parcours du Castor</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+            color: #333;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        header {
+            background: linear-gradient(135deg, #2c5aa0 0%, #3d7ac8 100%);
+            color: white;
+            padding: 40px 20px;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+        header p {
+            margin: 10px 0 0 0;
+            font-size: 1.2em;
+            opacity: 0.9;
+        }
+        nav {
+            background-color: white;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            position: sticky;
+            top: 20px;
+            z-index: 1000;
+        }
+        nav h2 {
+            margin-top: 0;
+            color: #2c5aa0;
+            border-bottom: 2px solid #2c5aa0;
+            padding-bottom: 10px;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 10px;
+        }
+        nav li {
+            margin: 0;
+        }
+        nav a {
+            display: block;
+            color: #2c5aa0;
+            text-decoration: none;
+            padding: 10px 15px;
+            border-radius: 5px;
+            transition: all 0.3s;
+            border: 1px solid #e0e0e0;
+        }
+        nav a:hover {
+            background-color: #2c5aa0;
+            color: white;
+            transform: translateX(5px);
+        }
+        h1 {
+            color: #2c5aa0;
+            border-bottom: 3px solid #2c5aa0;
+            padding-bottom: 10px;
+        }
+        h2 {
+            color: #3d7ac8;
+            margin-top: 40px;
+            border-left: 4px solid #3d7ac8;
+            padding-left: 15px;
+        }
+        h3 {
+            color: #5a92d4;
+            margin-top: 20px;
+        }
+        h4 {
+            color: #4a7ba7;
+            margin-top: 15px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+            background-color: white;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 12px;
+            text-align: left;
+        }
+        th {
+            background-color: #2c5aa0;
+            color: white;
+            font-weight: bold;
+        }
+        tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+        code {
+            background-color: #f4f4f4;
+            padding: 2px 6px;
+            border-radius: 3px;
+            font-family: 'Courier New', monospace;
+            color: #c7254e;
+        }
+        pre {
+            background-color: #282c34;
+            color: #abb2bf;
+            padding: 15px;
+            border-radius: 5px;
+            overflow-x: auto;
+            line-height: 1.4;
+        }
+        pre code {
+            background-color: transparent;
+            color: #abb2bf;
+            padding: 0;
+        }
+        .section {
+            background-color: white;
+            padding: 30px;
+            margin: 20px 0;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .note {
+            background-color: #fff3cd;
+            border-left: 4px solid #ffc107;
+            padding: 15px;
+            margin: 15px 0;
+            border-radius: 4px;
+        }
+        .important {
+            background-color: #f8d7da;
+            border-left: 4px solid #dc3545;
+            padding: 15px;
+            margin: 15px 0;
+            border-radius: 4px;
+        }
+        .tip {
+            background-color: #d1ecf1;
+            border-left: 4px solid #17a2b8;
+            padding: 15px;
+            margin: 15px 0;
+            border-radius: 4px;
+        }
+        .success {
+            background-color: #d4edda;
+            border-left: 4px solid #28a745;
+            padding: 15px;
+            margin: 15px 0;
+            border-radius: 4px;
+        }
+        .example {
+            background-color: #e7f3ff;
+            border-left: 4px solid #2196F3;
+            padding: 15px;
+            margin: 15px 0;
+            border-radius: 4px;
+        }
+        .difficulty {
+            display: inline-block;
+            padding: 5px 10px;
+            border-radius: 15px;
+            font-size: 0.85em;
+            font-weight: bold;
+            margin-left: 10px;
+        }
+        .easy {
+            background-color: #d4edda;
+            color: #155724;
+        }
+        .medium {
+            background-color: #fff3cd;
+            color: #856404;
+        }
+        .hard {
+            background-color: #f8d7da;
+            color: #721c24;
+        }
+        ul, ol {
+            margin: 10px 0;
+            padding-left: 30px;
+        }
+        li {
+            margin: 8px 0;
+        }
+        hr {
+            border: none;
+            border-top: 2px solid #ddd;
+            margin: 40px 0;
+        }
+        footer {
+            text-align: center;
+            margin-top: 40px;
+            padding: 30px;
+            background: linear-gradient(135deg, #2c5aa0 0%, #3d7ac8 100%);
+            color: white;
+        }
+        footer a {
+            color: white;
+            text-decoration: underline;
+        }
+        .back-to-top {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            background-color: #2c5aa0;
+            color: white;
+            padding: 15px 20px;
+            border-radius: 50px;
+            text-decoration: none;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+            transition: all 0.3s;
+        }
+        .back-to-top:hover {
+            background-color: #3d7ac8;
+            transform: translateY(-3px);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>🦫 Guide complet du Parcours du Castor</h1>
+        <p>Documentation et aide pour les élèves - Projet NSI</p>
+    </header>
+
+    <div class="container">
+        <nav id="sommaire">
+            <h2>📋 Sommaire</h2>
+            <ul>
+                <li><a href="#intro">📖 Introduction</a></li>
+                <li><a href="#architecture">🏗️ Architecture du projet</a></li>
+                <li><a href="#interface">💻 Interface graphique</a></li>
+                <li><a href="#logique">🎮 Logique du jeu</a></li>
+                <li><a href="#partie1">✏️ Partie I - Validation</a></li>
+                <li><a href="#partie2">🎲 Partie II - Chemins aléatoires</a></li>
+                <li><a href="#partie3">🔥 Partie III - Backtracking</a></li>
+                <li><a href="#tests">🧪 Tests et débogage</a></li>
+                <li><a href="#ressources">📚 Ressources</a></li>
+            </ul>
+        </nav>
+
+        <!-- INTRODUCTION -->
+        <section id="intro" class="section">
+            <h1>📖 Introduction</h1>
+            <p>Bienvenue dans le projet <strong>Parcours du Castor</strong> ! Ce guide complet vous accompagnera tout au long du développement de votre jeu Python avec interface graphique Tkinter.</p>
+            <div class="note">
+                <strong>🎯 Objectifs du projet :</strong>
+                <ul>
+                    <li>Comprendre la séparation logique/interface dans une application</li>
+                    <li>Manipuler des structures de données (listes, tableaux 2D)</li>
+                    <li>Implémenter des algorithmes de validation</li>
+                    <li>Découvrir l'algorithme de backtracking</li>
+                    <li>Créer une interface graphique interactive avec Tkinter</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- ARCHITECTURE -->
+        <section id="architecture" class="section">
+            <h1>🏗️ Architecture du projet</h1>
+            <p>Le projet est divisé en deux fichiers Python pour une meilleure organisation :</p>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Fichier</th>
+                        <th>Rôle</th>
+                        <th>Contenu</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><code>jeucastortravail.py</code></td>
+                        <td>Logique du jeu</td>
+                        <td>Fonctions de validation, chemins, algorithmes</td>
+                    </tr>
+                    <tr>
+                        <td><code>interfacecastortravail.py</code></td>
+                        <td>Interface graphique</td>
+                        <td>Fenêtre Tkinter, boutons, événements</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="tip">
+                <strong>💡 Avantage :</strong> Cette séparation permet de tester les fonctions de logique indépendamment de l'interface graphique.
+            </div>
+        </section>
+
+        <!-- INTERFACE -->
+        <section id="interface" class="section">
+            <h1>💻 Fichier <code>interfacecastortravail.py</code></h1>
+
+            <h2>Variables globales</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Variable</th>
+                        <th>Type</th>
+                        <th>Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><code>SCRIPT_DIR</code></td>
+                        <td>str</td>
+                        <td>Chemin absolu du dossier contenant le script (pour charger les images)</td>
+                    </tr>
+                    <tr>
+                        <td><code>fenetre</code></td>
+                        <td>Tk</td>
+                        <td>Fenêtre principale de l'application</td>
+                    </tr>
+                    <tr>
+                        <td><code>maPolice1</code></td>
+                        <td>Font</td>
+                        <td>Police Arial 18 gras pour les boutons</td>
+                    </tr>
+                    <tr>
+                        <td><code>photoF, photoB, photoP</code></td>
+                        <td>PhotoImage</td>
+                        <td>Images des cases (feuille, bois, pierre)</td>
+                    </tr>
+                    <tr>
+                        <td><code>tableauBoutons</code></td>
+                        <td>list</td>
+                        <td>Tableau 2D contenant tous les boutons de la grille</td>
+                    </tr>
+                    <tr>
+                        <td><code>reponse</code></td>
+                        <td>StringVar</td>
+                        <td>Variable Tkinter pour afficher "Bravo" ou "Perdu"</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h2>Gestion des chemins d'images</h2>
+            <p>Pour éviter les problèmes de chemins relatifs :</p>
+            <pre><code>SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
+photoF = PhotoImage(file=os.path.join(SCRIPT_DIR, "feuille.png"))</code></pre>
+            <div class="tip">
+                <strong>💡 Astuce :</strong> Cela garantit que les images seront trouvées quelle que soit la façon dont le script est lancé.
+            </div>
+
+            <h2>Fonctions fournies</h2>
+
+            <h3><code>initialise(grilleinit=grille_1)</code> ✅</h3>
+            <p><strong>But :</strong> Crée l'affichage initial de la grille avec les boutons cliquables.</p>
+            <p><strong>Étapes :</strong></p>
+            <ol>
+                <li>Calcule les dimensions L×C de la grille</li>
+                <li>Crée un tableau 2D <code>tableauBoutons</code></li>
+                <li>Pour chaque case, crée un <code>Button</code> avec l'image correspondante</li>
+                <li>Configure le bouton pour appeler <code>clic()</code></li>
+                <li>Place le bouton sur la grille</li>
+            </ol>
+            <div class="note">
+                <strong>Note sur les lambda :</strong>
+                <pre><code>lambda b=bouton, absc=x, ordon=y: clic(grillecourante, b, absc, ordon, "P")</code></pre>
+                <p>Les paramètres avec <code>=</code> sont nécessaires pour "capturer" les valeurs au moment de la création.</p>
+            </div>
+
+            <h3><code>clic(g, btn, ligne, colon, typecase)</code> ✅</h3>
+            <p><strong>But :</strong> Gère le clic sur une case de la grille.</p>
+            <p><strong>Actions :</strong></p>
+            <ol>
+                <li>Désactive le bouton cliqué</li>
+                <li>Ajoute les coordonnées à la liste <code>chemin</code></li>
+            </ol>
+        </section>
+
+        <!-- LOGIQUE -->
+        <section id="logique" class="section">
+            <h1>🎮 Fichier <code>jeucastortravail.py</code></h1>
+
+            <h2>Variables globales</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Variable</th>
+                        <th>Type</th>
+                        <th>Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><code>chemin</code></td>
+                        <td>list</td>
+                        <td>Liste des cases cliquées</td>
+                    </tr>
+                    <tr>
+                        <td><code>casedep</code></td>
+                        <td>list</td>
+                        <td>Case de départ [5, 4]</td>
+                    </tr>
+                    <tr>
+                        <td><code>casearriv</code></td>
+                        <td>list</td>
+                        <td>Case d'arrivée [0, 0]</td>
+                    </tr>
+                    <tr>
+                        <td><code>grille_1</code></td>
+                        <td>list</td>
+                        <td>Grille exemple 5×6</td>
+                    </tr>
+                    <tr>
+                        <td><code>grillecourante</code></td>
+                        <td>list</td>
+                        <td>Grille actuellement utilisée</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h2>Représentation de la grille</h2>
+            <p>Une grille est une liste de listes (tableau 2D) :</p>
+            <pre><code>grille_1 = [
+    ["P","B","P","F","P","P"],  # Ligne 0 (haut)
+    ["F","P","P","P","B","B"],  # Ligne 1
+    ["P","P","F","P","B","P"],  # Ligne 2
+    ["P","B","F","F","F","B"],  # Ligne 3
+    ["P","B","P","F","B","F"]   # Ligne 4 (bas)
+]</code></pre>
+            <ul>
+                <li><strong>P</strong> = Pierre 🪨</li>
+                <li><strong>B</strong> = Bois 🪵</li>
+                <li><strong>F</strong> = Feuille 🍃</li>
+            </ul>
+            <p><strong>Coordonnées :</strong> <code>grille[ligne][colonne]</code></p>
+            <ul>
+                <li>Case <code>[0, 0]</code> = haut-gauche (arrivée) 🏁</li>
+                <li>Case <code>[4, 5]</code> = bas-droite (départ) 🚀</li>
+            </ul>
+
+            <h2>Fonctions fournies</h2>
+
+            <h3><code>cheminContinu(parcours)</code> ✅</h3>
+            <p><strong>But :</strong> Vérifie que toutes les cases sont adjacentes consécutivement.</p>
+            <pre><code>def cheminContinu(parcours):
+    for i in range(len(parcours)-1):
+        if not sontVoisines(parcours[i], parcours[i+1]):
+            return False
+    return True  # EN DEHORS de la boucle !</code></pre>
+            <div class="important">
+                <strong>⚠️ Piège :</strong> Le <code>return True</code> doit être en dehors de la boucle.
+            </div>
+
+            <h3><code>casesVoisinesPossibles(grille, cheminParcouru, caseActuelle)</code> ✅</h3>
+            <p><strong>But :</strong> Retourne les cases voisines non encore visitées.</p>
+            <p>Cette fonction calcule les 4 voisins (haut, bas, gauche, droite) et filtre ceux qui sont dans la grille et non visités.</p>
+        </section>
+
+        <!-- PARTIE 1 -->
+        <section id="partie1" class="section">
+            <h1>✏️ Partie I - Fonctions de validation</h1>
+
+            <h2><code>sontVoisines(case1, case2)</code> <span class="difficulty easy">FACILE</span></h2>
+            <p><strong>Spécification :</strong></p>
+            <ul>
+                <li><strong>Entrée :</strong> Deux cases <code>[ligne, colonne]</code></li>
+                <li><strong>Sortie :</strong> <code>True</code> si adjacentes, <code>False</code> sinon</li>
+                <li><strong>Règle :</strong> Adjacence horizontale ou verticale uniquement</li>
+            </ul>
+            <p><strong>Tests attendus :</strong></p>
+            <pre><code>sontVoisines([0,0], [0,1])  # True (à droite)
+sontVoisines([0,0], [1,0])  # True (en dessous)
+sontVoisines([0,0], [1,1])  # False (diagonale)
+sontVoisines([0,0], [2,0])  # False (trop loin)</code></pre>
+            <div class="tip">
+                <strong>💭 Réfléchissez :</strong> Quelle condition mathématique permet de vérifier qu'une case est juste à côté d'une autre ?
+            </div>
+
+            <hr>
+
+            <h2><code>ordreDesCases(parcours, grilleATester)</code> <span class="difficulty medium">MOYEN</span></h2>
+            <p><strong>Spécification :</strong></p>
+            <ul>
+                <li><strong>Entrée :</strong> Un parcours et une grille</li>
+                <li><strong>Sortie :</strong> <code>True</code> si règle d'alternance respectée (max 1 joker)</li>
+                <li><strong>Règle :</strong> Pas deux cases identiques consécutives, sauf 1 fois</li>
+            </ul>
+            <p><strong>Algorithme suggéré :</strong></p>
+            <ol>
+                <li>Construire le mot correspondant au parcours</li>
+                <li>Compter les paires de lettres identiques consécutives</li>
+                <li>Vérifier que le compteur ≤ 1</li>
+            </ol>
+            <div class="example">
+                <strong>Exemples :</strong>
+                <ul>
+                    <li>P → B → F → B → P → <strong style="color: green;">✓ OK</strong> (0 joker)</li>
+                    <li>P → P → B → F → <strong style="color: green;">✓ OK</strong> (1 joker)</li>
+                    <li>P → P → B → B → <strong style="color: red;">✗ KO</strong> (2 jokers)</li>
+                </ul>
+            </div>
+
+            <hr>
+
+            <h2><code>departArrivee(parcours, grille)</code> <span class="difficulty easy">FACILE</span></h2>
+            <p><strong>Spécification :</strong></p>
+            <ul>
+                <li><strong>Entrée :</strong> Un parcours et une grille</li>
+                <li><strong>Sortie :</strong> <code>True</code> si départ = bas-droite ET arrivée = haut-gauche</li>
+            </ul>
+            <div class="tip">
+                <strong>💡 Indices :</strong>
+                <ul>
+                    <li>Départ : <code>[len(grille)-1, len(grille[0])-1]</code></li>
+                    <li>Arrivée : <code>[0, 0]</code></li>
+                    <li>Premier élément : <code>parcours[0]</code></li>
+                    <li>Dernier élément : <code>parcours[-1]</code></li>
+                </ul>
+            </div>
+
+            <hr>
+
+            <h2><code>verification(chemin, grille)</code> <span class="difficulty easy">FACILE</span></h2>
+            <p><strong>Spécification :</strong></p>
+            <ul>
+                <li><strong>Entrée :</strong> Un chemin et une grille</li>
+                <li><strong>Sortie :</strong> Modification de <code>reponse</code></li>
+                <li><strong>Règle :</strong> Les 3 conditions doivent être vraies</li>
+            </ul>
+            <p><strong>Structure suggérée :</strong></p>
+            <pre><code>if (condition1 and condition2 and condition3):
+    reponse.set("Bravo")
+else:
+    reponse.set("Perdu")</code></pre>
+        </section>
+
+        <!-- PARTIE 2 -->
+        <section id="partie2" class="section">
+            <h1>🎲 Partie II - Fonctions aléatoires</h1>
+
+            <h2><code>randomGrille(L, C)</code> <span class="difficulty easy">FACILE</span></h2>
+            <p><strong>Spécification :</strong></p>
+            <ul>
+                <li><strong>Entrée :</strong> Nombre de lignes L, colonnes C</li>
+                <li><strong>Sortie :</strong> Grille L×C aléatoire</li>
+                <li><strong>Effet de bord :</strong> Modifie <code>grillecourante</code></li>
+            </ul>
+            <div class="tip">
+                <strong>💡 Indices :</strong>
+                <ul>
+                    <li>Utilisez <code>choice(("P", "B", "F"))</code></li>
+                    <li>Liste en compréhension à deux niveaux</li>
+                    <li>N'oubliez pas <code>global grillecourante</code></li>
+                </ul>
+            </div>
+
+            <hr>
+
+            <h2><code>cheminAleatoire1(grille)</code> <span class="difficulty medium">MOYEN</span></h2>
+            <p><strong>Spécification :</strong></p>
+            <ul>
+                <li><strong>Entrée :</strong> Une grille</li>
+                <li><strong>Sortie :</strong> Chemin de départ à <code>[0,0]</code></li>
+                <li><strong>Contrainte :</strong> Se déplace vers le haut ou la gauche uniquement</li>
+            </ul>
+            <p><strong>Algorithme :</strong></p>
+            <ol>
+                <li>Partir de la case de départ</li>
+                <li>Tant qu'on n'est pas en <code>[0,0]</code> :
+                    <ul>
+                        <li>Si ligne = 0 : aller à gauche</li>
+                        <li>Si colonne = 0 : aller en haut</li>
+                        <li>Sinon : choisir aléatoirement</li>
+                    </ul>
+                </li>
+            </ol>
+
+            <hr>
+
+            <h2><code>cheminAleatoire2(grille)</code> <span class="difficulty medium">MOYEN/DIFFICILE</span></h2>
+            <p><strong>Spécification :</strong></p>
+            <ul>
+                <li><strong>Entrée :</strong> Une grille</li>
+                <li><strong>Sortie :</strong> Chemin aléatoire (peut être incomplet si coincé)</li>
+                <li><strong>Contrainte :</strong> Choisit parmi les voisins disponibles</li>
+            </ul>
+            <div class="tip">
+                <strong>💡 Optimisation :</strong> Si l'arrivée est dans les cases disponibles, y aller directement !
+            </div>
+
+            <hr>
+
+            <h2><code>initialisenew(grilleinit)</code> <span class="difficulty hard">DIFFICILE</span></h2>
+            <p><strong>Spécification :</strong></p>
+            <ul>
+                <li><strong>Entrée :</strong> Nouvelle grille</li>
+                <li><strong>Actions :</strong>
+                    <ol>
+                        <li>Réinitialiser <code>chemin</code> et <code>grillecourante</code></li>
+                        <li>Supprimer anciens boutons</li>
+                        <li>Recréer la grille</li>
+                    </ol>
+                </li>
+            </ul>
+            <p><strong>Astuce pour supprimer les boutons :</strong></p>
+            <pre><code>for button in fenetre.grid_slaves():
+    if (conditions):
+        button.destroy()</code></pre>
+
+            <hr>
+
+            <h2><code>lanceCheminAleatoire1/2(grille)</code> <span class="difficulty easy">FACILE</span></h2>
+            <p><strong>Étapes :</strong></p>
+            <ol>
+                <li>Appeler <code>cheminAleatoire1/2()</code></li>
+                <li>Pour chaque case, désactiver le bouton</li>
+                <li>Appeler <code>verification()</code></li>
+            </ol>
+            <div class="tip">
+                <strong>💡 Inspiration :</strong> Regardez comment <code>lanceAide()</code> fonctionne.
+            </div>
+        </section>
+
+        <!-- PARTIE 3 -->
+        <section id="partie3" class="section">
+            <h1>🔥 Partie III - Recherche de chemin (DIFFICILE)</h1>
+
+            <h2>Algorithme de backtracking</h2>
+            <div class="important">
+                <strong>⚠️ Cette partie est la plus difficile du projet !</strong>
+            </div>
+
+            <p><strong>Principe du backtracking :</strong></p>
+            <div class="note">
+                <p>Le backtracking est une technique qui explore toutes les possibilités :</p>
+                <ol>
+                    <li>Essayer une solution</li>
+                    <li>Si ça fonctionne, continuer</li>
+                    <li>Si bloqué, <strong>revenir en arrière</strong> et essayer autre chose</li>
+                </ol>
+            </div>
+
+            <h3><code>chercheChemin(grille)</code></h3>
+            <p><strong>Variables utilisées :</strong></p>
+            <ul>
+                <li><code>casecourante</code> : position actuelle</li>
+                <li><code>chemin</code> : cases parcourues</li>
+                <li><code>culDeSac</code> : chemins qui ne mènent nulle part</li>
+                <li><code>nextmove</code> : cases voisines possibles</li>
+            </ul>
+
+            <p><strong>Déroulement :</strong></p>
+            <ol>
+                <li>Démarre de la case de départ</li>
+                <li>Cherche les cases voisines valides</li>
+                <li>Essaie la première case disponible</li>
+                <li>Si le chemin est dans <code>culDeSac</code> : ignorer</li>
+                <li>Si bloqué :
+                    <ul>
+                        <li>Mémoriser dans <code>culDeSac</code></li>
+                        <li>Retirer dernière case (backtrack)</li>
+                        <li>Revenir à la case précédente</li>
+                    </ul>
+                </li>
+                <li>Continue jusqu'à atteindre <code>[0,0]</code></li>
+            </ol>
+
+            <p><strong>Exemple visuel :</strong></p>
+            <pre><code>Départ [4,5]
+├─ Essai 1 : [4,5] → [3,5] → [2,5] → Bloqué ! ❌
+│  └─ Backtrack à [3,5]
+└─ Essai 2 : [4,5] → [3,5] → [3,4] → ... → [0,0] ✓</code></pre>
+
+            <h3><code>rechercheCasesVoisinesPossibles(grille, cheminParcouru, caseActuelle)</code></h3>
+            <p><strong>But :</strong> Filtrer les cases voisines selon la règle d'alternance.</p>
+            <p><strong>Algorithme :</strong></p>
+            <ol>
+                <li>Appeler <code>casesVoisinesPossibles()</code></li>
+                <li>Pour chaque case :
+                    <ul>
+                        <li>Ajouter temporairement au chemin</li>
+                        <li>Tester <code>ordreDesCases()</code></li>
+                        <li>Garder si valide, retirer sinon</li>
+                    </ul>
+                </li>
+                <li>Retourner cases valides</li>
+            </ol>
+        </section>
+
+        <!-- TESTS -->
+        <section id="tests" class="section">
+            <h1>🧪 Tests et débogage</h1>
+
+            <h2>Tests unitaires</h2>
+            <p>Testez chaque fonction individuellement :</p>
+            <pre><code>from jeucastortravail import *
+
+# Test voisinage
+assert sontVoisines([0,0], [0,1]) == True
+assert sontVoisines([0,0], [1,1]) == False
+
+# Test départ/arrivée
+assert departArrivee([[4,5], [0,0]], grille_1) == True
+
+# Test chemin continu
+assert cheminContinu([[4,5], [3,5], [2,5]]) == True</code></pre>
+
+            <h2>Erreurs courantes</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>❌ Erreur</th>
+                        <th>💡 Solution</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><code>return True</code> trop tôt</td>
+                        <td>Mettre le <code>return</code> en dehors de la boucle</td>
+                    </tr>
+                    <tr>
+                        <td>Variable non modifiée</td>
+                        <td>Ajouter <code>global nom_variable</code></td>
+                    </tr>
+                    <tr>
+                        <td>Indices inversés</td>
+                        <td>Toujours <code>[ligne, colonne]</code></td>
+                    </tr>
+                    <tr>
+                        <td>Image non trouvée</td>
+                        <td>Utiliser <code>os.path.join(SCRIPT_DIR, ...)</code></td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h2>Ordre de travail suggéré</h2>
+            <div class="example">
+                <strong>📋 Progression recommandée :</strong>
+                <ol>
+                    <li><code>sontVoisines()</code> - facile</li>
+                    <li><code>departArrivee()</code> - facile</li>
+                    <li><code>ordreDesCases()</code> - moyen</li>
+                    <li><code>verification()</code> - facile</li>
+                    <li><code>randomGrille()</code> - facile</li>
+                    <li><code>cheminAleatoire1()</code> - moyen</li>
+                    <li><code>lanceCheminAleatoire1()</code> - facile</li>
+                    <li><code>lanceCheminAleatoire2()</code> - facile</li>
+                    <li><code>cheminAleatoire2()</code> - moyen/difficile</li>
+                    <li><code>initialisenew()</code> - difficile</li>
+                    <li><code>rechercheCasesVoisinesPossibles()</code> - difficile</li>
+                    <li><code>chercheChemin()</code> - difficile</li>
+                    <li><code>lanceAide()</code> - moyen</li>
+                </ol>
+            </div>
+
+            <h2>Affichage de débogage</h2>
+            <p>Ajoutez des <code>print()</code> pour comprendre ce qui se passe :</p>
+            <pre><code>def ordreDesCases(parcours, grille):
+    mot = ''
+    for case in parcours:
+        mot = mot + grille[case[0]][case[1]]
+    print(f"Mot construit : {mot}")  # Débogage
+    # ... suite du code</code></pre>
+        </section>
+
+        <!-- RESSOURCES -->
+        <section id="ressources" class="section">
+            <h1>📚 Ressources</h1>
+            <ul>
+                <li><strong>Tkinter :</strong> <a href="https://docs.python.org/fr/3/library/tkinter.html" target="_blank">Documentation officielle Python</a></li>
+                <li><strong>Module random :</strong> <a href="https://docs.python.org/fr/3/library/random.html" target="_blank">Documentation officielle Python</a>
+                    <ul>
+                        <li><code>choice(liste)</code> : choisit un élément au hasard</li>
+                        <li><code>randint(a, b)</code> : nombre aléatoire entre a et b</li>
+                    </ul>
+                </li>
+                <li><strong>Listes en compréhension :</strong> <a href="https://docs.python.org/fr/3/tutorial/datastructures.html#list-comprehensions" target="_blank">Tutoriel Python</a></li>
+                <li><strong>Backtracking :</strong> <a href="https://fr.wikipedia.org/wiki/Retour_sur_trace" target="_blank">Article Wikipedia</a></li>
+            </ul>
+        </section>
+
+        <a href="#sommaire" class="back-to-top">⬆️ Haut</a>
+    </div>
+
+    <footer>
+        <h2>🦫 Parcours du Castor - Projet NSI</h2>
+        <p>Guide complet pour les élèves</p>
+        <p style="margin-top: 15px; font-size: 0.9em;">Documentation créée pour une utilisation sur elea</p>
+    </footer>
+</body>
+</html>

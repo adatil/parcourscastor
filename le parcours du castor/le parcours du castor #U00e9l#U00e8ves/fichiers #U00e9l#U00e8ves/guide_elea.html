@@ -1,0 +1,296 @@
+<div style="max-width: 1000px; margin: 0 auto; padding: 20px; font-family: Arial, sans-serif; line-height: 1.6; color: #333; background: #f8f9fa;">
+
+  <!-- TITRE PRINCIPAL -->
+  <h1 style="text-align: center; color: #2c5aa0; font-size: 2.2em; margin-bottom: 30px; padding: 20px; background: linear-gradient(135deg, #e3f2fd, #bbdefb); border-radius: 10px; border: 2px solid #2196f3;">
+    🦫 Guide du Parcours du Castor
+  </h1>
+
+  <!-- OBJECTIFS -->
+  <div style="background: linear-gradient(135deg, #e8f5e8, #c8e6c8); padding: 20px; border-radius: 10px; margin: 20px 0; border-left: 5px solid #4caf50; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
+    <div style="font-weight: bold; color: #2e7d32; font-size: 1.1em; margin-bottom: 10px;">🎯 Objectifs du projet</div>
+    <ul style="margin-left: 20px; margin-top: 10px;">
+      <li style="margin: 8px 0;">Comprendre la séparation logique/interface dans une application</li>
+      <li style="margin: 8px 0;">Manipuler des structures de données (listes, tableaux 2D)</li>
+      <li style="margin: 8px 0;">Implémenter des algorithmes de validation</li>
+      <li style="margin: 8px 0;">Découvrir l'algorithme de backtracking (Partie III)</li>
+      <li style="margin: 8px 0;">Créer une interface graphique interactive avec Tkinter</li>
+    </ul>
+  </div>
+
+  <!-- AVERTISSEMENT IMPORTANT -->
+  <div style="background: linear-gradient(135deg, #ffebee, #ffcdd2); padding: 20px; border-radius: 10px; margin: 20px 0; border-left: 5px solid #f44336; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
+    <div style="font-weight: bold; color: #c62828; font-size: 1.1em; margin-bottom: 10px;">⚠️ Important</div>
+    <p style="margin: 5px 0;">Dans le fichier élève, <strong>TOUTES</strong> les fonctions de <code style="background: #f5f5f5; padding: 2px 6px; border-radius: 3px;">jeucastortravail.py</code> sont à compléter.</p>
+    <p style="margin: 5px 0;"><strong>Seules fournies :</strong> <code style="background: #f5f5f5; padding: 2px 6px; border-radius: 3px;">initialise()</code> et <code style="background: #f5f5f5; padding: 2px 6px; border-radius: 3px;">clic()</code> dans l'interface.</p>
+  </div>
+
+  <!-- PARTIE I -->
+  <div style="margin: 30px 0; padding: 20px; border-radius: 10px; background: white; box-shadow: 0 4px 15px rgba(0,0,0,0.1); border-left: 5px solid #2196f3;">
+    <h2 style="font-size: 1.6em; color: #1976d2; margin-bottom: 20px; padding-bottom: 10px; border-bottom: 2px solid #e3f2fd;">
+      ✏️ Partie I - Fonctions de validation
+    </h2>
+
+    <h3 style="color: #1976d2; margin: 20px 0 15px 0;">1. sontVoisines(case1, case2) - FACILE</h3>
+    <div style="background: linear-gradient(135deg, #fff3e0, #ffe0b2); padding: 15px; border-radius: 8px; margin: 15px 0; border-left: 4px solid #ff9800;">
+      <strong>But :</strong> Vérifie si deux cases sont adjacentes (horizontalement ou verticalement, pas en diagonale).
+    </div>
+    <div style="background: linear-gradient(135deg, #e1f5fe, #b3e5fc); padding: 15px; border-radius: 8px; margin: 15px 0; border-left: 4px solid #03a9f4;">
+      <strong>💡 Indice :</strong> Quelle condition mathématique permet de vérifier qu'une case est juste à côté d'une autre ?
+    </div>
+
+    <h3 style="color: #1976d2; margin: 20px 0 15px 0;">2. cheminContinu(parcours) - MOYEN</h3>
+    <div style="background: linear-gradient(135deg, #fff3e0, #ffe0b2); padding: 15px; border-radius: 8px; margin: 15px 0; border-left: 4px solid #ff9800;">
+      <strong>But :</strong> Vérifie que toutes les cases du parcours sont adjacentes consécutivement.
+    </div>
+    <div style="background: linear-gradient(135deg, #e1f5fe, #b3e5fc); padding: 15px; border-radius: 8px; margin: 15px 0; border-left: 4px solid #03a9f4;">
+      <strong>💡 Indice :</strong> Utilisez une boucle pour parcourir les paires de cases consécutives et vérifiez qu'elles sont voisines avec <code style="background: #f5f5f5; padding: 2px 6px; border-radius: 3px;">sontVoisines()</code>.
+    </div>
+    <div style="background: linear-gradient(135deg, #ffebee, #ffcdd2); padding: 15px; border-radius: 8px; margin: 15px 0; border-left: 4px solid #f44336;">
+      <strong>⚠️ Piège :</strong> Attention à l'emplacement du <code style="background: #f5f5f5; padding: 2px 6px; border-radius: 3px;">return True</code> !
+    </div>
+
+    <h3 style="color: #1976d2; margin: 20px 0 15px 0;">3. ordreDesCases(parcours, grille) - MOYEN</h3>
+    <div style="background: linear-gradient(135deg, #fff3e0, #ffe0b2); padding: 15px; border-radius: 8px; margin: 15px 0; border-left: 4px solid #ff9800;">
+      <strong>But :</strong> Vérifie la règle d'alternance (pas deux cases identiques consécutives, sauf 1 joker).
+    </div>
+    <div style="background: linear-gradient(135deg, #e1f5fe, #b3e5fc); padding: 15px; border-radius: 8px; margin: 15px 0; border-left: 4px solid #03a9f4;">
+      <strong>💡 Indice :</strong> Construisez le "mot" du parcours, puis comptez les doublons consécutifs.
+    </div>
+
+    <h3 style="color: #1976d2; margin: 20px 0 15px 0;">4. departArrivee(parcours, grille) - FACILE</h3>
+    <div style="background: linear-gradient(135deg, #fff3e0, #ffe0b2); padding: 15px; border-radius: 8px; margin: 15px 0; border-left: 4px solid #ff9800;">
+      <strong>But :</strong> Vérifie que le parcours commence en bas-droite et finit en haut-gauche.
+    </div>
+    <div style="background: linear-gradient(135deg, #e1f5fe, #b3e5fc); padding: 15px; border-radius: 8px; margin: 15px 0; border-left: 4px solid #03a9f4;">
+      <strong>💡 Indice :</strong> Comparez la première et la dernière case du parcours avec les positions calculées dynamiquement.
+    </div>
+
+    <h3 style="color: #1976d2; margin: 20px 0 15px 0;">5. verification(chemin, grille) - FACILE</h3>
+    <div style="background: linear-gradient(135deg, #fff3e0, #ffe0b2); padding: 15px; border-radius: 8px; margin: 15px 0; border-left: 4px solid #ff9800;">
+      <strong>But :</strong> Affiche "Bravo" si le parcours est valide, "Perdu" sinon.
+    </div>
+    <div style="background: linear-gradient(135deg, #e1f5fe, #b3e5fc); padding: 15px; border-radius: 8px; margin: 15px 0; border-left: 4px solid #03a9f4;">
+      <strong>💡 Indice :</strong> Utilisez les 3 fonctions de validation et modifiez <code style="background: #f5f5f5; padding: 2px 6px; border-radius: 3px;">reponse</code> selon le résultat.
+    </div>
+  </div>
+
+  <!-- PARTIE II -->
+  <div style="margin: 30px 0; padding: 20px; border-radius: 10px; background: white; box-shadow: 0 4px 15px rgba(0,0,0,0.1); border-left: 5px solid #2196f3;">
+    <h2 style="font-size: 1.6em; color: #1976d2; margin-bottom: 20px; padding-bottom: 10px; border-bottom: 2px solid #e3f2fd;">
+      🎲 Partie II - Chemins aléatoires
+    </h2>
+
+    <h3 style="color: #1976d2; margin: 20px 0 15px 0;">6. randomGrille(L, C) - FACILE</h3>
+    <div style="background: linear-gradient(135deg, #fff3e0, #ffe0b2); padding: 15px; border-radius: 8px; margin: 15px 0; border-left: 4px solid #ff9800;">
+      <strong>But :</strong> Génère une grille aléatoire de taille L×C.
+    </div>
+    <div style="background: linear-gradient(135deg, #e1f5fe, #b3e5fc); padding: 15px; border-radius: 8px; margin: 15px 0; border-left: 4px solid #03a9f4;">
+      <strong>💡 Indice :</strong> Utilisez <code style="background: #f5f5f5; padding: 2px 6px; border-radius: 3px;">choice()</code> et une liste en compréhension à deux niveaux. N'oubliez pas <code style="background: #f5f5f5; padding: 2px 6px; border-radius: 3px;">global</code>.
+    </div>
+
+    <h3 style="color: #1976d2; margin: 20px 0 15px 0;">7. casesVoisinesPossibles(grille, cheminParcouru, caseActuelle) - MOYEN</h3>
+    <div style="background: linear-gradient(135deg, #fff3e0, #ffe0b2); padding: 15px; border-radius: 8px; margin: 15px 0; border-left: 4px solid #ff9800;">
+      <strong>But :</strong> Retourne les cases voisines non encore visitées.
+    </div>
+    <div style="background: linear-gradient(135deg, #e1f5fe, #b3e5fc); padding: 15px; border-radius: 8px; margin: 15px 0; border-left: 4px solid #03a9f4;">
+      <strong>💡 Indice :</strong> Calculez les 4 voisins, puis filtrez ceux qui sont dans la grille et non déjà visités.
+    </div>
+
+    <h3 style="color: #1976d2; margin: 20px 0 15px 0;">8. cheminAleatoire1(grille) - MOYEN</h3>
+    <div style="background: linear-gradient(135deg, #fff3e0, #ffe0b2); padding: 15px; border-radius: 8px; margin: 15px 0; border-left: 4px solid #ff9800;">
+      <strong>But :</strong> Génère un chemin aléatoire en allant vers le haut ou la gauche uniquement.
+    </div>
+    <div style="background: linear-gradient(135deg, #e1f5fe, #b3e5fc); padding: 15px; border-radius: 8px; margin: 15px 0; border-left: 4px solid #03a9f4;">
+      <strong>💡 Indice :</strong> Utilisez une boucle <code style="background: #f5f5f5; padding: 2px 6px; border-radius: 3px;">while</code> et gérez les cas particuliers (ligne 0, colonne 0).
+    </div>
+
+    <h3 style="color: #1976d2; margin: 20px 0 15px 0;">9. cheminAleatoire2(grille) - MOYEN/DIFFICILE</h3>
+    <div style="background: linear-gradient(135deg, #fff3e0, #ffe0b2); padding: 15px; border-radius: 8px; margin: 15px 0; border-left: 4px solid #ff9800;">
+      <strong>But :</strong> Génère un chemin aléatoire en choisissant parmi les voisins disponibles.
+    </div>
+    <div style="background: linear-gradient(135deg, #e1f5fe, #b3e5fc); padding: 15px; border-radius: 8px; margin: 15px 0; border-left: 4px solid #03a9f4;">
+      <strong>💡 Indice :</strong> Utilisez <code style="background: #f5f5f5; padding: 2px 6px; border-radius: 3px;">casesVoisinesPossibles()</code> et <code style="background: #f5f5f5; padding: 2px 6px; border-radius: 3px;">choice()</code>. Attention au cas où le castor se retrouve coincé !
+    </div>
+
+    <h3 style="color: #1976d2; margin: 20px 0 15px 0;">10. initialisenew(grilleinit) - DIFFICILE</h3>
+    <div style="background: linear-gradient(135deg, #fff3e0, #ffe0b2); padding: 15px; border-radius: 8px; margin: 15px 0; border-left: 4px solid #ff9800;">
+      <strong>But :</strong> Réinitialise le jeu avec une nouvelle grille.
+    </div>
+    <div style="background: linear-gradient(135deg, #e1f5fe, #b3e5fc); padding: 15px; border-radius: 8px; margin: 15px 0; border-left: 4px solid #03a9f4;">
+      <strong>💡 Indice :</strong> Inspirez-vous de <code style="background: #f5f5f5; padding: 2px 6px; border-radius: 3px;">initialise()</code>. Pensez à <code style="background: #f5f5f5; padding: 2px 6px; border-radius: 3px;">.destroy()</code> pour les anciens boutons.
+    </div>
+
+    <h3 style="color: #1976d2; margin: 20px 0 15px 0;">11-12. lanceCheminAleatoire1/2(grille) - FACILE</h3>
+    <div style="background: linear-gradient(135deg, #fff3e0, #ffe0b2); padding: 15px; border-radius: 8px; margin: 15px 0; border-left: 4px solid #ff9800;">
+      <strong>But :</strong> Lance le chemin aléatoire et l'affiche sur la grille.
+    </div>
+    <div style="background: linear-gradient(135deg, #e1f5fe, #b3e5fc); padding: 15px; border-radius: 8px; margin: 15px 0; border-left: 4px solid #03a9f4;">
+      <strong>💡 Indice :</strong> Inspirez-vous de <code style="background: #f5f5f5; padding: 2px 6px; border-radius: 3px;">lanceAide()</code> dans le même fichier.
+    </div>
+  </div>
+
+  <!-- PARTIE III -->
+  <div style="margin: 30px 0; padding: 20px; border-radius: 10px; background: white; box-shadow: 0 4px 15px rgba(0,0,0,0.1); border-left: 5px solid #d32f2f;">
+    <h2 style="font-size: 1.6em; color: #d32f2f; margin-bottom: 20px; padding-bottom: 10px; border-bottom: 2px solid #ffcdd2;">
+      🔥 Partie III - Backtracking (DIFFICILE)
+    </h2>
+
+    <div style="background: linear-gradient(135deg, #ffebee, #ffcdd2); padding: 20px; border-radius: 10px; margin: 20px 0; border-left: 5px solid #f44336; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
+      <div style="font-weight: bold; color: #c62828; font-size: 1.1em; margin-bottom: 10px;">⚠️ Partie la plus difficile du projet !</div>
+      <p style="margin: 5px 0;">Cette section nécessite de comprendre l'algorithme de backtracking (retour en arrière).</p>
+    </div>
+
+    <h3 style="color: #d32f2f; margin: 20px 0 15px 0;">13. rechercheCasesVoisinesPossibles(grille, cheminParcouru, caseActuelle) - DIFFICILE</h3>
+    <div style="background: linear-gradient(135deg, #fff3e0, #ffe0b2); padding: 15px; border-radius: 8px; margin: 15px 0; border-left: 4px solid #ff9800;">
+      <strong>But :</strong> Comme <code style="background: #f5f5f5; padding: 2px 6px; border-radius: 3px;">casesVoisinesPossibles</code> mais en filtrant selon la règle d'alternance.
+    </div>
+
+    <div style="background: linear-gradient(135deg, #e8f5e8, #c8e6c8); padding: 20px; border-radius: 10px; margin: 20px 0; border-left: 5px solid #4caf50; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
+      <div style="font-weight: bold; color: #2e7d32; font-size: 1.1em; margin-bottom: 10px;">📋 Algorithme suggéré</div>
+      <ol style="margin-left: 20px; margin-top: 10px;">
+        <li style="margin: 8px 0;">Appeler <code style="background: #f5f5f5; padding: 2px 6px; border-radius: 3px;">casesVoisinesPossibles()</code> pour avoir la liste de base</li>
+        <li style="margin: 8px 0;">Pour chaque case de cette liste :
+          <ul style="margin-left: 20px;">
+            <li>Ajouter temporairement la case au chemin</li>
+            <li>Tester si <code style="background: #f5f5f5; padding: 2px 6px; border-radius: 3px;">ordreDesCases()</code> est toujours respecté</li>
+            <li>Si oui, garder la case ; sinon, l'éliminer</li>
+            <li>Retirer la case du chemin (test temporaire)</li>
+          </ul>
+        </li>
+        <li style="margin: 8px 0;">Retourner uniquement les cases valides</li>
+      </ol>
+    </div>
+
+    <h3 style="color: #d32f2f; margin: 20px 0 15px 0;">14. chercheChemin(grille) - TRÈS DIFFICILE</h3>
+    <div style="background: linear-gradient(135deg, #fff3e0, #ffe0b2); padding: 15px; border-radius: 8px; margin: 15px 0; border-left: 4px solid #ff9800;">
+      <strong>But :</strong> Recherche un chemin valide avec l'algorithme de backtracking (retour en arrière).
+    </div>
+
+    <div style="background: linear-gradient(135deg, #e8f5e8, #c8e6c8); padding: 20px; border-radius: 10px; margin: 20px 0; border-left: 5px solid #4caf50; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
+      <div style="font-weight: bold; color: #2e7d32; font-size: 1.1em; margin-bottom: 10px;">🧠 Principe du backtracking</div>
+      <p style="margin: 5px 0;">Le backtracking est une technique de recherche exhaustive qui explore toutes les possibilités en :</p>
+      <ol style="margin-left: 20px; margin-top: 10px;">
+        <li style="margin: 8px 0;">Essayant une solution</li>
+        <li style="margin: 8px 0;">Si ça fonctionne, on continue</li>
+        <li style="margin: 8px 0;">Si on est bloqué, on <strong>revient en arrière</strong> et on essaie autre chose</li>
+      </ol>
+    </div>
+
+    <div style="background: linear-gradient(135deg, #e8f5e8, #c8e6c8); padding: 20px; border-radius: 10px; margin: 20px 0; border-left: 5px solid #4caf50; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
+      <div style="font-weight: bold; color: #2e7d32; font-size: 1.1em; margin-bottom: 10px;">📋 Déroulement de l'algorithme</div>
+      <ol style="margin-left: 20px; margin-top: 10px;">
+        <li style="margin: 8px 0;">Partir de la case de départ</li>
+        <li style="margin: 8px 0;">Chercher les cases voisines valides (qui respectent les règles)</li>
+        <li style="margin: 8px 0;">Essayer la première case disponible</li>
+        <li style="margin: 8px 0;">Si le chemin actuel est déjà dans <code style="background: #f5f5f5; padding: 2px 6px; border-radius: 3px;">culDeSac</code> : on l'ignore</li>
+        <li style="margin: 8px 0;">Si toutes les cases ont été testées (on est bloqué) :
+          <ul style="margin-left: 20px;">
+            <li>On mémorise ce chemin dans <code style="background: #f5f5f5; padding: 2px 6px; border-radius: 3px;">culDeSac</code></li>
+            <li>On retire la dernière case (<strong>backtrack</strong>)</li>
+            <li>On revient à la case précédente</li>
+          </ul>
+        </li>
+        <li style="margin: 8px 0;">On continue jusqu'à atteindre [0,0] ou épuiser toutes les possibilités</li>
+      </ol>
+    </div>
+
+    <div style="background: linear-gradient(135deg, #e1f5fe, #b3e5fc); padding: 15px; border-radius: 8px; margin: 15px 0; border-left: 4px solid #03a9f4;">
+      <strong>💡 Variables utiles :</strong>
+      <ul style="margin-left: 20px; margin-top: 10px;">
+        <li style="margin: 5px 0;"><code style="background: #f5f5f5; padding: 2px 6px; border-radius: 3px;">casecourante</code> : position actuelle du castor</li>
+        <li style="margin: 5px 0;"><code style="background: #f5f5f5; padding: 2px 6px; border-radius: 3px;">chemin</code> : liste des cases parcourues jusqu'ici</li>
+        <li style="margin: 5px 0;"><code style="background: #f5f5f5; padding: 2px 6px; border-radius: 3px;">culDeSac</code> : liste des chemins testés qui ne mènent nulle part</li>
+        <li style="margin: 5px 0;"><code style="background: #f5f5f5; padding: 2px 6px; border-radius: 3px;">nextmove</code> : cases voisines possibles</li>
+      </ul>
+    </div>
+
+    <h3 style="color: #d32f2f; margin: 20px 0 15px 0;">15. lanceAide(grille) - MOYEN</h3>
+    <div style="background: linear-gradient(135deg, #fff3e0, #ffe0b2); padding: 15px; border-radius: 8px; margin: 15px 0; border-left: 4px solid #ff9800;">
+      <strong>But :</strong> Lance la recherche de chemin et l'affiche sur la grille.
+    </div>
+    <div style="background: linear-gradient(135deg, #e1f5fe, #b3e5fc); padding: 15px; border-radius: 8px; margin: 15px 0; border-left: 4px solid #03a9f4;">
+      <strong>💡 Indice :</strong> Similaire à <code style="background: #f5f5f5; padding: 2px 6px; border-radius: 3px;">lanceCheminAleatoire1/2()</code> mais avec <code style="background: #f5f5f5; padding: 2px 6px; border-radius: 3px;">chercheChemin()</code>.
+    </div>
+  </div>
+
+  <!-- ORDRE DE TRAVAIL -->
+  <div style="margin: 30px 0; padding: 20px; border-radius: 10px; background: white; box-shadow: 0 4px 15px rgba(0,0,0,0.1); border-left: 5px solid #2196f3;">
+    <h2 style="font-size: 1.6em; color: #1976d2; margin-bottom: 20px; padding-bottom: 10px; border-bottom: 2px solid #e3f2fd;">
+      📋 Ordre de travail suggéré
+    </h2>
+
+    <div style="background: linear-gradient(135deg, #e8f5e8, #c8e6c8); padding: 20px; border-radius: 10px; margin: 20px 0; border-left: 5px solid #4caf50; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
+      <div style="font-weight: bold; color: #2e7d32; font-size: 1.1em; margin-bottom: 10px;">✏️ Partie I - Validation</div>
+      <ol style="margin-left: 20px; margin-top: 10px;">
+        <li style="margin: 5px 0;"><code style="background: #f5f5f5; padding: 2px 6px; border-radius: 3px;">sontVoisines()</code> - facile</li>
+        <li style="margin: 5px 0;"><code style="background: #f5f5f5; padding: 2px 6px; border-radius: 3px;">cheminContinu()</code> - moyen</li>
+        <li style="margin: 5px 0;"><code style="background: #f5f5f5; padding: 2px 6px; border-radius: 3px;">departArrivee()</code> - facile</li>
+        <li style="margin: 5px 0;"><code style="background: #f5f5f5; padding: 2px 6px; border-radius: 3px;">ordreDesCases()</code> - moyen</li>
+        <li style="margin: 5px 0;"><code style="background: #f5f5f5; padding: 2px 6px; border-radius: 3px;">verification()</code> - facile</li>
+      </ol>
+    </div>
+
+    <div style="background: linear-gradient(135deg, #e1f5fe, #b3e5fc); padding: 20px; border-radius: 10px; margin: 20px 0; border-left: 5px solid #03a9f4; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
+      <div style="font-weight: bold; color: #01579b; font-size: 1.1em; margin-bottom: 10px;">🎲 Partie II - Chemins aléatoires</div>
+      <ol start="6" style="margin-left: 20px; margin-top: 10px;">
+        <li style="margin: 5px 0;"><code style="background: #f5f5f5; padding: 2px 6px; border-radius: 3px;">randomGrille()</code> - facile</li>
+        <li style="margin: 5px 0;"><code style="background: #f5f5f5; padding: 2px 6px; border-radius: 3px;">casesVoisinesPossibles()</code> - moyen</li>
+        <li style="margin: 5px 0;"><code style="background: #f5f5f5; padding: 2px 6px; border-radius: 3px;">cheminAleatoire1()</code> - moyen</li>
+        <li style="margin: 5px 0;"><code style="background: #f5f5f5; padding: 2px 6px; border-radius: 3px;">lanceCheminAleatoire1()</code> - facile</li>
+        <li style="margin: 5px 0;"><code style="background: #f5f5f5; padding: 2px 6px; border-radius: 3px;">lanceCheminAleatoire2()</code> - facile</li>
+        <li style="margin: 5px 0;"><code style="background: #f5f5f5; padding: 2px 6px; border-radius: 3px;">cheminAleatoire2()</code> - moyen/difficile</li>
+        <li style="margin: 5px 0;"><code style="background: #f5f5f5; padding: 2px 6px; border-radius: 3px;">initialisenew()</code> - difficile</li>
+      </ol>
+    </div>
+
+    <div style="background: linear-gradient(135deg, #ffebee, #ffcdd2); padding: 20px; border-radius: 10px; margin: 20px 0; border-left: 5px solid #f44336; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
+      <div style="font-weight: bold; color: #c62828; font-size: 1.1em; margin-bottom: 10px;">🔥 Partie III - Backtracking</div>
+      <ol start="13" style="margin-left: 20px; margin-top: 10px;">
+        <li style="margin: 5px 0;"><code style="background: #f5f5f5; padding: 2px 6px; border-radius: 3px;">rechercheCasesVoisinesPossibles()</code> - difficile</li>
+        <li style="margin: 5px 0;"><code style="background: #f5f5f5; padding: 2px 6px; border-radius: 3px;">chercheChemin()</code> - très difficile</li>
+        <li style="margin: 5px 0;"><code style="background: #f5f5f5; padding: 2px 6px; border-radius: 3px;">lanceAide()</code> - moyen</li>
+      </ol>
+    </div>
+  </div>
+
+  <!-- ERREURS COURANTES -->
+  <div style="margin: 30px 0; padding: 20px; border-radius: 10px; background: white; box-shadow: 0 4px 15px rgba(0,0,0,0.1); border-left: 5px solid #ff9800;">
+    <h2 style="font-size: 1.6em; color: #f57c00; margin-bottom: 20px; padding-bottom: 10px; border-bottom: 2px solid #ffe0b2;">
+      🐛 Erreurs courantes
+    </h2>
+
+    <table style="width: 100%; border-collapse: collapse; margin: 20px 0;">
+      <thead>
+        <tr>
+          <th style="background-color: #ff9800; color: white; padding: 12px; border: 1px solid #ddd; text-align: left;">❌ Erreur</th>
+          <th style="background-color: #ff9800; color: white; padding: 12px; border: 1px solid #ddd; text-align: left;">💡 Solution</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr style="background-color: #fff3e0;">
+          <td style="padding: 12px; border: 1px solid #ddd;"><code style="background: #f5f5f5; padding: 2px 6px; border-radius: 3px;">return True</code> trop tôt</td>
+          <td style="padding: 12px; border: 1px solid #ddd;">Mettre le <code style="background: #f5f5f5; padding: 2px 6px; border-radius: 3px;">return True</code> en dehors de la boucle</td>
+        </tr>
+        <tr>
+          <td style="padding: 12px; border: 1px solid #ddd;">Variable non modifiée</td>
+          <td style="padding: 12px; border: 1px solid #ddd;">Ajouter <code style="background: #f5f5f5; padding: 2px 6px; border-radius: 3px;">global nom_variable</code></td>
+        </tr>
+        <tr style="background-color: #fff3e0;">
+          <td style="padding: 12px; border: 1px solid #ddd;">Indices inversés</td>
+          <td style="padding: 12px; border: 1px solid #ddd;">Toujours <code style="background: #f5f5f5; padding: 2px 6px; border-radius: 3px;">[ligne, colonne]</code></td>
+        </tr>
+        <tr>
+          <td style="padding: 12px; border: 1px solid #ddd;">Oublier le <code style="background: #f5f5f5; padding: 2px 6px; border-radius: 3px;">casearriv</code></td>
+          <td style="padding: 12px; border: 1px solid #ddd;">La condition d'arrêt est <code style="background: #f5f5f5; padding: 2px 6px; border-radius: 3px;">case != [0, 0]</code></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- FOOTER -->
+  <div style="text-align: center; margin-top: 40px; padding: 30px; background: linear-gradient(135deg, #2c5aa0 0%, #3d7ac8 100%); color: white; border-radius: 10px;">
+    <p style="margin: 0; font-size: 1.1em;">🦫 Parcours du Castor - Projet NSI</p>
+    <p style="margin: 10px 0 0 0; font-size: 0.9em; opacity: 0.9;">Guide complet pour les élèves</p>
+  </div>
+
+</div>

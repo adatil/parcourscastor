@@ -156,53 +156,9 @@ casearriv = [0, 0]    # Case d'arrivée (en haut à gauche)
 grille_1 = [...]      # Grille exemple 5x6
 grillecourante = ...  # Grille actuellement utilisée</code></pre>
 
-        <h3>Fonctions fournies</h3>
-
-        <h4><code>cheminContinu(parcours)</code> ✅</h4>
-        <p>Vérifie que toutes les cases du parcours sont adjacentes consécutivement.</p>
-        <div class="success">
-            <strong>✅ Cette fonction vous est fournie comme exemple</strong> pour vous montrer comment utiliser <code>sontVoisines()</code>.
-        </div>
-        <pre><code>def cheminContinu(parcours):
-    for i in range(len(parcours)-1):
-        if not sontVoisines(parcours[i], parcours[i+1]):
-            return False
-    return True  # ATTENTION : ce return est EN DEHORS de la boucle !</code></pre>
+        <h3>⚠️ Attention : Toutes les fonctions de ce fichier sont À COMPLÉTER</h3>
         <div class="warning">
-            <strong>⚠️ Note importante :</strong> Le <code>return True</code> doit être en dehors de la boucle <code>for</code>, sinon la fonction retournerait <code>True</code> dès la première paire de cases voisines testée.
-        </div>
-
-        <h4><code>casesVoisinesPossibles(grille, cheminParcouru, caseActuelle)</code> ✅</h4>
-        <p>Retourne la liste des cases voisines non encore visitées.</p>
-        <p><strong>Paramètres</strong> :</p>
-        <ul>
-            <li><code>grille</code> : la grille de jeu</li>
-            <li><code>cheminParcouru</code> : les cases déjà visitées</li>
-            <li><code>caseActuelle</code> : position actuelle <code>[ligne, colonne]</code></li>
-        </ul>
-        <p><strong>Retourne</strong> : liste des positions possibles <code>[[l1,c1], [l2,c2], ...]</code></p>
-        <div class="success">
-            <strong>✅ Cette fonction est fournie</strong> car elle sera utile pour les chemins aléatoires.
-        </div>
-
-        <hr>
-
-        <h3>Partie III - Recherche de chemin <span class="difficulty hard">DIFFICILE</span></h3>
-
-        <h4><code>chercheChemin(grille)</code> et <code>rechercheCasesVoisinesPossibles(...)</code> ❌</h4>
-        <p><strong>À COMPLÉTER</strong> - Recherche un chemin valide avec la méthode du <strong>backtracking</strong> (retour en arrière).</p>
-        <div class="warning">
-            <strong>⚠️ Partie difficile du projet !</strong>
-        </div>
-        <p><strong>Principe du backtracking</strong> :</p>
-        <ol>
-            <li>Partir de la case de départ</li>
-            <li>Choisir une case voisine valide</li>
-            <li>Si bloqué (cul-de-sac), revenir en arrière et essayer une autre direction</li>
-            <li>Continuer jusqu'à atteindre l'arrivée ou épuiser les possibilités</li>
-        </ol>
-        <div class="tip">
-            <strong>💡 Aide :</strong> Lisez la documentation technique pour comprendre l'algorithme en détail.
+            <strong>Important :</strong> Contrairement à l'interface, AUCUNE fonction de logique n'est fournie complètement. Vous devez toutes les implémenter !
         </div>
     </div>
 
@@ -227,9 +183,9 @@ grillecourante = ...  # Grille actuellement utilisée</code></pre>
 
         <h4><code>lanceAide(grille)</code> ❌</h4>
         <p><strong>À COMPLÉTER</strong> - Appelle <code>chercheChemin</code> et affiche le résultat sur la grille.</p>
-        <div class="tip">
-            <strong>💡 Utilité :</strong> Vous pourrez vous en inspirer pour <code>lanceCheminAleatoire1/2()</code>.
-        </div>
+
+        <h4><code>verification(chemin, grille)</code> ❌</h4>
+        <p><strong>À COMPLÉTER</strong> - Vérifie la validité d'un chemin et affiche "Bravo" ou "Perdu".</p>
     </div>
 
     <hr>
@@ -246,6 +202,21 @@ grillecourante = ...  # Grille actuellement utilisée</code></pre>
 sontVoisines([0,0], [1,0])  # doit retourner True
 sontVoisines([0,0], [1,1])  # doit retourner False (diagonale)
 sontVoisines([0,0], [2,0])  # doit retourner False (trop loin)</code></pre>
+
+        <hr>
+
+        <h4><code>cheminContinu(parcours)</code> <span class="difficulty medium">MOYEN</span></h4>
+        <p><strong>But</strong> : Vérifie que toutes les cases du parcours sont adjacentes consécutivement.</p>
+        <p><strong>Algorithme suggéré</strong> :</p>
+        <ol>
+            <li>Parcourir toutes les paires de cases consécutives avec une boucle <code>for i in range(len(parcours)-1)</code></li>
+            <li>Pour chaque paire, vérifier qu'elles sont voisines avec <code>sontVoisines(parcours[i], parcours[i+1])</code></li>
+            <li>Si une paire n'est pas voisine : retourner <code>False</code></li>
+            <li>Si toutes les paires sont voisines : retourner <code>True</code></li>
+        </ol>
+        <div class="warning">
+            <strong>⚠️ Piège :</strong> Le <code>return True</code> doit être EN DEHORS de la boucle <code>for</code>, sinon la fonction retournera <code>True</code> dès la première paire voisine testée !
+        </div>
 
         <hr>
 
@@ -305,6 +276,27 @@ sontVoisines([0,0], [2,0])  # doit retourner False (trop loin)</code></pre>
                 <li>Utilisez une liste en compréhension à deux niveaux</li>
                 <li>N'oubliez pas <code>global grillecourante</code></li>
             </ul>
+        </div>
+
+        <hr>
+
+        <h4><code>casesVoisinesPossibles(grille, cheminParcouru, caseActuelle)</code> <span class="difficulty medium">MOYEN</span></h4>
+        <p><strong>But</strong> : Retourne les cases voisines non encore visitées.</p>
+        <p><strong>Algorithme suggéré</strong> :</p>
+        <ol>
+            <li>Calculer les dimensions de la grille (L lignes, C colonnes)</li>
+            <li>Générer la liste de toutes les cases de la grille</li>
+            <li>À partir de la case actuelle <code>[x, y]</code>, calculer les 4 positions voisines (haut, bas, gauche, droite)</li>
+            <li>Filtrer pour ne garder que les cases qui :
+                <ul>
+                    <li>Sont dans la grille</li>
+                    <li>Ne sont pas déjà dans <code>cheminParcouru</code></li>
+                </ul>
+            </li>
+            <li>Retourner la liste filtrée</li>
+        </ol>
+        <div class="tip">
+            <strong>💡 Utilité :</strong> Cette fonction sera utilisée pour générer les chemins aléatoires et pour le backtracking.
         </div>
 
         <hr>
@@ -414,12 +406,49 @@ print(departArrivee(parcours))       # True si bon départ/arrivée</code></pre>
             </tbody>
         </table>
 
+        <h3>Partie III - Recherche de chemin (Backtracking) <span class="difficulty hard">DIFFICILE</span></h3>
+
+        <h4><code>rechercheCasesVoisinesPossibles(grille, cheminParcouru, caseActuelle)</code> <span class="difficulty hard">DIFFICILE</span></h4>
+        <p><strong>But</strong> : Comme <code>casesVoisinesPossibles</code> mais en filtrant selon la règle d'alternance.</p>
+        <p><strong>Algorithme suggéré</strong> :</p>
+        <ol>
+            <li>Appeler <code>casesVoisinesPossibles()</code> pour avoir la liste de base</li>
+            <li>Pour chaque case de cette liste :
+                <ul>
+                    <li>Ajouter temporairement la case au chemin</li>
+                    <li>Tester si <code>ordreDesCases()</code> est toujours respecté</li>
+                    <li>Si oui, garder la case ; sinon, l'éliminer</li>
+                    <li>Retirer la case du chemin (test temporaire)</li>
+                </ul>
+            </li>
+            <li>Retourner uniquement les cases valides</li>
+        </ol>
+
+        <h4><code>chercheChemin(grille)</code> <span class="difficulty hard">TRÈS DIFFICILE</span></h4>
+        <p><strong>But</strong> : Recherche un chemin valide avec l'algorithme de backtracking (retour en arrière).</p>
+        <div class="warning">
+            <strong>⚠️ Cette partie est la plus difficile du projet !</strong>
+        </div>
+        <p><strong>Principe du backtracking</strong> :</p>
+        <ol>
+            <li>Partir de la case de départ</li>
+            <li>Choisir une case voisine valide</li>
+            <li>Si bloqué (cul-de-sac), revenir en arrière et essayer une autre direction</li>
+            <li>Continuer jusqu'à atteindre l'arrivée ou épuiser les possibilités</li>
+        </ol>
+        <div class="tip">
+            <strong>💡 Aide :</strong> Consultez la documentation technique complète pour comprendre l'algorithme en détail.
+        </div>
+
+        <hr>
+
         <h3>Ordre de travail suggéré</h3>
 
         <div class="example">
             <strong>📋 Partie I</strong> (dans l'ordre) :
             <ol>
-                <li><code>sontVoisines()</code> - facile, formule donnée</li>
+                <li><code>sontVoisines()</code> - facile</li>
+                <li><code>cheminContinu()</code> - moyen, utilise sontVoisines()</li>
                 <li><code>departArrivee()</code> - facile, juste une comparaison</li>
                 <li><code>ordreDesCases()</code> - moyen, construction de mot</li>
                 <li><code>verification()</code> - facile, appel des 3 fonctions</li>
@@ -428,11 +457,12 @@ print(departArrivee(parcours))       # True si bon départ/arrivée</code></pre>
 
         <div class="example">
             <strong>🎲 Partie II</strong> (dans l'ordre) :
-            <ol start="5">
+            <ol start="6">
                 <li><code>randomGrille()</code> - facile, liste en compréhension</li>
+                <li><code>casesVoisinesPossibles()</code> - moyen, calcul des voisins</li>
                 <li><code>cheminAleatoire1()</code> - moyen, while + conditions</li>
-                <li><code>lanceCheminAleatoire1()</code> - facile, inspiré de <code>lanceAide()</code></li>
-                <li><code>lanceCheminAleatoire2()</code> - facile, idem</li>
+                <li><code>lanceCheminAleatoire1()</code> - facile</li>
+                <li><code>lanceCheminAleatoire2()</code> - facile</li>
                 <li><code>cheminAleatoire2()</code> - moyen/difficile, gestion du hasard</li>
                 <li><code>initialisenew()</code> - difficile, gestion de l'interface</li>
             </ol>
@@ -440,7 +470,7 @@ print(departArrivee(parcours))       # True si bon départ/arrivée</code></pre>
 
         <div class="warning">
             <strong>🔥 Partie III</strong> (DIFFICILE - Backtracking) :
-            <ol start="11">
+            <ol start="13">
                 <li><code>rechercheCasesVoisinesPossibles()</code> - filtrage avec règle d'alternance</li>
                 <li><code>chercheChemin()</code> - algorithme de backtracking complet</li>
                 <li><code>lanceAide()</code> - affichage du résultat</li>

@@ -394,6 +394,10 @@ photoF = PhotoImage(file=os.path.join(SCRIPT_DIR, "feuille.png"))</code></pre>
         <section id="logique" class="section">
             <h1>🎮 Fichier <code>jeucastortravail.py</code></h1>
 
+            <div class="important">
+                <strong>⚠️ Important :</strong> Dans le fichier élève, <strong>TOUTES</strong> les fonctions de <code>jeucastortravail.py</code> sont à compléter. Aucune n'est fournie avec du code.
+            </div>
+
             <h2>Variables globales</h2>
             <table>
                 <thead>
@@ -452,22 +456,24 @@ photoF = PhotoImage(file=os.path.join(SCRIPT_DIR, "feuille.png"))</code></pre>
                 <li>Case <code>[4, 5]</code> = bas-droite (départ) 🚀</li>
             </ul>
 
-            <h2>Fonctions fournies</h2>
+            <h2>Fonctions à compléter</h2>
 
-            <h3><code>cheminContinu(parcours)</code> ✅</h3>
+            <h3><code>cheminContinu(parcours)</code> ❌</h3>
             <p><strong>But :</strong> Vérifie que toutes les cases sont adjacentes consécutivement.</p>
-            <pre><code>def cheminContinu(parcours):
-    for i in range(len(parcours)-1):
-        if not sontVoisines(parcours[i], parcours[i+1]):
-            return False
-    return True  # EN DEHORS de la boucle !</code></pre>
+            <p><strong>Algorithme suggéré :</strong></p>
+            <ol>
+                <li>Parcourir toutes les paires de cases consécutives</li>
+                <li>Vérifier qu'elles sont voisines avec <code>sontVoisines()</code></li>
+                <li>Si une paire n'est pas voisine : retourner <code>False</code></li>
+                <li>Si toutes les paires sont voisines : retourner <code>True</code></li>
+            </ol>
             <div class="important">
-                <strong>⚠️ Piège :</strong> Le <code>return True</code> doit être en dehors de la boucle.
+                <strong>⚠️ Piège :</strong> Le <code>return True</code> doit être EN DEHORS de la boucle <code>for</code> !
             </div>
 
-            <h3><code>casesVoisinesPossibles(grille, cheminParcouru, caseActuelle)</code> ✅</h3>
+            <h3><code>casesVoisinesPossibles(grille, cheminParcouru, caseActuelle)</code> ❌</h3>
             <p><strong>But :</strong> Retourne les cases voisines non encore visitées.</p>
-            <p>Cette fonction calcule les 4 voisins (haut, bas, gauche, droite) et filtre ceux qui sont dans la grille et non visités.</p>
+            <p><strong>Algorithme :</strong> Calculer les 4 voisins (haut, bas, gauche, droite) et filtrer ceux qui sont dans la grille et non visités.</p>
         </section>
 
         <!-- PARTIE 1 -->
@@ -488,6 +494,26 @@ sontVoisines([0,0], [1,1])  # False (diagonale)
 sontVoisines([0,0], [2,0])  # False (trop loin)</code></pre>
             <div class="tip">
                 <strong>💭 Réfléchissez :</strong> Quelle condition mathématique permet de vérifier qu'une case est juste à côté d'une autre ?
+            </div>
+
+            <hr>
+
+            <h2><code>cheminContinu(parcours)</code> <span class="difficulty medium">MOYEN</span></h2>
+            <p><strong>Spécification :</strong></p>
+            <ul>
+                <li><strong>Entrée :</strong> Un parcours (liste de cases)</li>
+                <li><strong>Sortie :</strong> <code>True</code> si toutes les cases sont adjacentes consécutivement</li>
+                <li><strong>Règle :</strong> Chaque case doit être voisine de la suivante</li>
+            </ul>
+            <p><strong>Algorithme suggéré :</strong></p>
+            <ol>
+                <li>Parcourir toutes les paires de cases consécutives</li>
+                <li>Vérifier qu'elles sont voisines avec <code>sontVoisines()</code></li>
+                <li>Si une paire n'est pas voisine : retourner <code>False</code></li>
+                <li>Si toutes les paires sont voisines : retourner <code>True</code></li>
+            </ol>
+            <div class="important">
+                <strong>⚠️ Piège à éviter :</strong> Le <code>return True</code> doit être EN DEHORS de la boucle <code>for</code>, sinon la fonction retournera <code>True</code> dès la première paire voisine testée !
             </div>
 
             <hr>
@@ -566,6 +592,25 @@ else:
                     <li>Liste en compréhension à deux niveaux</li>
                     <li>N'oubliez pas <code>global grillecourante</code></li>
                 </ul>
+            </div>
+
+            <hr>
+
+            <h2><code>casesVoisinesPossibles(grille, cheminParcouru, caseActuelle)</code> <span class="difficulty medium">MOYEN</span></h2>
+            <p><strong>Spécification :</strong></p>
+            <ul>
+                <li><strong>Entrée :</strong> Une grille, un chemin parcouru, une case actuelle</li>
+                <li><strong>Sortie :</strong> Liste des cases voisines non encore visitées</li>
+            </ul>
+            <p><strong>Algorithme :</strong></p>
+            <ol>
+                <li>Calculer les 4 voisins (haut, bas, gauche, droite)</li>
+                <li>Filtrer ceux qui sont dans la grille</li>
+                <li>Filtrer ceux qui ne sont pas déjà dans le chemin parcouru</li>
+                <li>Retourner la liste filtrée</li>
+            </ol>
+            <div class="tip">
+                <strong>💡 Utilité :</strong> Cette fonction sera utilisée pour les chemins aléatoires et le backtracking.
             </div>
 
             <hr>
@@ -750,19 +795,28 @@ assert cheminContinu([[4,5], [3,5], [2,5]]) == True</code></pre>
             <h2>Ordre de travail suggéré</h2>
             <div class="example">
                 <strong>📋 Progression recommandée :</strong>
+                <p><strong>Partie I - Validation :</strong></p>
                 <ol>
                     <li><code>sontVoisines()</code> - facile</li>
+                    <li><code>cheminContinu()</code> - moyen (utilise sontVoisines)</li>
                     <li><code>departArrivee()</code> - facile</li>
                     <li><code>ordreDesCases()</code> - moyen</li>
                     <li><code>verification()</code> - facile</li>
+                </ol>
+                <p><strong>Partie II - Chemins aléatoires :</strong></p>
+                <ol start="6">
                     <li><code>randomGrille()</code> - facile</li>
+                    <li><code>casesVoisinesPossibles()</code> - moyen</li>
                     <li><code>cheminAleatoire1()</code> - moyen</li>
                     <li><code>lanceCheminAleatoire1()</code> - facile</li>
                     <li><code>lanceCheminAleatoire2()</code> - facile</li>
                     <li><code>cheminAleatoire2()</code> - moyen/difficile</li>
                     <li><code>initialisenew()</code> - difficile</li>
+                </ol>
+                <p><strong>Partie III - Backtracking :</strong></p>
+                <ol start="13">
                     <li><code>rechercheCasesVoisinesPossibles()</code> - difficile</li>
-                    <li><code>chercheChemin()</code> - difficile</li>
+                    <li><code>chercheChemin()</code> - très difficile</li>
                     <li><code>lanceAide()</code> - moyen</li>
                 </ol>
             </div>

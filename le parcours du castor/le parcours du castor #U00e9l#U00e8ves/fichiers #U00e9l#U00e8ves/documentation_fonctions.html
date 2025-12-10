@@ -318,14 +318,17 @@ photoF = PhotoImage(file=os.path.join(SCRIPT_DIR, "feuille.png"))</code></pre>
             <li>Case <code>[4, 5]</code> = bas-droite (départ) 🚀</li>
         </ul>
 
-        <h3>Fonctions fournies</h3>
+        <h3>⚠️ Fonctions à compléter</h3>
+        <div class="important">
+            <strong>Important :</strong> Dans le fichier élève, TOUTES les fonctions de logique sont à compléter. Seules <code>initialise()</code> et <code>clic()</code> dans l'interface sont fournies.
+        </div>
 
-        <h4><code>cheminContinu(parcours)</code></h4>
+        <h4><code>cheminContinu(parcours)</code> - À COMPLÉTER</h4>
         <p><strong>But</strong> : Vérifie que toutes les cases du parcours sont adjacentes consécutivement.</p>
-        <p><strong>Algorithme</strong> :</p>
+        <p><strong>Algorithme suggéré</strong> :</p>
         <ul>
             <li>Parcourir toutes les paires de cases consécutives</li>
-            <li>Pour chaque paire, vérifier qu'elles sont voisines</li>
+            <li>Pour chaque paire, vérifier qu'elles sont voisines avec <code>sontVoisines()</code></li>
             <li>Si une paire n'est pas voisine : retourner <code>False</code></li>
             <li>Si toutes les paires sont voisines : retourner <code>True</code></li>
         </ul>
@@ -333,9 +336,9 @@ photoF = PhotoImage(file=os.path.join(SCRIPT_DIR, "feuille.png"))</code></pre>
             <strong>⚠️ Piège à éviter :</strong> Le <code>return True</code> doit être <strong>en dehors</strong> de la boucle <code>for</code>. Si on le met dans la boucle, la fonction retournera <code>True</code> dès la première paire voisine testée.
         </div>
 
-        <h4><code>casesVoisinesPossibles(grille, cheminParcouru, caseActuelle)</code></h4>
+        <h4><code>casesVoisinesPossibles(grille, cheminParcouru, caseActuelle)</code> - À COMPLÉTER</h4>
         <p><strong>But</strong> : Retourne les cases voisines non encore visitées.</p>
-        <p><strong>Algorithme</strong> :</p>
+        <p><strong>Algorithme suggéré</strong> :</p>
         <ol>
             <li>Calculer les dimensions de la grille (L lignes, C colonnes)</li>
             <li>Générer la liste de toutes les cases de la grille</li>
@@ -356,7 +359,7 @@ photoF = PhotoImage(file=os.path.join(SCRIPT_DIR, "feuille.png"))</code></pre>
             <li>Retourner la liste filtrée</li>
         </ol>
         <div class="tip">
-            <strong>💡 Utilité :</strong> Cette fonction est utilisée pour générer les chemins aléatoires.
+            <strong>💡 Utilité :</strong> Cette fonction sera utilisée pour générer les chemins aléatoires et pour le backtracking.
         </div>
 
         <h4><code>chercheChemin(grille)</code> - Algorithme de backtracking</h4>

@@ -325,41 +325,17 @@ photoF = PhotoImage(file=os.path.join(SCRIPT_DIR, "feuille.png"))</code></pre>
 
         <h4><code>cheminContinu(parcours)</code> - À COMPLÉTER</h4>
         <p><strong>But</strong> : Vérifie que toutes les cases du parcours sont adjacentes consécutivement.</p>
-        <p><strong>Algorithme suggéré</strong> :</p>
-        <ul>
-            <li>Parcourir toutes les paires de cases consécutives</li>
-            <li>Pour chaque paire, vérifier qu'elles sont voisines avec <code>sontVoisines()</code></li>
-            <li>Si une paire n'est pas voisine : retourner <code>False</code></li>
-            <li>Si toutes les paires sont voisines : retourner <code>True</code></li>
-        </ul>
+        <div class="tip">
+            <strong>💡 Indice :</strong> Parcourez les paires de cases consécutives et vérifiez qu'elles sont voisines.
+        </div>
         <div class="important">
-            <strong>⚠️ Piège à éviter :</strong> Le <code>return True</code> doit être <strong>en dehors</strong> de la boucle <code>for</code>. Si on le met dans la boucle, la fonction retournera <code>True</code> dès la première paire voisine testée.
+            <strong>⚠️ Piège :</strong> Attention à l'emplacement du <code>return True</code> !
         </div>
 
         <h4><code>casesVoisinesPossibles(grille, cheminParcouru, caseActuelle)</code> - À COMPLÉTER</h4>
         <p><strong>But</strong> : Retourne les cases voisines non encore visitées.</p>
-        <p><strong>Algorithme suggéré</strong> :</p>
-        <ol>
-            <li>Calculer les dimensions de la grille (L lignes, C colonnes)</li>
-            <li>Générer la liste de toutes les cases de la grille</li>
-            <li>À partir de la case actuelle <code>[x, y]</code>, calculer les 4 positions voisines :
-                <ul>
-                    <li><code>[x-1, y]</code> : au-dessus ⬆️</li>
-                    <li><code>[x+1, y]</code> : en-dessous ⬇️</li>
-                    <li><code>[x, y-1]</code> : à gauche ⬅️</li>
-                    <li><code>[x, y+1]</code> : à droite ➡️</li>
-                </ul>
-            </li>
-            <li>Filtrer les positions pour ne garder que celles qui :
-                <ul>
-                    <li>Sont dans la grille (existent dans <code>cases_grille</code>)</li>
-                    <li>Ne sont pas déjà dans <code>cheminParcouru</code></li>
-                </ul>
-            </li>
-            <li>Retourner la liste filtrée</li>
-        </ol>
         <div class="tip">
-            <strong>💡 Utilité :</strong> Cette fonction sera utilisée pour générer les chemins aléatoires et pour le backtracking.
+            <strong>💡 Indice :</strong> Calculez les 4 voisins (haut, bas, gauche, droite), puis filtrez ceux qui sont dans la grille et non déjà dans le chemin parcouru.
         </div>
 
         <h4><code>chercheChemin(grille)</code> - Algorithme de backtracking</h4>
@@ -476,16 +452,8 @@ photoF = PhotoImage(file=os.path.join(SCRIPT_DIR, "feuille.png"))</code></pre>
         <ul>
             <li><strong>Entrée</strong> : Un parcours et une grille</li>
             <li><strong>Sortie</strong> : <code>True</code> si départ = bas-droite ET arrivée = haut-gauche</li>
-            <li><strong>Calcul dynamique</strong> :
-                <ul>
-                    <li>Départ = <code>[len(grille)-1, len(grille[0])-1]</code></li>
-                    <li>Arrivée = <code>[0, 0]</code></li>
-                </ul>
-            </li>
+            <li><strong>Calcul dynamique</strong> : Calculer les positions selon la taille de la grille</li>
         </ul>
-        <div class="tip">
-            <strong>💡 Astuce :</strong> Accès au premier élément avec <code>parcours[0]</code>, au dernier avec <code>parcours[-1]</code>
-        </div>
 
         <h4><code>verification(chemin, grille)</code></h4>
         <p><strong>Spécification</strong> :</p>
@@ -494,11 +462,6 @@ photoF = PhotoImage(file=os.path.join(SCRIPT_DIR, "feuille.png"))</code></pre>
             <li><strong>Sortie</strong> : Aucune (modification de la variable d'interface <code>reponse</code>)</li>
             <li><strong>Règle</strong> : Les 3 conditions doivent être vraies simultanément</li>
         </ul>
-        <p><strong>Structure suggérée</strong> :</p>
-        <pre><code>if (condition1 and condition2 and condition3):
-    reponse.set("Bravo")
-else:
-    reponse.set("Perdu")</code></pre>
 
         <h3>Partie II - Fonctions aléatoires</h3>
 
@@ -509,7 +472,6 @@ else:
             <li><strong>Sortie</strong> : Une grille L×C avec cases aléatoires</li>
             <li><strong>Effet de bord</strong> : Modifie <code>grillecourante</code> (variable globale)</li>
         </ul>
-        <p><strong>Structure</strong> : Liste de listes (liste en compréhension à deux niveaux)</p>
 
         <h4><code>cheminAleatoire1(grille)</code></h4>
         <p><strong>Spécification</strong> :</p>
@@ -517,12 +479,6 @@ else:
             <li><strong>Entrée</strong> : Une grille</li>
             <li><strong>Sortie</strong> : Un chemin de la case de départ à <code>[0,0]</code></li>
             <li><strong>Contrainte</strong> : Ne se déplace que vers le haut ou la gauche</li>
-        </ul>
-        <p><strong>Cas particuliers</strong> :</p>
-        <ul>
-            <li>Si <code>ligne == 0</code> : ne peut aller qu'à gauche</li>
-            <li>Si <code>colonne == 0</code> : ne peut aller qu'en haut</li>
-            <li>Sinon : choix aléatoire entre les deux</li>
         </ul>
 
         <h4><code>cheminAleatoire2(grille)</code></h4>
@@ -532,43 +488,22 @@ else:
             <li><strong>Sortie</strong> : Un chemin (qui peut ne pas atteindre l'arrivée si coincé)</li>
             <li><strong>Contrainte</strong> : Choisit aléatoirement parmi les cases voisines disponibles</li>
         </ul>
-        <p><strong>Optimisation</strong> : Si l'arrivée est dans les cases disponibles, y aller directement.</p>
-        <p><strong>Gestion du blocage</strong> : La boucle s'arrête si <code>nextmove == []</code> (aucune case disponible).</p>
 
         <h4><code>initialisenew(grilleinit)</code></h4>
         <p><strong>Spécification</strong> :</p>
         <ul>
             <li><strong>Entrée</strong> : Une nouvelle grille</li>
             <li><strong>Sortie</strong> : Aucune (modification de l'interface)</li>
-            <li><strong>Actions</strong> :
-                <ol>
-                    <li>Réinitialiser <code>chemin</code> et <code>grillecourante</code></li>
-                    <li>Supprimer les anciens boutons de la grille</li>
-                    <li>Recréer la grille (comme <code>initialise()</code>)</li>
-                </ol>
-            </li>
+            <li><strong>Actions</strong> : Réinitialiser, supprimer anciens boutons, recréer la grille</li>
         </ul>
-        <p><strong>Astuce pour supprimer les boutons</strong> :</p>
-        <pre><code>for button in fenetre.grid_slaves():
-    if (conditions pour vérifier que c'est un bouton de la grille):
-        button.destroy()</code></pre>
 
         <h4><code>lanceCheminAleatoire1(grille)</code> et <code>lanceCheminAleatoire2(grille)</code></h4>
         <p><strong>Spécification</strong> :</p>
         <ul>
             <li><strong>Entrée</strong> : Une grille</li>
             <li><strong>Sortie</strong> : Aucune (modification de l'interface)</li>
-            <li><strong>Actions</strong> :
-                <ol>
-                    <li>Générer un chemin aléatoire</li>
-                    <li>Désactiver visuellement les boutons du chemin</li>
-                    <li>Vérifier si le chemin est valide</li>
-                </ol>
-            </li>
+            <li><strong>Actions</strong> : Générer chemin, désactiver boutons, vérifier</li>
         </ul>
-        <div class="tip">
-            <strong>💡 Pattern à suivre :</strong> Regarder <code>lanceAide()</code> qui fait la même chose avec <code>chercheChemin()</code>.
-        </div>
     </div>
 
     <hr>

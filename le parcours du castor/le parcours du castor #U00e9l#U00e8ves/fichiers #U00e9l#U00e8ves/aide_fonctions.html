@@ -207,34 +207,19 @@ sontVoisines([0,0], [2,0])  # doit retourner False (trop loin)</code></pre>
 
         <h4><code>cheminContinu(parcours)</code> <span class="difficulty medium">MOYEN</span></h4>
         <p><strong>But</strong> : Vérifie que toutes les cases du parcours sont adjacentes consécutivement.</p>
-        <p><strong>Algorithme suggéré</strong> :</p>
-        <ol>
-            <li>Parcourir toutes les paires de cases consécutives avec une boucle <code>for i in range(len(parcours)-1)</code></li>
-            <li>Pour chaque paire, vérifier qu'elles sont voisines avec <code>sontVoisines(parcours[i], parcours[i+1])</code></li>
-            <li>Si une paire n'est pas voisine : retourner <code>False</code></li>
-            <li>Si toutes les paires sont voisines : retourner <code>True</code></li>
-        </ol>
+        <div class="tip">
+            <strong>💡 Indice :</strong> Utilisez une boucle pour parcourir les paires de cases consécutives et vérifiez qu'elles sont voisines avec <code>sontVoisines()</code>.
+        </div>
         <div class="warning">
-            <strong>⚠️ Piège :</strong> Le <code>return True</code> doit être EN DEHORS de la boucle <code>for</code>, sinon la fonction retournera <code>True</code> dès la première paire voisine testée !
+            <strong>⚠️ Piège :</strong> Attention à l'emplacement du <code>return True</code> !
         </div>
 
         <hr>
 
         <h4><code>ordreDesCases(parcours, grille)</code> <span class="difficulty medium">MOYEN</span></h4>
         <p><strong>But</strong> : Vérifie la règle d'alternance (pas deux cases identiques consécutives, sauf 1 joker).</p>
-        <p><strong>Étapes suggérées</strong> :</p>
-        <ol>
-            <li>Construire le mot correspondant au parcours (P, B, F, ...)</li>
-            <li>Compter combien de fois on a deux lettres consécutives identiques</li>
-            <li>Retourner <code>True</code> si ≤ 1 joker utilisé</li>
-        </ol>
-        <div class="example">
-            <strong>Exemples :</strong>
-            <ul>
-                <li>Parcours : P → B → F → B → P → <strong style="color: green;">OK</strong> (aucun joker)</li>
-                <li>Parcours : P → P → B → F → <strong style="color: green;">OK</strong> (1 joker utilisé entre les deux P)</li>
-                <li>Parcours : P → P → B → B → <strong style="color: red;">KO</strong> (2 jokers utilisés)</li>
-            </ul>
+        <div class="tip">
+            <strong>💡 Indice :</strong> Construisez d'abord le "mot" correspondant au parcours (suite des lettres P, B, F), puis comptez les doublons consécutifs.
         </div>
 
         <hr>
@@ -242,12 +227,7 @@ sontVoisines([0,0], [2,0])  # doit retourner False (trop loin)</code></pre>
         <h4><code>departArrivee(parcours, grille)</code> <span class="difficulty easy">FACILE</span></h4>
         <p><strong>But</strong> : Vérifie que le parcours commence en bas-droite et finit en haut-gauche.</p>
         <div class="tip">
-            <strong>💡 Indices :</strong>
-            <ul>
-                <li>La case de départ est <code>[len(grille)-1, len(grille[0])-1]</code></li>
-                <li>La case d'arrivée est <code>[0, 0]</code></li>
-                <li>Utilisez <code>parcours[0]</code> pour la première case et <code>parcours[-1]</code> pour la dernière</li>
-            </ul>
+            <strong>💡 Indice :</strong> Comparez la première et la dernière case du parcours avec les positions calculées dynamiquement selon la taille de la grille.
         </div>
 
         <hr>
@@ -255,12 +235,7 @@ sontVoisines([0,0], [2,0])  # doit retourner False (trop loin)</code></pre>
         <h4><code>verification(chemin, grille)</code> <span class="difficulty easy">FACILE</span></h4>
         <p><strong>But</strong> : Affiche "Bravo" si le parcours est valide, "Perdu" sinon.</p>
         <div class="tip">
-            <strong>💡 Indices :</strong>
-            <ul>
-                <li>Utilisez les 3 fonctions de validation : <code>cheminContinu()</code>, <code>ordreDesCases()</code>, <code>departArrivee()</code></li>
-                <li>Si les 3 retournent <code>True</code> : <code>reponse.set("Bravo")</code></li>
-                <li>Sinon : <code>reponse.set("Perdu")</code></li>
-            </ul>
+            <strong>💡 Indice :</strong> Utilisez les 3 fonctions de validation et modifiez <code>reponse</code> selon le résultat.
         </div>
 
         <hr>
@@ -270,92 +245,47 @@ sontVoisines([0,0], [2,0])  # doit retourner False (trop loin)</code></pre>
         <h4><code>randomGrille(L, C)</code> <span class="difficulty easy">FACILE</span></h4>
         <p><strong>But</strong> : Génère une grille aléatoire de taille L×C.</p>
         <div class="tip">
-            <strong>💡 Indices :</strong>
-            <ul>
-                <li>Utilisez <code>choice(("P", "B", "F"))</code> pour choisir aléatoirement</li>
-                <li>Utilisez une liste en compréhension à deux niveaux</li>
-                <li>N'oubliez pas <code>global grillecourante</code></li>
-            </ul>
+            <strong>💡 Indice :</strong> Utilisez <code>choice()</code> et une liste en compréhension à deux niveaux. N'oubliez pas <code>global</code>.
         </div>
 
         <hr>
 
         <h4><code>casesVoisinesPossibles(grille, cheminParcouru, caseActuelle)</code> <span class="difficulty medium">MOYEN</span></h4>
         <p><strong>But</strong> : Retourne les cases voisines non encore visitées.</p>
-        <p><strong>Algorithme suggéré</strong> :</p>
-        <ol>
-            <li>Calculer les dimensions de la grille (L lignes, C colonnes)</li>
-            <li>Générer la liste de toutes les cases de la grille</li>
-            <li>À partir de la case actuelle <code>[x, y]</code>, calculer les 4 positions voisines (haut, bas, gauche, droite)</li>
-            <li>Filtrer pour ne garder que les cases qui :
-                <ul>
-                    <li>Sont dans la grille</li>
-                    <li>Ne sont pas déjà dans <code>cheminParcouru</code></li>
-                </ul>
-            </li>
-            <li>Retourner la liste filtrée</li>
-        </ol>
         <div class="tip">
-            <strong>💡 Utilité :</strong> Cette fonction sera utilisée pour générer les chemins aléatoires et pour le backtracking.
+            <strong>💡 Indice :</strong> Calculez les 4 positions voisines, puis filtrez celles qui sont dans la grille et non déjà visitées.
         </div>
 
         <hr>
 
         <h4><code>cheminAleatoire1(grille)</code> <span class="difficulty medium">MOYEN</span></h4>
         <p><strong>But</strong> : Génère un chemin aléatoire en allant toujours vers le haut ou la gauche.</p>
-        <p><strong>Algorithme suggéré</strong> :</p>
-        <ol>
-            <li>Partir de la case de départ</li>
-            <li>Tant qu'on n'est pas arrivé à <code>[0,0]</code> :
-                <ul>
-                    <li>Si on est sur la ligne 0 : aller à gauche</li>
-                    <li>Si on est sur la colonne 0 : aller en haut</li>
-                    <li>Sinon : choisir aléatoirement avec <code>randint(0,1)</code></li>
-                </ul>
-            </li>
-            <li>Retourner le chemin</li>
-        </ol>
+        <div class="tip">
+            <strong>💡 Indice :</strong> Utilisez une boucle <code>while</code> et gérez les cas particuliers (ligne 0, colonne 0).
+        </div>
 
         <hr>
 
         <h4><code>cheminAleatoire2(grille)</code> <span class="difficulty medium">MOYEN/DIFFICILE</span></h4>
         <p><strong>But</strong> : Génère un chemin aléatoire en choisissant parmi les cases voisines disponibles.</p>
         <div class="tip">
-            <strong>💡 Indices :</strong>
-            <ul>
-                <li>Utilisez <code>casesVoisinesPossibles()</code> pour connaître les cases disponibles</li>
-                <li>Utilisez <code>choice()</code> pour choisir une case au hasard</li>
-                <li>Si l'arrivée est dans les cases possibles, y aller directement</li>
-                <li>Attention : le castor peut se retrouver coincé !</li>
-            </ul>
+            <strong>💡 Indice :</strong> Utilisez <code>casesVoisinesPossibles()</code> et <code>choice()</code>. Attention au cas où le castor se retrouve coincé !
         </div>
 
         <hr>
 
         <h4><code>initialisenew(grilleinit)</code> <span class="difficulty hard">DIFFICILE</span></h4>
         <p><strong>But</strong> : Réinitialise le jeu avec une nouvelle grille.</p>
-        <p><strong>Étapes</strong> :</p>
-        <ol>
-            <li>Réinitialiser <code>chemin</code> et <code>grillecourante</code></li>
-            <li>Effacer les anciens boutons (<code>.destroy()</code>)</li>
-            <li>Recréer la grille (comme dans <code>initialise()</code>)</li>
-        </ol>
         <div class="tip">
-            <strong>💡 Astuce :</strong> Regardez comment <code>initialise()</code> fonctionne et adaptez.
+            <strong>💡 Indice :</strong> Inspirez-vous de <code>initialise()</code>. Pensez à supprimer les anciens boutons avec <code>.destroy()</code>.
         </div>
 
         <hr>
 
         <h4><code>lanceCheminAleatoire1(grille)</code> et <code>lanceCheminAleatoire2(grille)</code> <span class="difficulty easy">FACILE</span></h4>
         <p><strong>But</strong> : Lance le chemin aléatoire et l'affiche sur la grille.</p>
-        <p><strong>Étapes</strong> :</p>
-        <ol>
-            <li>Appeler <code>cheminAleatoire1()</code> ou <code>cheminAleatoire2()</code></li>
-            <li>Pour chaque case du parcours, désactiver le bouton</li>
-            <li>Appeler <code>verification()</code></li>
-        </ol>
         <div class="tip">
-            <strong>💡 Astuce :</strong> Regardez comment <code>lanceAide()</code> fonctionne et adaptez.
+            <strong>💡 Indice :</strong> Inspirez-vous de <code>lanceAide()</code> dans le même fichier.
         </div>
     </div>
 
